@@ -12,7 +12,7 @@ I'm a developer building a well-rounded foundation beyond application code: how 
 
 ## Topics (planned)
 
-networking · linux · os · devops · operations & monitoring · aws · system design · security · vulnerability management · frontend · backend
+networking · linux · os · containers · web servers & runtimes · devops · operations & monitoring · aws · system design · security · vulnerability management · frontend · backend
 
 ## Current focus
 
