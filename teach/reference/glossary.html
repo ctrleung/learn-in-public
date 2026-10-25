@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Networking glossary</title><link rel="stylesheet" href="../assets/lesson.css"></head>
+<body><main>
+<nav class="lesson-nav"><a href="../lessons/0001-follow-a-request.html">Lesson 1</a></nav>
+<h1>Networking glossary</h1>
+<p class="meta">Terms used across lessons. Each definition follows the cited source; lessons must use these terms the same way.</p>
+<dl>
+<dt>Client</dt><dd>An internet-connected device, plus the web-accessing software on it (usually a browser). <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>Server</dt><dd>A computer that stores webpages, sites or apps. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>URL</dt><dd>Defines the location of a unique resource on the internet. Main parts: protocol (<code>https</code>), domain name, optional subdomain, and path. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>IP address</dt><dd>A number such as <code>192.0.2.172</code> that represents a unique location on the web. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>DNS (Domain Name System)</dt><dd>Special servers that match the web address you type to the website's real IP address, like an address book. The browser needs this before it can retrieve the site. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>TCP/IP</dt><dd>Communication protocols that define how data should travel across the internet. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>Packet</dt><dd>A small chunk of data sent between client and server. It has a header (client and server IP addresses, packet number, total packets, protocol details) and a payload (the actual data). <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>HTTP</dt><dd>An application protocol: the language clients and servers use to talk to each other. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>HTTP status code</dt><dd>Part of the response saying whether the request worked. Common ones: 200 success; 301 permanently moved; 400 server can't process the request; 403 server won't give access; 404 server can't find it; 503 server can't handle it right now (temporary). <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>HTTPS</dt><dd>A secure version of HTTP that stops bad people from reading your data while it is being transported. <span class="cite"><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN</a></span></dd>
+<dt>TLS (Transport Layer Security)</dt><dd>A protocol designed to give applications running above it three services: encryption, authentication and data integrity. <span class="cite"><a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a></span></dd>
+<dt>Encryption</dt><dd>A mechanism to obfuscate what is sent from one host to another. <span class="cite"><a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a></span></dd>
+<dt>Authentication</dt><dd>A mechanism to verify the validity of provided identification material. In the browser, it lets the client check the server is who it claims to be and not someone pretending to be the destination by spoofing its name or IP address. <span class="cite"><a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a></span></dd>
+<dt>Integrity</dt><dd>A mechanism to detect message tampering and forgery. TLS signs each message with a message authentication code (MAC), a one-way cryptographic hash (effectively a checksum). <span class="cite"><a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a></span></dd>
+<dt>Public key cryptography</dt><dd>Lets two peers negotiate a shared secret key without prior knowledge of each other, over an unencrypted channel. This is why TLS works in practice. <span class="cite"><a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a></span></dd>
+</dl>
+</main></body></html>

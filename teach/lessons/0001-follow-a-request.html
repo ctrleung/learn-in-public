@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 1: Follow a request</title><link rel="stylesheet" href="../assets/lesson.css"></head>
+<body><main>
+<nav class="lesson-nav">Networking · Lesson 1 · <a href="../reference/glossary.html">Glossary</a></nav>
+<h1>Follow a request</h1>
+<p class="meta">About 10 minutes. Mission link: trace a request from browser to server and say where it can fail or be attacked.</p>
+
+<div class="callout"><p><strong>Your win today:</strong> given a symptom (an error code, a missing site, a tampered page), name the step of the request journey where it happened, and the protection that guards the risky steps.</p></div>
+
+<h2>The journey in four steps</h2>
+<p>When you type a web address into the browser, MDN says these steps happen:</p>
+<ol class="steps">
+<li><strong>Address lookup.</strong> The browser asks a DNS server for the real address of the server the site lives on.</li>
+<li><strong>Request.</strong> The browser sends an HTTP request asking for a copy of the site. This message, and all other data between client and server, travels over TCP/IP.</li>
+<li><strong>Response.</strong> If the server approves, it replies "200 OK" and sends the site's files as a series of small chunks called <em>packets</em>.</li>
+<li><strong>Assembly.</strong> The browser puts the chunks together into a complete page.</li>
+</ol>
+<p class="cite">Source: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN, How the web works</a>.</p>
+
+<h2>Where each step can fail</h2>
+<table>
+<tr><th>Symptom</th><th>Step</th><th>Why</th></tr>
+<tr><td>Browser can't find the site at all</td><td>1. Address lookup</td><td>The browser needs the IP address from DNS before it can retrieve the website.</td></tr>
+<tr><td>Some data is lost on the way</td><td>2–3. TCP/IP transport</td><td>Packets are sometimes dropped or corrupted; the client can ask for just the missing ones.</td></tr>
+<tr><td>Error code such as 403, 404 or 503</td><td>3. Response</td><td>The server answered, but not with the page. 403: access refused. 404: not found. 503: temporarily unable to handle it.</td></tr>
+</table>
+<p class="cite">Source: MDN, as above.</p>
+
+<h2>Where it can be attacked: TLS</h2>
+<p>MDN describes HTTPS as a secure version of HTTP that stops bad people from reading your data while it is being transported. The book <em>High Performance Browser Networking</em> breaks the protection down. The TLS protocol is designed to provide three services:</p>
+<ul>
+<li><strong>Encryption:</strong> obfuscates what is sent between hosts.</li>
+<li><strong>Authentication:</strong> lets the browser verify the server is who it claims to be, not someone pretending to be it by spoofing its name or IP address.</li>
+<li><strong>Integrity:</strong> detects tampering and forgery of messages.</li>
+</ul>
+<p class="cite">Source: <a href="https://hpbn.co/transport-layer-security-tls/">HPBN, Transport Layer Security (TLS)</a>.</p>
+<div class="callout"><p><strong>Security lens:</strong> each service answers a different attack. Reading traffic is stopped by encryption. Impersonating a site is stopped by authentication. Changing traffic is stopped by integrity.</p></div>
+
+<h2>Try it on your own machine</h2>
+<p>Run this in a terminal (macOS and Linux have <code>curl</code>; Windows 10+ has it too):</p>
+<pre>curl -sI https://developer.mozilla.org/en-US/</pre>
+<p>The <code>-I</code> flag asks for just the headers. Find the status line (it should say <code>HTTP/2 200</code>) and compare it with the example response in the MDN article. Then request a page that does not exist and read the code:</p>
+<pre>curl -sI https://developer.mozilla.org/en-US/no-such-page-xyz</pre>
+<p>I ran both while preparing this lesson and got <code>200</code> for the first and <code>404</code> for the second. Which step of the journey does the code come from?</p>
+
+<h2>Check yourself</h2>
+<div id="quiz"></div>
+<script type="application/json" id="quiz-data">[
+{"q":"Your browser can't work out which server a site name points to. Which step failed?",
+ "options":["The HTTP request","The DNS lookup","The page assembly"],"answer":1,
+ "why":"The browser needs the site's IP address from DNS before it can retrieve the website.",
+ "cite":"<a href=\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works\">MDN</a>"},
+{"q":"A server answers a request with the code 403. What does that usually mean?",
+ "options":["Access is not allowed","The page is missing","The server is offline"],"answer":0,
+ "why":"403 means the server will not give the client access, usually because the client lacks permission. A missing page is 404, and a temporary server problem is 503.",
+ "cite":"<a href=\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works\">MDN</a>"},
+{"q":"A response is altered in transit, and the browser detects the change. Which TLS service caught it?",
+ "options":["Server authentication","Traffic encryption","Data integrity checks"],"answer":2,
+ "why":"Integrity is the mechanism that detects message tampering and forgery. TLS signs each message with a MAC so the receiver can verify it.",
+ "cite":"<a href=\"https://hpbn.co/transport-layer-security-tls/\">HPBN</a>"},
+{"q":"A fake site copies your bank's name. Which TLS service lets the browser spot the imposter?",
+ "options":["Data integrity checks","Server authentication","Traffic encryption"],"answer":1,
+ "why":"Authentication lets the client verify the server is who it claims to be, and not someone pretending to be the destination by spoofing its name or IP address.",
+ "cite":"<a href=\"https://hpbn.co/transport-layer-security-tls/\">HPBN</a>"}
+]</script>
+<script src="../assets/quiz.js"></script>
+
+<details><summary>Recall it from memory (do this a few days later)</summary>
+<p>Without scrolling up: write the four steps of the journey, one failure you could see at each step, and the three services TLS provides with the attack each one answers. Then check against this page.</p>
+</details>
+
+<h2>Read next</h2>
+<p><strong>Primary source:</strong> <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN, How the web works</a> (about 10 minutes). Then, if you want more depth on TLS, the section "Encryption, Authentication, and Integrity" in <a href="https://hpbn.co/transport-layer-security-tls/">HPBN</a>.</p>
+<p>All terms used here are in the <a href="../reference/glossary.html">glossary</a>.</p>
+<div class="callout"><p><strong>Ask your teacher.</strong> If any part was unclear, or you want to go deeper (for example, how DNS lookups are actually resolved), ask in the session. Questions are what shape the next lesson.</p></div>
+</main></body></html>
