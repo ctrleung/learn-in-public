@@ -1,9 +1,8 @@
 # Notes
 
 ## Learner
-- Working programmer, mainly frontend, some backend and API experience. Comfortable with HTTP as a client-side concept; less familiar with systems, ops and security.
+- Working programmer, mainly frontend, some backend and API experience. Comfortable with HTTP as a client-side concept; building out systems, ops and security.
 - Has been leaning on AI for coding; wants to keep hand-coding skills sharp (`../practice/` is AI-free).
-- Prefers not to be described as not understanding things; frame gaps as "unfamiliar" or "gaps to fill".
 
 ## Preferences
 - Short lessons; uneven weekly energy. A lesson should be doable in a sitting.
