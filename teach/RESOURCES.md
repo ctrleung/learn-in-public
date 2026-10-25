@@ -11,11 +11,14 @@
 - [High Performance Browser Networking, Ilya Grigorik: Transport Layer Security (TLS)](https://hpbn.co/transport-layer-security-tls/)
   Freely readable online (O'Reilly, 2013). Only the opening section (encryption, authentication, integrity) has been read so far. Use for: what TLS provides and why. Its table of contents also covers TCP, UDP, HTTP/2, certificates and chain of trust; check chapter content is still current before relying on specific settings, since the book is from 2013.
 
-### Unverified (found by search, not yet read)
+- [Julia Evans: Networking! ACK! (free zine, PDF)](https://wizardzines.com/zines/networking/)
+  A free, roughly 20-page comic for working programmers that follows one cat picture from a server to your laptop (DNS, packets, TCP, HTTP and how they fit together). Only the first three pages and the landing page have been read, enough to confirm it is free and aimed at web developers who know the names but not how the pieces fit. Use for: a friendly second explanation of the request journey; read fully before citing specific pages.
 
-- [Julia Evans: "Bite Size Networking" zine announcement](https://jvns.ca/blog/2019/03/15/new-zine--bite-size-networking-/)
-  Announcement of a paid zine on practical tools such as tcpdump, DNS queries and inspecting certificates. Use for: hands-on command-line tooling, once the zine is confirmed.
-- Cloudflare Learning Center articles on DNS and TLS handshakes (cloudflare.com/learning). The site returned HTTP 403 to automated requests, so the pages couldn't be read. Use for: DNS resolution steps and the TLS handshake, once readable (try pasting the text in).
+### Unverified (not yet read)
+
+- [Julia Evans: "Bite Size Networking" (paid zine, $10)](https://jvns.ca/blog/2019/03/15/new-zine--bite-size-networking-/)
+  A separate, paid zine from 2019 on practical tools (tcpdump, DNS queries, inspecting SSL certificates, checking firewalls). Only the announcement post has been read, and the zine itself has not. Use for: hands-on command-line troubleshooting, if you decide to buy it.
+- Cloudflare Learning Center articles on DNS and TLS handshakes (cloudflare.com/learning). The site shows a bot-check page ("Just a moment... Enable JavaScript") instead of the article, so it can't be read from here. Use for: DNS resolution steps and the TLS handshake, if you paste the text in.
 
 ## Wisdom (Communities)
 
