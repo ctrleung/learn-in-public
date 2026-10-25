@@ -1,7 +1,7 @@
 /* Reusable quiz component.
-   Usage: <div id="quiz"></div> plus <script type="application/json" id="quiz-data">
-   [{"q":"...","options":["a","b","c"],"answer":1,"why":"...","cite":"<a href=...>...</a>"}]
-   Then <script src="../assets/quiz.js"></script>. Gives instant feedback per question and a final score. */
+   Usage: put a div with id "quiz" and a JSON script tag with id "quiz-data" on the page.
+   The JSON is a list of {"q","options","answer","why","cite"} objects (answer is the index of the correct option).
+   Then load this file after both. Gives instant feedback per question and a final score. */
 (function () {
   var root = document.getElementById('quiz'), raw = document.getElementById('quiz-data');
   if (!root || !raw) return;
