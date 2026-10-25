@@ -40,11 +40,24 @@
 
 ## Wisdom (Communities)
 
-- None chosen yet. Ask before suggesting any; the learner hasn't said whether they want communities.
+Where to test skills with other practitioners. The learner asked for suggestions. None of these communities' own rules or moderation could be read from this environment (Reddit and the Stack Exchange sites are not reachable here), so descriptions come from third-party lists and an official AWS announcement; check each community's sidebar or rules before posting.
+
+- [AWS re:Post](https://repost.aws/)
+  Official community Q&A service launched by AWS in December 2021 (replacing the old AWS forums), where customers, partners and AWS staff answer questions on designing, building and operating workloads on AWS; members earn reputation for accepted answers. Source: [AWS announcement](https://aws.amazon.com/about-aws/whats-new/2021/12/aws-repost-community-question-answer-service). Use for: AWS questions once lessons reach VPCs and IAM.
+- [r/homelab](https://www.reddit.com/r/homelab/)
+  Reddit community for home lab setups, networking and virtualization projects (third-party lists, 2026, give member counts from about 700K to over 1M). Use for: hands-on practice ideas and "what did I get wrong in my setup" questions.
+- [r/networking](https://www.reddit.com/r/networking/)
+  Described by a third-party list as a subreddit for network professionals and enthusiasts covering hardware, protocols and troubleshooting. Use for: networking questions after reading the basics. Professional audience; expect to be asked to show your own research first.
+- [r/sysadmin](https://www.reddit.com/r/sysadmin/) and [r/linuxadmin](https://www.reddit.com/r/linuxadmin/)
+  Described as communities for system administrators and Linux administrators respectively. Use for: operations questions, once lessons reach Linux and monitoring.
+- Stack Exchange sites: Server Fault, Information Security, Network Engineering (serverfault.com, security.stackexchange.com, networkengineering.stackexchange.com)
+  Not verified from here; suggested from general knowledge of the Stack Exchange network. Use for: precise, well-formed questions with a single right answer. Stack Exchange sites expect you to search first and show your research.
+- OWASP local chapters ([owasp.org/chapters](https://owasp.org/chapters/))
+  OWASP has local chapters (page confirmed to exist; its list loads dynamically and could not be read). Use for: in-person or local meetups on application security, if one is near the learner. Needs the learner's location to check.
 
 ## Gaps
 
 - **Attacks on DNS itself** (spoofing, cache poisoning, DNSSEC). No source read covers this. OWASP has no DNS-specific page (its "Cache_Poisoning" entry is about web caches, not read). The learner is reading Cloudflare's DNS articles, which may fill it; otherwise `www.icann.org` is not reachable under the current network settings.
 - **Firewalls beyond AWS.** Only AWS security groups and network ACLs are covered; no source read explains host or network firewalls in general.
 - **Vulnerability and CVE sources** (for the "read an advisory" mission goal). `nvd.nist.gov` and `www.cisa.gov` are not reachable under the current network settings.
-- **Communities (wisdom).** None chosen; the learner hasn't been asked yet whether they want any.
+- **Community rules and activity** are unverified for every community above; pick one or two, read the sidebar, and prune the rest.
