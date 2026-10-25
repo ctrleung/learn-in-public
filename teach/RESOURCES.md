@@ -16,6 +16,15 @@
 - [MDN Glossary: DNS](https://developer.mozilla.org/en-US/docs/Glossary/DNS)
   Short definition: a hierarchical, decentralized naming system that maps domain names to IP addresses (a DNS lookup), with reverse DNS going the other way. Use for: a precise one-line definition.
 
+- [OWASP Cheat Sheet Series: Transport Layer Security](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html)
+  Practitioner guidance on TLS. Read: the introduction (TLS gives confidentiality, integrity and authentication) and the SSL vs TLS section (SSL versions 2 and 3 have serious cryptographic weaknesses and should no longer be used; TLS 1.0 to 1.3 followed). The server configuration and certificates sections are not yet read. Use for: what a secure TLS setup looks like, once those sections are read.
+- [OWASP: Manipulator-in-the-Middle attack](https://community.owasp.org/attacks/Manipulator-in-the-middle_attack)
+  Describes how an attacker splits a TCP connection in two and acts as a proxy that can read, insert and modify data; most effective over unencrypted HTTP; still possible over HTTPS with two separate TLS sessions; listed controls are enforcing HTTPS and HSTS, secure session management and proper certificate validation. Caveat: the page says it was ported from an old wiki and still needs work, so treat it as an overview and cross-check specifics. Use for: the attacker's view of why TLS authentication matters.
+- [AWS: What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
+  Defines a VPC as a logically isolated virtual network, a subnet as a range of IP addresses in a VPC (within a single Availability Zone), route tables as deciding where traffic goes, and internet gateways as connecting the VPC to the internet. Use for: subnets and routing before going deeper into AWS.
+- [AWS: Control traffic to your AWS resources using security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
+  A security group acts as a virtual firewall with inbound and outbound rules (source or destination, port range, protocol); only traffic allowed by the rules reaches the instance; security groups are stateful. Only the opening and basics sections have been read. Use for: firewalls as AWS applies them.
+
 ### Unverified (not yet read)
 
 - [Julia Evans: "Bite Size Networking" (paid zine, $10)](https://jvns.ca/blog/2019/03/15/new-zine--bite-size-networking-/)
@@ -28,6 +37,5 @@
 
 ## Gaps
 
-- ~~DNS resolution steps~~ Covered by the zine's DNS pages and the MDN glossary (see above). Cloudflare's article would still be a useful third source, but it is not required.
-- A primary source for security-focused networking (DNS spoofing, man-in-the-middle, firewalls). OWASP's pages now redirect to `community.owasp.org` and the cheat sheets live at `cheatsheetseries.owasp.org`; neither host is allowed by the current network settings. Neither the zine's pages read so far nor HPBN's opening section covers firewalls. Needs: those two OWASP hosts allowed, then read.
-- A source for subnets, routing and firewalls (needed before AWS VPCs). Nothing read so far covers this. Candidate: AWS VPC documentation (`docs.aws.amazon.com`, not yet allowed) once networking basics are done.
+- Cloudflare's DNS and TLS articles are still blocked by a bot check; not needed now that the zine and MDN cover DNS.
+- Not yet read: the rest of the OWASP TLS cheat sheet (server configuration, certificates), AWS network ACLs (the stateless counterpart to security groups), and how routing works outside AWS.
