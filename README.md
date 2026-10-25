@@ -12,7 +12,11 @@ I'm a developer building a well-rounded foundation beyond application code: how 
 
 ## Topics (planned)
 
-networking · linux · os · containers · web servers & runtimes · devops · operations & monitoring · aws · system design · security · vulnerability management · frontend · backend
+- **Foundations:** networking · linux · os · cryptography basics
+- **Building and running:** containers · web servers & runtimes · databases · devops (CI/CD, infrastructure as code) · scripting & automation · aws
+- **Operations:** operations & monitoring · system design
+- **Security:** security · identity, auth & secrets · vulnerability management
+- **Application:** frontend · backend
 
 ## Current focus
 
