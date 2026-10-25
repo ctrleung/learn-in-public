@@ -2,7 +2,7 @@
 
 🍎 my public learning log
 
-I'm a frontend-leaning developer rebuilding a broad, solid foundation: networking, Linux, OS, DevOps, AWS, system design, security, plus a fresh look at frontend and backend. I'm also keeping my hand-coding skills sharp.
+I'm a developer building a well-rounded foundation beyond application code: how systems run, how they're operated, and how they get attacked, so I can spot and mitigate vulnerabilities. Topics span networking, Linux, DevOps, AWS, system design and security, plus revisiting frontend and backend. I'm also keeping my hand-coding skills sharp.
 
 ## How this repo works
 
@@ -12,7 +12,7 @@ I'm a frontend-leaning developer rebuilding a broad, solid foundation: networkin
 
 ## Topics (planned)
 
-networking · linux · os · devops · aws · system design · security · frontend · backend
+networking · linux · os · devops · operations & monitoring · aws · system design · security · vulnerability management · frontend · backend
 
 ## Current focus
 
