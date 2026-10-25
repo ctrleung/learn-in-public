@@ -30,8 +30,17 @@
 - [AWS: Configure route tables](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html)
   A route table is the traffic controller for a VPC; each route has a destination (CIDR block) and a target (such as an internet gateway, NAT gateway, peering connection or VPN connection); traffic is routed by destination IP address. Only the opening read. Use for: public vs private subnets, once the zine's routing and CIDR pages are done.
 
+- [ICANN: DNSSEC, What Is It and Why Is It Important?](https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en)
+  Explains how DNS works (stub resolver, recursive resolver, authoritative name servers) and why DNS by itself is not secure: a resolver can only check that a response appears to come from the IP address it queried, and that source address can be forged. A forged answer accepted by a recursive resolver poisons its cache, so the resolver returns fraudulent data to other devices; the page's example is a fake bank site. DNSSEC adds digital signatures based on public key cryptography. Read through the opening of the DNSSEC section; the key trust and validation sections are not yet read. Use for: DNS attacks, as the follow-on to the zine's DNS pages.
+- [NVD CVE API](https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-44228) (`services.nvd.nist.gov`, replace the CVE id to look up another)
+  NIST's National Vulnerability Database as data: description, publication date, analysis status, CVSS score and severity, and CISA known-exploited-vulnerability fields. For CVE-2021-44228 (Log4Shell) it returned a CVSS v3.1 score of 10.0, CRITICAL, with CISA dates of 2021-12-10 added and 2021-12-24 action due. The NVD website itself refuses automated requests, but this API works. Use for: reading an advisory and judging severity.
+- [CVE Record API (MITRE)](https://cveawg.mitre.org/api/cve/CVE-2021-44228)
+  The authoritative CVE record. For CVE-2021-44228 it returned state PUBLISHED, assigned by Apache. Use for: who reported it and the original description, to cross-check NVD.
+
 ### Not yet read
 
+- [OSV (Open Source Vulnerabilities)](https://osv.dev/) and [CVE.org](https://www.cve.org/)
+  Both reachable (home pages return 200; OSV's API also answered) but not yet read. Use for: finding which vulnerabilities affect specific open-source package versions, which is the practical "does this affect what I run?" question.
 - [OWASP Cheat Sheet Series: HTTP Strict Transport Security](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
   Linked from the TLS cheat sheet as the guide to HSTS, one of the controls OWASP lists against man-in-the-middle attacks. Reachable but not read. Use for: the lesson on HTTPS enforcement.
 - [Julia Evans: "Bite Size Networking" (paid zine, $10)](https://jvns.ca/blog/2019/03/15/new-zine--bite-size-networking-/)
@@ -57,7 +66,7 @@ Where to test skills with other practitioners. The learner asked for suggestions
 
 ## Gaps
 
-- **Attacks on DNS itself** (spoofing, cache poisoning, DNSSEC). No source read covers this. OWASP has no DNS-specific page (its "Cache_Poisoning" entry is about web caches, not read). The learner is reading Cloudflare's DNS articles, which may fill it; otherwise `www.icann.org` is not reachable under the current network settings.
 - **Firewalls beyond AWS.** Only AWS security groups and network ACLs are covered; no source read explains host or network firewalls in general.
-- **Vulnerability and CVE sources** (for the "read an advisory" mission goal). `www.cisa.gov` and `nvd.nist.gov` are allowed by the network settings but return "Access Denied" to automated requests from this environment, so they can't be read here; the learner can read them directly. Not yet allowed by the network settings: `www.cve.org`, `cveawg.mitre.org`, `osv.dev`, `api.osv.dev`, `services.nvd.nist.gov` (NVD's API, meant for programs). GitHub's global advisory database is not available to this session.
+- **How to read and triage a real advisory.** The data sources (NVD, MITRE, OSV) are now readable, but no guide on triage (is it exploitable here, what to patch first) has been read yet. CISA's known-exploited catalog is a candidate, but `www.cisa.gov` blocks automated reads; the learner can read it directly.
+- **Cloudflare's DNS and TLS articles** are still blocked by a bot check; the learner is reading them themselves.
 - **Community rules and activity** are unverified for every community above; pick one or two, read the sidebar, and prune the rest.
