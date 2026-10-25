@@ -2,7 +2,7 @@
 
 🍎 my public learning log
 
-I'm a frontend-leaning developer rebuilding a broad, solid foundation: networking, Linux, OS, DevOps, AWS, system design, security, plus a fresh look at frontend and backend. I'm also relearning how to code by hand.
+I'm a frontend-leaning developer rebuilding a broad, solid foundation: networking, Linux, OS, DevOps, AWS, system design, security, plus a fresh look at frontend and backend. I'm also keeping my hand-coding skills sharp.
 
 ## How this repo works
 
