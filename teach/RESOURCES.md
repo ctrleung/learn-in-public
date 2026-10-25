@@ -59,5 +59,5 @@ Where to test skills with other practitioners. The learner asked for suggestions
 
 - **Attacks on DNS itself** (spoofing, cache poisoning, DNSSEC). No source read covers this. OWASP has no DNS-specific page (its "Cache_Poisoning" entry is about web caches, not read). The learner is reading Cloudflare's DNS articles, which may fill it; otherwise `www.icann.org` is not reachable under the current network settings.
 - **Firewalls beyond AWS.** Only AWS security groups and network ACLs are covered; no source read explains host or network firewalls in general.
-- **Vulnerability and CVE sources** (for the "read an advisory" mission goal). `nvd.nist.gov` and `www.cisa.gov` are not reachable under the current network settings.
+- **Vulnerability and CVE sources** (for the "read an advisory" mission goal). `www.cisa.gov` and `nvd.nist.gov` are allowed by the network settings but return "Access Denied" to automated requests from this environment, so they can't be read here; the learner can read them directly. Not yet allowed by the network settings: `www.cve.org`, `cveawg.mitre.org`, `osv.dev`, `api.osv.dev`, `services.nvd.nist.gov` (NVD's API, meant for programs). GitHub's global advisory database is not available to this session.
 - **Community rules and activity** are unverified for every community above; pick one or two, read the sidebar, and prune the rest.
