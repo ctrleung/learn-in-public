@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request journey notes</title><link rel="stylesheet" href="../assets/lesson.css"></head>
+<body><main>
+<nav class="lesson-nav"><a href="../lessons/0001-follow-a-request.html">Lesson 1</a> · <a href="glossary.html">Glossary</a></nav>
+<h1>The request journey</h1>
+<p class="meta">Quick-reference notes from networking lesson 1. Every claim comes from MDN or HPBN (linked at the bottom).</p>
+
+<h2>The four steps</h2>
+<ol class="steps">
+<li><strong>Address lookup.</strong> The browser asks DNS for the IP address of the server the site lives on. It needs this <em>before</em> it can retrieve the site.</li>
+<li><strong>Request.</strong> The browser sends an HTTP request asking for a copy of the site. All data between client and server travels over TCP/IP.</li>
+<li><strong>Response.</strong> If the server approves, it replies <code>200 OK</code> and sends the site's files as small chunks called <em>packets</em>.</li>
+<li><strong>Assembly.</strong> The browser puts the chunks together into the page.</li>
+</ol>
+
+<h2>Where each step fails</h2>
+<table>
+<tr><th>Symptom</th><th>Step</th></tr>
+<tr><td>Can't find the site at all</td><td>1. Address lookup (DNS)</td></tr>
+<tr><td>Data lost or corrupted on the way</td><td>2-3. TCP/IP transport (client re-requests the missing packets)</td></tr>
+<tr><td>Error code (403, 404, 503...)</td><td>3. Response (server answered, not with the page)</td></tr>
+</table>
+
+<h2>Status codes</h2>
+<table>
+<tr><th>Code</th><th>Means</th></tr>
+<tr><td><code>200</code></td><td>Success</td></tr>
+<tr><td><code>301</code></td><td>Permanently moved; the new location is in the response</td></tr>
+<tr><td><code>400</code></td><td>Server can't process the request (malformed or has errors)</td></tr>
+<tr><td><code>403</code></td><td>Server won't give access: it knows who you are, but you lack permission</td></tr>
+<tr><td><code>404</code></td><td>Can't find the resource (wrong URL, or deleted without a redirect)</td></tr>
+<tr><td><code>503</code></td><td>Server can't handle the request right now, usually temporary (e.g. maintenance)</td></tr>
+</table>
+<div class="callout"><p><strong>Mix-ups to watch:</strong> 301 is not "unauthorized" and 503 is not "internal server error". Those are different codes (401 and 500), which the MDN page names but doesn't define; look them up in MDN's HTTP status reference.</p></div>
+
+<h2>Packets</h2>
+<p>Data is sent in small chunks. Each packet has a <strong>header</strong> (client and server IP addresses, packet number, total packets, protocol details) and a <strong>payload</strong> (the actual data).</p>
+<p><strong>Why chunks:</strong> (1) dropped or corrupted packets can be re-requested on their own instead of the whole file; (2) packets can take different routes and arrive out of order, and the header numbers let the client reassemble them.</p>
+
+<h2>Parts of a URL</h2>
+<pre>https://developer.mozilla.org/en-US/
+ |        |         |           |
+ |        |         |           path: where the resource is on the server
+ |        |         domain name (mozilla.org)
+ |        subdomain (developer)
+ protocol</pre>
+
+<h2>TCP/IP vs HTTP</h2>
+<p><strong>TCP/IP</strong> defines how data travels across the internet (the road and the vehicle). <strong>HTTP</strong> is the application protocol: the language client and server use to talk (the order you place at the shop). <strong>DNS</strong> is the address book that turns a domain name into an IP address.</p>
+
+<h2>TLS: three services, three attacks</h2>
+<table>
+<tr><th>Service</th><th>What it does</th><th>Attack it answers</th></tr>
+<tr><td>Encryption</td><td>Obfuscates what is sent between hosts</td><td>Reading the traffic</td></tr>
+<tr><td>Authentication</td><td>Lets the browser verify the server is who it claims to be</td><td>Impersonating a site (spoofing its name or IP address)</td></tr>
+<tr><td>Integrity</td><td>Detects tampering and forgery, using a message authentication code on each message</td><td>Changing the traffic</td></tr>
+</table>
+<p>MDN: HTTPS is a secure version of HTTP that stops bad people from reading your data while it is being transported.</p>
+
+<h2>Try it</h2>
+<pre>curl -sI https://developer.mozilla.org/en-US/
+curl -sI https://developer.mozilla.org/en-US/no-such-page-xyz</pre>
+<p><code>-I</code> asks for headers only. Expect <code>HTTP/2 200</code> for the first and <code>404</code> for the second.</p>
+
+<h2>Sources</h2>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works">MDN, How the web works</a></li>
+<li><a href="https://hpbn.co/transport-layer-security-tls/">HPBN, Transport Layer Security (TLS)</a></li>
+</ul>
+</main></body></html>
