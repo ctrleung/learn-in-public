@@ -11,3 +11,5 @@ Three days after lesson 1 the learner re-tested from memory. They gave the three
 - Lesson 1 is solid enough to build on. Move to lesson 2 (DNS in depth, caching, attacks).
 - Re-test 503 once more in a few days; the earlier 301 vs 401 and 503 vs 500 worry is half resolved.
 - When TLS comes up again, have the learner explain how the three services together answer a man-in-the-middle attack.
+
+Re-test: on or after 2026-10-30 for the 503 status code. On or after 2026-11-05 for the three TLS services, the roles of DNS, TCP/IP, TLS and HTTP, and how integrity fits into stopping a man-in-the-middle attack.

@@ -9,3 +9,5 @@ The learner scored 4/4 on the lesson 1 quiz before doing the recommended reading
 ## Implications
 - Don't assume the reading has been done. Wait for the learner to finish it, then check recall from memory (the lesson's recall prompt) before building on the journey or the three TLS services.
 - A high quiz score before reading suggests the basics are not the gap; the likely stretch is the deeper layers (DNS resolution and attacks, the TLS handshake, subnets and firewalls).
+
+Re-test: on or after 2026-11-05 (re-tested on 2026-10-29 in record 0003 and passed, so the interval moved up to 7 days).
