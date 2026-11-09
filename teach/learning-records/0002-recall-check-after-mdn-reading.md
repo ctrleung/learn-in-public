@@ -9,3 +9,5 @@ After reading MDN's "How the web works", the learner answered six written recall
 ## Implications
 - Re-test status codes (301 vs 401, 503 vs 500) after a few days; this is the one misconception to watch.
 - Ready for a deeper DNS lesson. DNS caching, TTL and attacks on DNS are a natural next step.
+
+Re-test: on or after 2026-10-30 (503 was still wrong on 2026-10-29, so back to 1 day; 301 is fixed).
