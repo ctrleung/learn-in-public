@@ -9,11 +9,13 @@ Teaching workspace for learning Japanese, run with the `/teach` skill from this 
 
 ## How it fits with my other tools
 
+- **Genki** (textbook and workbook) is the main course, and the Genki app gives me audio. This workspace follows whichever chapter I'm on.
 - **Anki** is for vocabulary and flashcards. This workspace doesn't replace it; word lists can live here if I want them versioned.
 - **Renshuu** is where I'm learning hiragana. This workspace is for reinforcing and testing what I've picked up there.
 
 ## Files
 
 - `NOTES.md`: how to teach me
+- `RESOURCES.md`: my materials (Genki, Anki, Renshuu)
 - `gaps.md`: what I've missed, until I can answer it from memory
 - Created as needed: `MISSION.md`, `PLAN.md`, `RESOURCES.md`, `learning-records/`, `lessons/`, `reference/`, `assets/`
