@@ -1,7 +1,7 @@
-# Mission: Survival Japanese for a short trip to Japan (April 2027)
+# Mission: Survival Japanese for a short trip to Japan
 
 ## Why
-I'm going to Japan for a short trip next year and I don't know any Japanese yet. By April 2027 I want enough to read signs, get around, talk to locals and ask questions, so the trip is easier and more fun.
+I'm going to Japan for a short trip and I don't know any Japanese yet. Before I go I want enough to read signs, get around, talk to locals and ask questions, so the trip is easier and more fun.
 
 ## Success looks like
 - Read hiragana and katakana without a chart, so I can sound out signs, menus and station names
@@ -12,7 +12,7 @@ I'm going to Japan for a short trip next year and I don't know any Japanese yet.
 
 ## Constraints
 - Short sessions, about 10 minutes or less; uneven energy, and the web plan runs at the same time until 14 Feb
-- Trip is in April 2027; the exact date isn't fixed yet
+- The trip date is deliberately not recorded in this repo; I'll say when timing matters
 - Materials: Genki textbook, workbook and app (audio), Anki for vocabulary, Renshuu for hiragana
 - Typed chat can't check pronunciation, so audio practice happens in the Genki app
 

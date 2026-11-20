@@ -9,7 +9,7 @@ I use this repo to learn in public, one workspace per subject, each run with the
 | Folder | Status | What |
 |---|---|---|
 | [`web/`](web/) | Active, 23 Nov 2026 to 14 Feb 2027 | Web fundamentals: HTML and accessibility, CSS, browser, HTTP and JavaScript gaps, then React. MDN is the main resource. [Plan](web/PLAN.md), [gaps](web/gaps.md) |
-| [`japanese/`](japanese/) | Active, short sessions | Survival Japanese for a short trip to Japan in April 2027, reinforcing what I learn in Genki, Anki and Renshuu. [Mission](japanese/MISSION.md), [plan](japanese/PLAN.md) |
+| [`japanese/`](japanese/) | Active, short sessions | Survival Japanese for a short trip to Japan, reinforcing what I learn in Genki, Anki and Renshuu. [Mission](japanese/MISSION.md), [plan](japanese/PLAN.md) |
 | [`systems/`](systems/) | Dormant, parked | AWS, containers, Linux, backend, DevOps, operations, security and networking beyond the web basics. Kept, not dropped |
 
 Each workspace has its own mission, notes, `gaps.md`, learning records, lessons and reference pages.

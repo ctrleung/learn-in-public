@@ -8,7 +8,7 @@
 ## Preferences
 
 - Short sessions; uneven weekly energy.
-- Wants durable, referable notes that others can read too (repo is public). Keep personal details out of committed files.
+- Wants durable, referable notes that others can read too (repo is public). Keep personal details out of committed files, including the trip date and any other travel timing.
 
 ## Working agreements
 

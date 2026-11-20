@@ -4,7 +4,7 @@ Teaching workspace for learning Japanese, run with the `/teach` skill from this 
 
 ## Status
 
-- Mission: survival Japanese for a short trip to Japan in April 2027. See `MISSION.md`.
+- Mission: survival Japanese for a short trip to Japan. See `MISSION.md`.
 - Starting point: no vocabulary; hiragana started, then paused for two weeks. See the first learning record.
 - `PLAN.md` is a draft, adjusted after the first diagnostic quiz.
 
