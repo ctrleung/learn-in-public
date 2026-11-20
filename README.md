@@ -2,22 +2,34 @@
 
 🍎 my public learning log
 
-I'm a developer building a well-rounded foundation beyond application code: how systems run, how they're operated, and how they get attacked, so I can spot and mitigate vulnerabilities. Topics span networking, Linux, DevOps, AWS, system design and security, plus revisiting frontend and backend. I'm also keeping my hand-coding skills sharp.
+I use this repo to learn in public, one workspace per subject, each run with the `/teach` skill. I already know the basics of the web, so the aim there is to refresh, find what I don't know yet, and fill gaps. I'm also keeping my hand-coding skills sharp.
 
-## How this repo works
+## Workspaces
 
-- [`teach/`](teach/): lessons, reference sheets and learning records, made with the `/teach` skill
-- [`log/`](log/): one line per study session, so showing up counts even on tired weeks
-- [`practice/`](practice/): code written by hand, no AI
+| Folder | Status | What |
+|---|---|---|
+| [`web/`](web/) | Active, 23 Nov 2026 to 14 Feb 2027 | Web fundamentals: HTML and accessibility, CSS, browser, HTTP and JavaScript gaps, then React. MDN is the main resource. [Plan](web/PLAN.md), [gaps](web/gaps.md) |
+| [`japanese/`](japanese/) | Active, short sessions | Reinforcing Japanese learned outside the repo (Anki for vocabulary, Renshuu for hiragana). The mission comes from the first session |
+| [`systems/`](systems/) | Dormant, parked | AWS, containers, Linux, backend, DevOps, operations, security and networking beyond the web basics. Kept, not dropped |
 
-## Topics (planned)
+Each workspace has its own mission, notes, `gaps.md`, learning records, lessons and reference pages.
 
-- **Foundations:** networking · linux · os · cryptography basics
-- **Building and running:** containers · web servers & runtimes · databases · devops (CI/CD, infrastructure as code) · scripting & automation · aws
-- **Operations:** operations & monitoring · system design
-- **Security:** security · identity, auth & secrets · vulnerability management
-- **Application:** frontend · backend
+## Elsewhere
+
+- [`log/`](log/): one line per study session, tagged by workspace, so showing up counts even on tired weeks
+- [`web/practice/`](web/practice/): code written by hand, no AI
+
+## The web plan, 12 weeks
+
+| Dates | Block |
+|---|---|
+| 23 Nov to 13 Dec | HTML and accessibility |
+| 14 Dec to 3 Jan | CSS |
+| 4 Jan to 24 Jan | Browser, HTTP and JavaScript gaps |
+| 25 Jan to 14 Feb | React |
+
+Networking (DNS, HTTP, TLS basics, how a page loads) stays in `web/` only as it supports the browser and HTTP block. The schedule adjusts to how I'm doing.
 
 ## Current focus
 
-Networking.
+Web: HTML and accessibility, starting 23 Nov. Japanese: a mission interview, then short reinforcement lessons.
