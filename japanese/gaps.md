@@ -4,4 +4,5 @@ Everything I miss goes here, so I can fix it from memory instead of just reading
 
 | Date | Area | What I missed | Status | Fix in my own words | Re-test |
 |---|---|---|---|---|---|
-| 2026-11-20 | Hiragana reading | First diagnostic, 3 of 10. Correct: あ, き, ん. Read す as "shi". Not remembered: て, ぬ, ふ, ま, よ, れ | open | | 2026-11-21 |
+| 2026-11-20 | Hiragana reading | Diagnostic rounds 1 and 2. Solid: あ, い, お, か, け, き, し, た, ん. Not remembered: て, ぬ, ふ, ま, よ, れ | open | | 2026-11-21 |
+| 2026-11-20 | Hiragana s-row | Read さ as "chi", そ as "zu", and す as "shi" then didn't answer the hint. Sounds from other rows are attached to the wrong characters | open | | 2026-11-21 |
