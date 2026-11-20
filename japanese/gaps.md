@@ -4,3 +4,4 @@ Everything I miss goes here, so I can fix it from memory instead of just reading
 
 | Date | Area | What I missed | Status | Fix in my own words | Re-test |
 |---|---|---|---|---|---|
+| 2026-11-20 | Hiragana | Paused for two weeks and doesn't remember much (self-reported) | open | | 2026-11-21 |
