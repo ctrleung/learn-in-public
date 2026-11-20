@@ -1,22 +1,10 @@
-# Parking lot
+# Systems Resources (dormant)
 
-Parked, **not dropped**. These topics matter and I'll come back to them, but I'm not working on them during the 12-week web fundamentals plan (23 Nov 2026 to 14 Feb 2027) unless I ask for a lesson on one. When I do ask, it runs as a normal lesson, gets logged, and I note whether it pushes the schedule.
+> Moved here unchanged from the old networking resources. Read the page before a lesson cites it; entries below are marked by what was and wasn't read.
 
-## Parked topics
+## Knowledge and communities
 
-- **AWS:** VPCs, subnets, routing, security groups, network ACLs, IAM
-- **Containers:** Docker, images, scanning
-- **Linux and operating systems**
-- **Web servers and runtimes:** nginx, Apache, reverse proxies, language runtimes
-- **Backend and databases**
-- **DevOps:** CI/CD, infrastructure as code; scripting and automation
-- **Operations and monitoring; system design**
-- **Security beyond the browser:** identity, authentication and secrets; cryptography beyond TLS basics; vulnerability management (CVEs, advisories, triage)
-- **Networking beyond the supporting slice:** TCP internals, UDP and DTLS, routing, subnets, firewalls, packet captures
-
-## Parked resources
-
-### AWS and vulnerabilities (moved from RESOURCES.md, unchanged)
+### AWS and vulnerabilities
 
 - [AWS: What is Amazon VPC?](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
   Defines a VPC as a logically isolated virtual network, a subnet as a range of IP addresses in a VPC (within a single Availability Zone), route tables as deciding where traffic goes, and internet gateways as connecting the VPC to the internet. Use for: subnets and routing before going deeper into AWS.
@@ -42,7 +30,7 @@ Parked, **not dropped**. These topics matter and I'll come back to them, but I'm
 - [Julia Evans: "Bite Size Networking" (paid zine, $10)](https://jvns.ca/blog/2019/03/15/new-zine--bite-size-networking-/)
   A separate, paid zine from 2019 on practical tools (tcpdump, DNS queries, inspecting SSL certificates, checking firewalls). Only the announcement post has been read. Use for: hands-on command-line troubleshooting, if you decide to buy it.
 
-### Communities (moved from RESOURCES.md, unchanged)
+### Communities
 
 Where to test skills with other practitioners. The learner asked for suggestions. None of these communities' own rules or moderation could be read from this environment (Reddit and the Stack Exchange sites are not reachable here), so descriptions come from third-party lists and an official AWS announcement; check each community's sidebar or rules before posting.
 
@@ -64,49 +52,8 @@ Where to test skills with other practitioners. The learner asked for suggestions
 - OWASP local chapters ([owasp.org/chapters](https://owasp.org/chapters/))
   OWASP has local chapters (page confirmed to exist; its list loads dynamically and could not be read). Use for: in-person or local meetups on application security, if one is near the learner. Needs the learner's location to check.
 
-## Parked exercises (moved from exercises.md, unchanged)
-
-- [ ] **Trace the route.** Run `traceroute google.com`.
-  Notice: each line is a router your packets pass through on the way. *(Zine, routing page)*
-
-- [ ] **See who's on your local network.** Run `arp -na`.
-  Notice: the table maps IP addresses on your network to hardware (MAC) addresses. *(Zine, local networking page)*
-
-- [ ] **Read a real advisory.** Run `curl "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-44228"` (Log4Shell). Find the description, the severity score, and the CISA dates.
-  Notice: how a single record tells you whether something is serious and being exploited. Then look at the same CVE at `cveawg.mitre.org`. *(NVD and MITRE APIs)*
-
-- [ ] **Harden a TLS setup.** Run nginx in a container with a self-signed certificate, check which TLS versions it accepts, then change the config to allow only TLS 1.2 and 1.3 and check again. Look up the right directive name in nginx's documentation; OWASP says to default to TLS 1.3, allow 1.2 for compatibility, and disable 1.0, 1.1 and SSLv2/3. *(OWASP TLS)*
-
-- [ ] **Generate a config.** Use Mozilla's SSL configuration generator (named in OWASP's cheat sheet) to produce an nginx config, and read what each setting does.
-
-## Parked gaps
+## Gaps
 
 - **Firewalls beyond AWS.** Only AWS security groups and network ACLs were read; no source read explains host or network firewalls in general.
 - **How to read and triage a real advisory.** NVD, MITRE and OSV are readable, but no triage guide has been read. CISA's known-exploited catalog is a candidate; `www.cisa.gov` blocks automated reads.
 - **Community rules and activity** are unverified for every community above.
-
-## Previous mission (before 20 Nov 2026)
-
-## Mission: Systems & security foundations for an application developer
-
-### Why
-I build applications, but I'm less familiar with the systems underneath, such as networks, servers, containers and cloud, and I may have some knowledge gaps there. With cybersecurity vulnerabilities being found more often (including with AI), I want enough breadth to understand and mitigate them, and to grow at work, rather than only handle application code.
-
-### Success looks like
-- Read a vulnerability advisory (CVE) and decide whether it affects what I run, and what to do about it
-- Trace a request from browser to server (DNS, TCP, TLS, HTTP, proxies) and explain where it can fail or be attacked
-- Find my way around a Linux server, and understand containers and images well enough to scan and harden them
-- Understand how a service is deployed, monitored and kept healthy, including on AWS
-- Hold a confident conversation with ops and security colleagues, with a more than good enough foundation across the topics in the README
-
-### Constraints
-- Full-time job; energy is uneven, so lessons must be short and sessions flexible
-- Can practice on anything: local machine, containers, an AWS account
-- Mostly learning for myself, with notes public in this repo
-
-### Out of scope
-- Offensive security and penetration testing as a career path
-- Certifications
-- Deep dives into any single frontend framework
-- Kernel internals and low-level OS development
-

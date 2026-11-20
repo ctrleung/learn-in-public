@@ -1,6 +1,6 @@
 # Web Fundamentals Resources
 
-> Sources marked **read** have been fetched and read for the cited section. Everything else is a map or a candidate: read the page before a lesson cites it. Networking and security sources for parked topics live in [PARKING-LOT.md](PARKING-LOT.md).
+> Sources marked **read** have been fetched and read for the cited section. Everything else is a map or a candidate: read the page before a lesson cites it. Networking and security sources for parked topics live in [`../systems/RESOURCES.md`](../systems/RESOURCES.md).
 
 ## Main resource: MDN, Learn web development
 
@@ -49,4 +49,4 @@ Section paths below come from MDN's Learn landing page, checked on 2026-11-20. *
 - **Blocked by the network settings** (tested 2026-11-20): react.dev, w3.org (WAI), web.dev, webaim.org, a11yproject.com, javascript.info and html.spec.whatwg.org. MDN's React module may be enough for an introduction, but React depth beyond it would need react.dev. Add the hosts you want read.
 - **MDN's HTTP reference** path is unconfirmed. Check it before the HTTP lessons.
 - **Cloudflare's DNS and TLS articles** are blocked by a bot check; the learner reads them directly.
-- **Communities for web development** have not been chosen. Earlier community suggestions are in the parking lot.
+- **Communities for web development** have not been chosen. Earlier community suggestions are in `../systems/RESOURCES.md`.

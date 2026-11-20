@@ -9,7 +9,7 @@ I build web applications and already know the basics, but I want to refresh my m
 - Explain what happens from typing a URL to a rendered page, covering both the network half (DNS, HTTP, TLS basics) and the browser half, and use the browser's developer tools to see where a request went wrong
 - Write JavaScript by hand for DOM, events and `fetch`, including promises and error handling
 - Build a small accessible React app by hand: components, state, events, conditional rendering
-- `teach/gaps.md` shrinks: gaps move to fixed after I re-answer correctly from memory on a re-test
+- `gaps.md` shrinks: gaps move to fixed after I re-answer correctly from memory on a re-test
 
 ## Constraints
 - Sessions of 10 to 20 minutes; energy is uneven, so the schedule in `PLAN.md` flexes with how I'm doing
@@ -18,7 +18,7 @@ I build web applications and already know the basics, but I want to refresh my m
 - Hand-coded practice goes in `practice/` (no AI)
 - Mostly learning for myself, with notes public in this repo
 
-## Out of scope for these 12 weeks (parked, not dropped; see `PARKING-LOT.md`)
+## Out of scope for these 12 weeks (parked, not dropped; see `../systems/`)
 - AWS, containers, Linux, backend and databases, DevOps, operations, system design
 - Security beyond the browser-side thread (XSS, CORS, CSP, cookies, HSTS)
 - Networking beyond DNS, HTTP, TLS basics and how a page loads

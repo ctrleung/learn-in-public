@@ -1,6 +1,6 @@
 # Exercises
 
-Hands-on things to try later. Tick them off as you go. Each one runs on **your own computer** and is based on a source you've already read. Only capture or probe your own devices and networks. These are the networking exercises that support the browser and HTTP part of the plan. Hand-coded web exercises for the 12-week plan go in [`../practice/`](../practice/) (no AI). Parked exercises are in [PARKING-LOT.md](PARKING-LOT.md).
+Hands-on things to try later. Tick them off as you go. Each one runs on **your own computer** and is based on a source you've already read. Only capture or probe your own devices and networks. These are the networking exercises that support the browser and HTTP part of the plan. Hand-coded web exercises for the 12-week plan go in [`practice/`](practice/) (no AI). Parked exercises are in [`../systems/exercises.md`](../systems/exercises.md).
 
 Source key: [MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) · [Zine](https://wizardzines.com/zines/networking/) (free, "Networking! ACK!") · [OWASP TLS](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Security_Cheat_Sheet.html)
 

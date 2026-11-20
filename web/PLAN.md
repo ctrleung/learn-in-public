@@ -9,7 +9,7 @@ This is a guide, not a contract. It adjusts to how I'm doing: when `gaps.md` sho
 3. **Make me produce it:** hints and narrower questions before answers. I fix gaps in my own words.
 4. **Then explain,** from MDN, and go deep on a few things instead of skimming many.
 5. **Explain it back,** then the learning record, with a Re-test date.
-6. Sessions are 10 to 20 minutes. Hand-coded practice goes in `../practice/` (no AI).
+6. Sessions are 10 to 20 minutes. Hand-coded practice goes in `practice/` (no AI).
 
 The first week of each block is a **diagnostic**: a typed quiz across the block, used to find the real gaps and set the pace.
 
@@ -30,7 +30,7 @@ The first week of each block is a **diagnostic**: a typed quiz across the block,
 | 11 | 1 to 7 Feb | React | State, events, conditional rendering and filtering |
 | 12 | 8 to 14 Feb | React | React accessibility, a small hand-built project, review of the whole plan against `gaps.md` |
 
-## Hand-coded practice (in `../practice/`, no AI)
+## Hand-coded practice (in `practice/`, no AI)
 
 - **After HTML and accessibility:** an accessible page with landmarks, a form with validation and a data table, checked with the keyboard and tooling.
 - **After CSS:** the same page rebuilt as a responsive layout with flexbox and grid.
@@ -43,7 +43,7 @@ DNS, HTTP, TLS basics and how a page loads stay in scope, mainly in weeks 7 and 
 
 ## Parked
 
-AWS, containers, Linux, backend and databases, DevOps, operations, system design and the rest are in [PARKING-LOT.md](PARKING-LOT.md). I work on them only when I ask.
+AWS, containers, Linux, backend and databases, DevOps, operations, system design and the rest are in the dormant [`../systems/`](../systems/) workspace. I work on them only when I ask.
 
 ## Schedule changes
 

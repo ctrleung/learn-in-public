@@ -3,7 +3,7 @@
 ## Learner
 
 - Working programmer, mainly frontend, some backend and API experience. Knows the web basics and wants to refresh them, find what's unknown, and fill gaps. Comfortable with HTTP as a client-side concept.
-- Has been leaning on AI for coding; wants to keep hand-coding skills sharp (`../practice/` is AI-free).
+- Has been leaning on AI for coding; wants to keep hand-coding skills sharp (`practice/` is AI-free).
 
 ## Preferences
 
@@ -11,13 +11,13 @@
 - Depth over coverage: fewer topics, understood well, beats skimming many.
 - Wants durable, referable notes that others can read too (repo is public). Keep personal details out of committed files.
 - Keep a light security thread, browser-side (XSS, CORS, CSP, cookies, HSTS): when a topic raises "how is this attacked, and how is it mitigated?", ask it once.
-- Hands-on practice welcome: local machine; hand-coded work goes in `../practice/` (no AI).
+- Hands-on practice welcome: local machine; hand-coded work goes in `practice/` (no AI).
 
 ## Working agreements
 
-- Workspace is `teach/`. Session log lives in `../log/`. Commit as the user (repo git config), push to a branch, merge via PR.
+- Workspace is `web/`. Session log lives in `../log/`; tag each line `[web]`. Commit as the user (repo git config), push to a branch, merge via PR.
 - Current focus (23 Nov 2026 to 14 Feb 2027): web fundamentals only, following `PLAN.md`. MDN is the main resource.
-- Parked topics (`PARKING-LOT.md`) are kept, not dropped. Don't work on them unless I ask. When I do ask, run it as a normal lesson and note whether it moves the schedule.
+- Parked topics live in `../systems/` (a dormant workspace), kept, not dropped. Don't work on them unless I ask. When I do ask, run a normal lesson there and note whether it moves the web schedule.
 - The schedule adjusts to how I'm doing: when `gaps.md` shows a topic needs more time, change `PLAN.md` and record it under "Schedule changes".
 
 ## How to teach me

@@ -2,18 +2,24 @@
 
 🍎 my public learning log
 
-From 23 Nov 2026 to 14 Feb 2027 I'm focusing on web fundamentals only: HTML and accessibility, then CSS, then browser, HTTP and JavaScript gaps, then React. MDN is the main resource. I already know the basics, so the aim is to refresh, find what I don't know yet, and fill gaps. I'm also keeping my hand-coding skills sharp.
+I use this repo to learn in public, one workspace per subject, each run with the `/teach` skill. I already know the basics of the web, so the aim there is to refresh, find what I don't know yet, and fill gaps. I'm also keeping my hand-coding skills sharp.
 
-## How this repo works
+## Workspaces
 
-- [`teach/`](teach/): lessons, reference sheets and learning records, made with the `/teach` skill
-  - [`PLAN.md`](teach/PLAN.md): the 12-week plan
-  - [`gaps.md`](teach/gaps.md): what I miss, until I can answer it from memory
-  - [`PARKING-LOT.md`](teach/PARKING-LOT.md): topics I've parked, not dropped
-- [`log/`](log/): one line per study session, so showing up counts even on tired weeks
-- [`practice/`](practice/): code written by hand, no AI
+| Folder | Status | What |
+|---|---|---|
+| [`web/`](web/) | Active, 23 Nov 2026 to 14 Feb 2027 | Web fundamentals: HTML and accessibility, CSS, browser, HTTP and JavaScript gaps, then React. MDN is the main resource. [Plan](web/PLAN.md), [gaps](web/gaps.md) |
+| [`japanese/`](japanese/) | Active, short sessions | Reinforcing Japanese learned outside the repo (Anki for vocabulary, Renshuu for hiragana). The mission comes from the first session |
+| [`systems/`](systems/) | Dormant, parked | AWS, containers, Linux, backend, DevOps, operations, security and networking beyond the web basics. Kept, not dropped |
 
-## The 12 weeks
+Each workspace has its own mission, notes, `gaps.md`, learning records, lessons and reference pages.
+
+## Elsewhere
+
+- [`log/`](log/): one line per study session, tagged by workspace, so showing up counts even on tired weeks
+- [`web/practice/`](web/practice/): code written by hand, no AI
+
+## The web plan, 12 weeks
 
 | Dates | Block |
 |---|---|
@@ -22,12 +28,8 @@ From 23 Nov 2026 to 14 Feb 2027 I'm focusing on web fundamentals only: HTML and 
 | 4 Jan to 24 Jan | Browser, HTTP and JavaScript gaps |
 | 25 Jan to 14 Feb | React |
 
-Networking (DNS, HTTP, TLS basics, how a page loads) stays only as it supports the browser and HTTP block. The schedule adjusts to how I'm doing.
-
-## Parked
-
-AWS, containers, Linux, backend and databases, DevOps, operations, system design, and security beyond the browser. See the parking lot.
+Networking (DNS, HTTP, TLS basics, how a page loads) stays in `web/` only as it supports the browser and HTTP block. The schedule adjusts to how I'm doing.
 
 ## Current focus
 
-HTML and accessibility, starting 23 Nov.
+Web: HTML and accessibility, starting 23 Nov. Japanese: a mission interview, then short reinforcement lessons.
