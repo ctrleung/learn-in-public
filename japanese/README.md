@@ -4,8 +4,9 @@ Teaching workspace for learning Japanese, run with the `/teach` skill from this 
 
 ## Status
 
-- No mission yet. The first session is a short interview about why I'm learning Japanese, what I can already do, and what success looks like. `MISSION.md` gets written from that.
-- No plan yet. `PLAN.md` follows the interview.
+- Mission: survival Japanese for a short trip to Japan by March to April 2027. See `MISSION.md`.
+- Starting point: no vocabulary; hiragana started, then paused for two weeks. See the first learning record.
+- `PLAN.md` is a draft, adjusted after the first diagnostic quiz.
 
 ## How it fits with my other tools
 
@@ -16,6 +17,7 @@ Teaching workspace for learning Japanese, run with the `/teach` skill from this 
 ## Files
 
 - `NOTES.md`: how to teach me
+- `MISSION.md`, `PLAN.md`: why and the draft plan
 - `RESOURCES.md`: my materials (Genki, Anki, Renshuu)
 - `gaps.md`: what I've missed, until I can answer it from memory
-- Created as needed: `MISSION.md`, `PLAN.md`, `RESOURCES.md`, `learning-records/`, `lessons/`, `reference/`, `assets/`
+- Created as needed: `lessons/`, `reference/`, `assets/`
