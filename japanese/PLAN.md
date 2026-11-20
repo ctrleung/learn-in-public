@@ -1,4 +1,4 @@
-# Plan: survival Japanese by March to April 2027 (draft)
+# Plan: survival Japanese by April 2027 (draft)
 
 Draft, to adjust after the first diagnostic quiz and once the trip date is known. Short sessions, about 10 minutes or less, alongside the web plan. The schedule flexes with `gaps.md`; changes go in "Schedule changes" at the bottom.
 
@@ -7,9 +7,9 @@ Draft, to adjust after the first diagnostic quiz and once the trip date is known
 | Dates | Phase | Focus |
 |---|---|---|
 | Now to 13 Dec | Recover hiragana | Diagnostic: what I still remember. Rebuild reading of hiragana from memory, with Renshuu doing the practice and this workspace testing it |
-| 14 Dec to 17 Jan | Katakana, numbers, time, prices | Katakana for signs and menus. Numbers, times and prices for tickets and shopping. Lighter over the holidays |
-| 18 Jan to 28 Feb | Survival phrases and questions | Greetings, polite requests, ordering, asking where and how much, following Genki as I reach those chapters |
-| March to the trip | Signs, listening, practice | A short list of sign and station kanji, listening practice with the Genki app, role-play of trip situations in chat |
+| 14 Dec to 17 Jan | Katakana, numbers, time, prices | Katakana for signs and menus. Numbers, times and prices for tickets and shopping. Start Genki (textbook, workbook, app audio) once hiragana reading is back. Lighter over the holidays |
+| 18 Jan to 28 Feb | Survival phrases and questions | Greetings, polite requests, ordering, asking where and how much, following Genki |
+| March to the trip (April) | Signs, listening, practice | About a dozen sign and station kanji to recognize, listening practice with the Genki app, role-play of trip situations in chat |
 
 ## How each session works
 

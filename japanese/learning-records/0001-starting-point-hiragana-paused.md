@@ -4,11 +4,11 @@ The learner knows no Japanese words. They had started learning hiragana in Rensh
 
 ## Evidence
 - Self-reported in the mission interview on 2026-11-20; not yet tested.
-- Genki chapter and Renshuu progress not stated.
+- Hasn't started Genki yet (self-reported 2026-11-20). Renshuu progress beyond hiragana not stated.
 
 ## Implications
 - Start with a typed diagnostic: read hiragana characters and sound out simple strings, and record the misses in `gaps.md`.
-- Don't assume any Genki chapter has been completed; ask which one the learner is on.
+- Genki is not started, so don't assume any chapter. Start it once hiragana reading is back.
 - Avoid introducing vocabulary or grammar until hiragana reading is back, since Anki and Genki both rely on it.
 
 Re-test: on or after 2026-11-21 (the first diagnostic quiz tests the self-reported starting point).

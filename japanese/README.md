@@ -4,13 +4,13 @@ Teaching workspace for learning Japanese, run with the `/teach` skill from this 
 
 ## Status
 
-- Mission: survival Japanese for a short trip to Japan by March to April 2027. See `MISSION.md`.
+- Mission: survival Japanese for a short trip to Japan in April 2027. See `MISSION.md`.
 - Starting point: no vocabulary; hiragana started, then paused for two weeks. See the first learning record.
 - `PLAN.md` is a draft, adjusted after the first diagnostic quiz.
 
 ## How it fits with my other tools
 
-- **Genki** (textbook and workbook) is the main course, and the Genki app gives me audio. This workspace follows whichever chapter I'm on.
+- **Genki** (textbook and workbook) is the main course, and the Genki app gives me audio. I haven't started it yet; once I do, this workspace follows whichever chapter I'm on.
 - **Anki** is for vocabulary and flashcards. This workspace doesn't replace it; word lists can live here if I want them versioned.
 - **Renshuu** is where I'm learning hiragana. This workspace is for reinforcing and testing what I've picked up there.
 

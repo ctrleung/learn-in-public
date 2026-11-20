@@ -2,7 +2,7 @@
 
 ## Learner
 
-- Learning Japanese alongside a full-time job. Using the Genki textbook and workbook, with the Genki app for audio, plus Anki for vocabulary and Renshuu for hiragana, all outside this repo.
+- Learning Japanese alongside a full-time job. Using the Genki textbook and workbook, with the Genki app for audio (not started yet), plus Anki for vocabulary and Renshuu for hiragana, all outside this repo.
 - Wants this workspace for short lessons that reinforce and test what I've learned elsewhere, not to replace those tools.
 
 ## Preferences
@@ -21,7 +21,7 @@
 - Quiz before explaining: ask typed questions first, then teach. Not multiple choice.
 - Don't hand me finished answers. Give a hint or a narrower question and let me try again; explain only after a real attempt.
 - Everything I miss goes in `gaps.md`. I write the fix in my own words; it becomes fixed only after I answer correctly from memory on a re-test.
-- Test me on what I've covered in Genki (textbook and workbook), Renshuu and Anki, not only what's new here. Ask which Genki chapter I'm on before building a lesson.
+- Test me on what I've covered in Genki (textbook and workbook), Renshuu and Anki, not only what's new here.
 
 ## Session routine
 
