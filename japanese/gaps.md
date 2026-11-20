@@ -4,4 +4,4 @@ Everything I miss goes here, so I can fix it from memory instead of just reading
 
 | Date | Area | What I missed | Status | Fix in my own words | Re-test |
 |---|---|---|---|---|---|
-| 2026-11-20 | Hiragana | Paused for two weeks and doesn't remember much (self-reported) | open | | 2026-11-21 |
+| 2026-11-20 | Hiragana reading | First diagnostic, 3 of 10. Correct: あ, き, ん. Read す as "shi". Not remembered: て, ぬ, ふ, ま, よ, れ | open | | 2026-11-21 |
