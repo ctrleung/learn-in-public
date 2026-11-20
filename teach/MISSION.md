@@ -1,22 +1,24 @@
-# Mission: Systems & security foundations for an application developer
+# Mission: Web fundamentals, refreshed and gap-filled (23 Nov 2026 to 14 Feb 2027)
 
 ## Why
-I build applications, but I'm less familiar with the systems underneath, such as networks, servers, containers and cloud, and I may have some knowledge gaps there. With cybersecurity vulnerabilities being found more often (including with AI), I want enough breadth to understand and mitigate them, and to grow at work, rather than only handle application code.
+I build web applications and already know the basics, but I want to refresh my memory, learn what I don't know yet, and fill gaps, so my foundation is solid across HTML, accessibility, CSS, the browser, HTTP, JavaScript and React. The goal is depth, not coverage.
 
 ## Success looks like
-- Read a vulnerability advisory (CVE) and decide whether it affects what I run, and what to do about it
-- Trace a request from browser to server (DNS, TCP, TLS, HTTP, proxies) and explain where it can fail or be attacked
-- Find my way around a Linux server, and understand containers and images well enough to scan and harden them
-- Understand how a service is deployed, monitored and kept healthy, including on AWS
-- Hold a confident conversation with ops and security colleagues, with a more than good enough foundation across the topics in the README
+- Write semantic, accessible HTML by hand for a multi-section page with a form and a data table, and check it with keyboard-only navigation and accessibility tooling
+- Lay out a responsive page by hand with flexbox and grid, and explain why a given CSS rule wins (cascade, specificity, inheritance)
+- Explain what happens from typing a URL to a rendered page, covering both the network half (DNS, HTTP, TLS basics) and the browser half, and use the browser's developer tools to see where a request went wrong
+- Write JavaScript by hand for DOM, events and `fetch`, including promises and error handling
+- Build a small accessible React app by hand: components, state, events, conditional rendering
+- `teach/gaps.md` shrinks: gaps move to fixed after I re-answer correctly from memory on a re-test
 
 ## Constraints
-- Full-time job; energy is uneven, so lessons must be short and sessions flexible
-- Can practice on anything: local machine, containers, an AWS account
+- Sessions of 10 to 20 minutes; energy is uneven, so the schedule in `PLAN.md` flexes with how I'm doing
+- MDN is the main resource
+- Quiz first, then explain; I produce answers and fixes myself
+- Hand-coded practice goes in `practice/` (no AI)
 - Mostly learning for myself, with notes public in this repo
 
-## Out of scope
-- Offensive security and penetration testing as a career path
-- Certifications
-- Deep dives into any single frontend framework
-- Kernel internals and low-level OS development
+## Out of scope for these 12 weeks (parked, not dropped; see `PARKING-LOT.md`)
+- AWS, containers, Linux, backend and databases, DevOps, operations, system design
+- Security beyond the browser-side thread (XSS, CORS, CSP, cookies, HSTS)
+- Networking beyond DNS, HTTP, TLS basics and how a page loads
