@@ -9,7 +9,7 @@ Draft, to adjust after the first diagnostic quiz and once the trip date is known
 | Now to 13 Dec | Recover hiragana | Diagnostic: what I still remember. Rebuild reading of hiragana from memory, with Renshuu doing the practice and this workspace testing it |
 | 14 Dec to 17 Jan | Katakana, numbers, time, prices | Katakana for signs and menus. Numbers, times and prices for tickets and shopping. Start Genki (textbook, workbook, app audio) once hiragana reading is back. Lighter over the holidays |
 | 18 Jan to 28 Feb | Survival phrases and questions | Greetings, polite requests, ordering, asking where and how much, following Genki |
-| From March until the trip | Signs, listening, practice | About a dozen sign and station kanji to recognize, listening practice with the Genki app, role-play of trip situations in chat |
+| Final phase, until the trip | Signs, listening, practice | About a dozen sign and station kanji to recognize, listening practice with the Genki app, role-play of trip situations in chat |
 
 ## How each session works
 
