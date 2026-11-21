@@ -4,6 +4,6 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 
 | Item | Source | Stage | Last result | Due |
 |---|---|---|---|---|
-| Hiragana s-row, scrambled: さ し す せ そ | record 0002, gaps.md | 1 day | 5 of 5 after teaching, 2026-11-20 | 2026-11-21 |
-| す (su) vs し (shi) | record 0002, gaps.md | 1 day | 5 of 5 after teaching, 2026-11-20 | 2026-11-21 |
-| The row pattern: consonant plus a, i, u, e, o | record 0002, gaps.md | 1 day | couldn't state it, 2026-11-20 | 2026-11-21 |
+| Hiragana s-row, scrambled: さ し す せ そ | record 0002, gaps.md | 3 days | 7 of 7 correct, mixed with か and け, 2026-11-21 | 2026-11-24 |
+| す (su) vs し (shi) | record 0002, gaps.md | 3 days | correct; gave the shape trick and the すし anchor, 2026-11-21 | 2026-11-24 |
+| The row pattern: consonant plus a, i, u, e, o, with し as the exception | record 0002, gaps.md | 1 day | partly: stated consonant plus a, i, u, e, o, missed the exception, 2026-11-21 | 2026-11-22 |
