@@ -13,6 +13,10 @@ One short weekend session a week, starting after web week 1 (weekend of 28 to 29
 | after the basics | Containers | What a container is and what Docker does; run one locally. Needs `docs.docker.com` allowed |
 | then | Kubernetes | What it does and why, assuming containers and networking. Needs `kubernetes.io` allowed |
 
+## First session
+
+The learner is rereading chapter 1 of the Alex Xu book on their own time. Session 1 starts with a typed, from-memory quiz on what stuck, then uses the primer's scalability section to fill gaps. The reading doesn't count against the 10 minutes.
+
 ## How each session works
 
 1. Warm-up: 1 or 2 typed questions from due re-tests and open items in `gaps.md`.
