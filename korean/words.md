@@ -14,6 +14,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 사흘 (sa-heul) | three days; the 3rd day. Native day-count: 하루 1, 이틀 2, 사흘 3, 나흘 4, 닷새 5, 엿새 6, 이레 7, 여드레 8, 아흐레 9, 열흘 10. Gotcha: 사 here is not "four". 사흘 동안 = for three days | No match for 사흘 (native). The Sino-Korean 삼 일 (三日) matches: Cantonese *saam1 jat6*; Japanese *sannichi* (native reading *mikka*); Mandarin *sān rì* | Cantonese *saam1 jat6* is almost the same as sam-il. Japanese mikka is the native-word counterpart of 사흘 | 三日 (for 삼 일) | | 2026-11-21 |
 | 의미 (ui-mi) | meaning, significance. 무슨 의미예요? = what does it mean? Native 뜻 is the everyday word for meaning; 의미 is more formal and abstract | Japanese *imi*; Cantonese *ji3 mei6*; Mandarin *yìwèi* | Japanese 意味 (imi) is the same word and nearly the same sound. Cantonese *ji3 mei6* is close too (mei ~ mi). In everyday Cantonese and Mandarin, "meaning" is usually 意思 (ji3 si1, yìsi) | 意味 | | 2026-11-21 |
 | 상황 (sang-hwang) | situation, circumstances. 상황에 따라 = depending on the situation | Cantonese *zong6 fong3*; Mandarin *zhuàngkuàng*; Japanese *jōkyō* | Cantonese *zong6 fong3* is closest: both keep the -ng endings (sang / zong, hwang / fong). Japanese turned -ng into a long vowel (jō, kyō) | 狀況 | | 2026-11-21 |
+| 기름 (gi-reum) | oil, fat, grease; also fuel (기름 넣다 = to fill up). 참기름 = sesame oil, 기름지다 = oily | No match for 기름 itself (native Korean). The Sino-Korean 유 (油) has matches: Japanese *yu*; Cantonese *jau4*; Mandarin *yóu* | Korean 유 is almost identical to Mandarin *yóu*. 석유 (石油, petroleum) *seok-yu* ~ Japanese *sekiyu*; Cantonese *sek6 jau4* | 油 (for the related 유) | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -41,3 +42,4 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 味 | 미 | taste, flavor | 의미 (also 취미 "hobby", Japanese shumi) |
 | 狀 | 상 | form, state, condition | 상황 (also 상태 "state", Japanese jōtai) |
 | 況 | 황 | condition, situation | 상황 |
+| 油 | 유 | oil | related to 기름: 석유 "petroleum", 식용유 "cooking oil" |
