@@ -12,12 +12,13 @@
 - Wants durable, referable notes that others can read too (repo is public). Keep personal details out of committed files.
 - Keep a light security thread, browser-side (XSS, CORS, CSP, cookies, HSTS): when a topic raises "how is this attacked, and how is it mitigated?", ask it once.
 - Hands-on practice welcome: local machine; hand-coded work goes in `practice/` (no AI).
+- Keep a light "what changes at scale?" thread where a web topic overlaps with systems (caching, DNS, cookies and sessions, how a page loads): ask the question once, note it, and leave the depth for the weekend systems session.
 
 ## Working agreements
 
 - Workspace is `web/`. Session log lives in `../log/`; tag each line `[web]`. Commit as the user (repo git config), push to a branch, merge via PR.
 - Current focus (23 Nov 2026 to 14 Feb 2027): web fundamentals only, following `PLAN.md`. MDN is the main resource.
-- Parked topics live in `../systems/` (a dormant workspace), kept, not dropped. Don't work on them unless I ask. When I do ask, run a normal lesson there and note whether it moves the web schedule.
+- Systems topics (scaling, networking, containers, system design) have their own short weekend sessions in `../systems/`. Other parked topics (AWS, Linux and so on) are in `../systems/PARKING-LOT.md`; don't work on those unless I ask.
 - The schedule adjusts to how I'm doing: when `gaps.md` shows a topic needs more time, change `PLAN.md` and record it under "Schedule changes".
 
 ## How to teach me

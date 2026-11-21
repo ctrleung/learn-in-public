@@ -18,7 +18,8 @@ I build web applications and already know the basics, but I want to refresh my m
 - Hand-coded practice goes in `practice/` (no AI)
 - Mostly learning for myself, with notes public in this repo
 
-## Out of scope for these 12 weeks (parked, not dropped; see `../systems/`)
-- AWS, containers, Linux, backend and databases, DevOps, operations, system design
+## Out of scope for these 12 weeks (covered in the `../systems/` workspace or parked there)
+- Scaling, networking beyond the basics, containers and system design: these have their own short weekly sessions in `../systems/`
+- AWS, Linux, backend and databases, DevOps, operations
 - Security beyond the browser-side thread (XSS, CORS, CSP, cookies, HSTS)
 - Networking beyond DNS, HTTP, TLS basics and how a page loads
