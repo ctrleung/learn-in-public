@@ -11,6 +11,7 @@ I use this repo to learn in public, one workspace per subject, each run with the
 | [`web/`](web/) | Active, 23 Nov 2026 to 14 Feb 2027 | Web fundamentals: HTML and accessibility, CSS, browser, HTTP and JavaScript gaps, then React. MDN is the main resource. [Plan](web/PLAN.md), [gaps](web/gaps.md) |
 | [`japanese/`](japanese/) | Active, short sessions | Survival Japanese for a short trip to Japan, reinforcing what I learn in Genki, Anki and Renshuu. [Mission](japanese/MISSION.md), [plan](japanese/PLAN.md) |
 | [`systems/`](systems/) | Active, one short weekend session a week | How web systems scale and connect: networking, scaling, then containers and Kubernetes, plus system design practice. AWS, Linux and other topics stay parked in [`systems/PARKING-LOT.md`](systems/PARKING-LOT.md). [Mission](systems/MISSION.md), [plan](systems/PLAN.md) |
+| [`korean/`](korean/) | Notebook, no lessons | Memory aids and cross-language links for the Korean cards I review in Anki. [Words](korean/words.md) |
 
 Each workspace has its own mission, notes, `gaps.md`, learning records, lessons and reference pages.
 

@@ -12,6 +12,7 @@ This repo has one /teach workspace per subject:
 - `web/`: active. Web fundamentals, 23 Nov 2026 to 14 Feb 2027, following `web/PLAN.md`. Sessions of 10 to 20 minutes.
 - `japanese/`: active. Short sessions (about 10 minutes or less) that reinforce what I learn outside the repo (Anki for vocabulary, Renshuu for hiragana).
 - `systems/`: active, one short session a week (about 10 minutes, on a weekend). Scaling and networking, then containers and Kubernetes, with system design practice, following `systems/PLAN.md`. The first thing to skip when I'm tired. Parked topics (AWS, Linux and so on) are in `systems/PARKING-LOT.md`; do not work on them unless I ask.
+- `korean/`: a notebook, not a study workspace. The cards are in Anki. When I ask about a Korean word, answer, add a row to `korean/words.md` (Hanja, how it looks or sounds in Japanese, Mandarin and Cantonese, and a blank for my own memory aid), and add a log line tagged `[korean]`. Don't quiz me on it or pick it for a bare "go"; Anki does the scheduling.
 
 ## Pick the workspace
 
