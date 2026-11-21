@@ -15,6 +15,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 의미 (ui-mi) | meaning, significance. 무슨 의미예요? = what does it mean? Native 뜻 is the everyday word for meaning; 의미 is more formal and abstract | Japanese *imi*; Cantonese *ji3 mei6*; Mandarin *yìwèi* | Japanese 意味 (imi) is the same word and nearly the same sound. Cantonese *ji3 mei6* is close too (mei ~ mi). In everyday Cantonese and Mandarin, "meaning" is usually 意思 (ji3 si1, yìsi) | 意味 | | 2026-11-21 |
 | 상황 (sang-hwang) | situation, circumstances. 상황에 따라 = depending on the situation | Cantonese *zong6 fong3*; Mandarin *zhuàngkuàng*; Japanese *jōkyō* | Cantonese *zong6 fong3* is closest: both keep the -ng endings (sang / zong, hwang / fong). Japanese turned -ng into a long vowel (jō, kyō) | 狀況 | | 2026-11-21 |
 | 기름 (gi-reum) | oil, fat, grease; also fuel (기름 넣다 = to fill up). 참기름 = sesame oil, 기름지다 = oily | No match for 기름 itself (native Korean). The Sino-Korean 유 (油) has matches: Japanese *yu*; Cantonese *jau4*; Mandarin *yóu* | Korean 유 is almost identical to Mandarin *yóu*. 석유 (石油, petroleum) *seok-yu* ~ Japanese *sekiyu*; Cantonese *sek6 jau4* | 油 (for the related 유) | | 2026-11-21 |
+| 문장 (mun-jang) | sentence. 문장을 만들다 = to make a sentence; 예문 = example sentence | Cantonese *man4 zoeng1*; Japanese *bunshō*; Mandarin *wénzhāng* | Cantonese *man4 zoeng1* is closest (man ~ mun, zoeng ~ jang, same -ng). Japanese m became b (mun ~ bun). Meaning shifts: Korean = sentence; Mandarin/Cantonese 文章 = article or essay (their "sentence" is 句子); Japanese 文章 = text, and a sentence is 文 | 文章 | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -43,3 +44,5 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 狀 | 상 | form, state, condition | 상황 (also 상태 "state", Japanese jōtai) |
 | 況 | 황 | condition, situation | 상황 |
 | 油 | 유 | oil | related to 기름: 석유 "petroleum", 식용유 "cooking oil" |
+| 文 | 문 | writing, text | 문장 (also 문화 "culture", Japanese bunka; 문학 "literature") |
+| 章 | 장 | chapter, section | 문장 |
