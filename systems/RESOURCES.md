@@ -6,8 +6,8 @@
 
 - [The System Design Primer (GitHub, donnemartin/system-design-primer)](https://github.com/donnemartin/system-design-primer)
   A long community guide to designing large-scale systems, aimed at system design interviews. **Only its table of contents has been read.** Its sections include performance vs scalability, latency vs throughput, availability vs consistency (CAP), consistency and availability patterns, DNS, CDNs (push and pull), load balancers (layer 4 and 7, horizontal scaling), reverse proxies, the application layer (microservices, service discovery), a four-step approach to a design question, back-of-the-envelope calculations, and worked questions (Pastebin or bit.ly first). It also links Anki flashcards. Read the raw file at `raw.githubusercontent.com/donnemartin/system-design-primer/master/README.md`, since github.com blocks automated reads. A popular community resource, not an authority. Use for: the main sequence for the scaling and design sessions.
-- **System Design Interview, by Alex Xu (the learner's own copy; volume to be confirmed).**
-  The learner mentioned a "2nd edition", but the series is Volume 1 and Volume 2 (two separate books), so the volume needs confirming; it decides what chapter 1 covers. The learner read chapter 1 a few months ago and is rereading it. Not read by Claude, and Claude can't see its content, so lessons follow the chapters the learner says they're on and cross-check ideas against the primer. Use for: the learner's main interview-practice text alongside the primer. Quiz on the concepts and run designs in chat, with the learner attempting first.
+- **System Design Interview, by Alex Xu: Volume 1 (the learner says edition 2) and Volume 2, both the learner's own.**
+  Start with Volume 1, which search results describe as the fundamentals, then Volume 2 (a sequel with more specialized designs and trade-offs) later, in the interview-practice phase. The learner read chapter 1 of Volume 1 a few months ago and is rereading it. Not read by Claude, and Claude can't see its content, so lessons follow the chapters the learner says they're on and cross-check ideas against the primer. Use for: the learner's main interview-practice text alongside the primer. Quiz on the concepts and run designs in chat, with the learner attempting first.
 - [MDN: HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
   Reachable, not read. Use for: caching, one of the overlaps with the web plan.
 - [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
@@ -19,7 +19,7 @@
 
 - The primer's sections are unread beyond headings; each session reads its section first.
 - Docker and Kubernetes docs are blocked.
-- The learner has read chapter 1 of the interview book and is rereading it; the volume is unconfirmed and later chapters are unread. Claude can't read it, so lessons rely on what the learner shares.
+- The learner has read chapter 1 of Volume 1 and is rereading it; later chapters and Volume 2 are unread. Claude can't read it, so lessons rely on what the learner shares.
 
 ## Parked resources (kept, not in the current plan)
 
