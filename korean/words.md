@@ -9,6 +9,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 동안 (dong-an) | during, for a period of time; while. Goes after a time expression (한 시간 동안). 에 marks a point in time, 동안 a duration | No clear match for this meaning (probably a native Korean word). The homonym 동안 "baby face" has matches: Japanese *dōgan*; Cantonese *tung4 ngaan4*; Mandarin *tóng yán* | Don't confuse the two words. The "baby face" one sounds very close to Japanese dōgan | 童顔 (the homonym only) | | 2026-11-21 |
 | 운전하다 (un-jeon-ha-da) | to drive (a vehicle). 운전 = driving, 하다 = to do. 운전면허 = driver's license | Japanese *unten*; Cantonese *wan6 zyun2* (but it means "operate"); Mandarin *yùnzhuǎn* (also "operate"). To say "drive" in Cantonese: 揸車 *zaa1 ce1* (formal 駕駛 *gaa3 sai2*), unrelated to the Korean | Japanese 運転 (unten) is almost the same sound and the same meaning, and 運転免許 (unten menkyo) matches 운전면허. In Mandarin and Cantonese the same characters mean "operate", not "drive" | 運轉 (Japanese 運転) | | 2026-11-21 |
 | 처음 (cheo-eum) | the first time; the beginning; at first. 처음 뵙겠습니다 = nice to meet you (formal). Related to 첫 (first, before a noun: 첫 번째) | No match for 처음 itself (native Korean). The related Chinese-based 초 (初) has one: Japanese *sho*; Cantonese *co1*; Mandarin *chū* | Mandarin *chū* is close to Korean *cho*. Japanese 初めて (hajimete) means the same as 처음 but sounds different | 初 (for the related 초, not 처음) | | 2026-11-21 |
+| 개월 (gae-wol) | counter for months, a length of time: 3개월 = three months. 월 alone names a calendar month: 3월 = March. Native 달 also counts months (세 달). Irregular: 6월 = 유월, 10월 = 시월 | Japanese か月/ヶ月 *kagetsu*; Cantonese 個月 *go3 jyut6*; Mandarin 个月 *gè yuè* | Cantonese 個月 *go3 jyut6* is closest to gae-wol: both are counter + month. Japanese and Mandarin use the same structure | 個月 (Japanese ヶ月) | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -27,3 +28,5 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 番 | 번 | turn, number | 두 번째 |
 | 運 | 운 | move, carry | 운전하다 |
 | 轉 | 전 | turn, rotate | 운전하다 |
+| 月 | 월 | month, moon | 개월 |
+| 個 | 개 | counter, unit | 개월 |
