@@ -1,29 +1,32 @@
 # Anki cards
 
-Importable decks for terms, built after lessons in the learner's card style, as `.apkg` files. Card data lives in a JSON file next to each deck; `build.py` turns it into the package.
+Decks built after lessons as importable `.apkg` files, in the learner's own card styles, taken from their existing decks. Card data lives in a JSON file next to each deck; `build.py` turns it into the package.
 
-## Card style (follow this for every deck)
+## Concept cards (the default for web and systems)
 
-Modeled on the learner's existing vocabulary deck.
+- **Note type:** `React Concept (Option B)`, copied exactly from the learner's own deck into `note-type.json`, so the cards look identical and Anki recognizes the note type.
+- **One card per note:** Question to Answer.
+- **Fields:** Question, Answer, Code (optional), Category (optional pill, such as Scenario, Mnemonic or Compare), Topic (small gray line).
+- **Front:** a small uppercase "Question" label and the question in bold, centered.
+- **Back:** the same, a divider, the answer, an optional code block, the Category pill and the Topic.
+- **Short:** questions about 8 words (up to about 15); answers about 17 words (up to about 40), in plain sentences. One idea per card.
+- **Kinds of cards:** "What is X?", "When do you use X?", "What is the difference between X and Y?", scenario questions ("You need X. What do you use?"), contrast cards ("Does X do Y? No. ..."), best-practice lists and mnemonics.
+- **Organized by Topic, not tags.** Deck path: `Subject::Topic`, for example `Web::Networking`.
+- Light and dark mode are handled by the CSS.
 
-- **Two cards per note:** Term to Meaning (recognition) and Meaning to Term (production).
-- **Fields:** Term, Meaning, Type, Lesson, Source. The Source field isn't shown on the card.
-- **Front:** one big centered item (40px for the term, 28px for a meaning).
-- **Back:** the same front, a divider, then the answer (28px or 40px), and a small gray line reading "Type · Lesson N".
-- **Meanings are very short:** a few words, with a clarifier in brackets if needed, like "I, me (formal)". No long definitions.
-- **One simple fact per card.**
-- **Tags:** lowercase, `lesson1` and `vocabulary`.
-- **Deck path:** `Subject::Course or topic::Lesson N`, for example `Web::Networking Vocabulary::Lesson 1`.
-- **Note type:** `Tech Terms+`, with a fixed id so every deck shares it.
+## Vocabulary cards (language decks, built when asked)
+
+From the learner's vocabulary deck: two cards per note (term to meaning, and meaning to term), a big centered term with audio, a very short meaning with a clarifier in brackets, and a small gray "Type · Lesson N" line. Lowercase tags (`lesson1`, `vocabulary`), and a deck path like `Subject::Course unit::Lesson N`. `build.py` doesn't build these yet.
 
 ## Files
 
-- `networking-terms.json`: the 15 networking terms from lesson 1 (source of truth)
-- `networking-terms.apkg`: the importable deck (30 cards)
-- `build.py`: `pip install genanki`, then `python3 build.py networking-terms.json`
+- `note-type.json`: the concept-card note type (fields, template, styling)
+- `networking-lesson-1.json`: 19 cards from lesson 1 (15 terms and 4 "Compare" cards); the source of truth, with each card's source
+- `networking-lesson-1.apkg`: the importable deck
+- `build.py`: `pip install genanki`, then `python3 build.py networking-lesson-1.json`
 
-Rewrite a card in your own words if that helps you remember it, then update the JSON so the deck and the repo stay in step.
+The note type has no Source field, so each card's source is kept in the JSON only. Rewrite a card in your own words if that helps, then update the JSON so the deck and the repo stay in step.
 
 ## Importing
 
-Open the `.apkg` file with Anki, or use File, then Import on a computer. I haven't checked the steps for the Anki mobile apps; if it's awkward on your phone, import on a computer and sync.
+Open the `.apkg` file with Anki, or use File, then Import on a computer. The note type matches the learner's existing one, so Anki should reuse it. I haven't checked the steps for the Anki mobile apps; if it's awkward on your phone, import on a computer and sync.
