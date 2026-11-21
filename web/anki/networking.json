@@ -1,0 +1,24 @@
+{
+  "deck": "Web::Networking",
+  "cards": [
+    {"id": "What is a client?", "question": "What is a client?", "answer": "A device, plus the software on it (usually a browser), that asks servers for pages.", "topic": "Basics", "source": "MDN"},
+    {"id": "What is a server?", "question": "What is a server?", "answer": "A computer that stores webpages, sites or apps and sends them to clients.", "topic": "Basics", "source": "MDN"},
+    {"id": "What are the main parts of a URL?", "question": "What are the main parts of a URL?", "answer": "The protocol, the domain name (with an optional subdomain), and the path to the resource.", "topic": "Basics", "source": "MDN"},
+    {"id": "What is an IP address?", "question": "What is an IP address?", "answer": "A number, like 192.0.2.172, that identifies a unique location on the web.", "topic": "DNS", "source": "MDN"},
+    {"id": "What does DNS (Domain Name System) do?", "question": "What does DNS (Domain Name System) do?", "answer": "It acts like an address book, matching a domain name to the site's IP address, which the browser needs before it can retrieve the site.", "topic": "DNS", "source": "MDN"},
+    {"id": "What is TCP/IP?", "question": "What is TCP/IP?", "answer": "The protocols that define how data travels across the internet.", "topic": "Basics", "source": "MDN"},
+    {"id": "What is a packet?", "question": "What is a packet?", "answer": "A small chunk of data with a header (addresses, packet number, protocol details) and a payload (the actual data).", "topic": "Basics", "source": "MDN"},
+    {"id": "What is HTTP?", "question": "What is HTTP?", "answer": "The application protocol that defines the language clients and servers use to talk to each other.", "topic": "HTTP", "source": "MDN"},
+    {"id": "What is an HTTP status code?", "question": "What is an HTTP status code?", "answer": "A number in the response that says whether the request worked, such as 200 for success or 404 for not found.", "topic": "HTTP", "source": "MDN"},
+    {"id": "What is HTTPS?", "question": "What is HTTPS?", "answer": "A secure version of HTTP that stops others from reading your data while it is in transit.", "topic": "HTTP", "source": "MDN"},
+    {"id": "What is TLS?", "question": "What is TLS?", "answer": "A protocol that gives applications running above it encryption, authentication and data integrity.", "topic": "TLS", "source": "HPBN"},
+    {"id": "What does encryption do in TLS?", "question": "What does encryption do in TLS?", "answer": "It obfuscates what is sent from one host to another.", "topic": "TLS", "source": "HPBN"},
+    {"id": "What does authentication do in TLS?", "question": "What does authentication do in TLS?", "answer": "It lets the client verify the server is who it claims to be, not someone spoofing its name or IP address.", "topic": "TLS", "source": "HPBN"},
+    {"id": "What does integrity do in TLS?", "question": "What does integrity do in TLS?", "answer": "It detects tampering and forgery of messages, using a message authentication code on each one.", "topic": "TLS", "source": "HPBN"},
+    {"id": "What is public key cryptography used for in TLS?", "question": "What is public key cryptography used for in TLS?", "answer": "It lets two peers agree on a shared secret key without prior knowledge of each other, even over an unencrypted channel.", "topic": "TLS", "source": "HPBN"},
+    {"id": "How are TLS and SSL related?", "question": "How are TLS and SSL related?", "answer": "SSL was the original protocol, and its versions 2 and 3 are broken and should not be used. TLS replaced it, starting with TLS 1.0.", "category": "Compare", "topic": "TLS", "source": "OWASP TLS cheat sheet, HPBN"},
+    {"id": "What is the difference between HTTP and HTTPS?", "question": "What is the difference between HTTP and HTTPS?", "answer": "HTTPS is HTTP carried over a TLS-protected connection. The messages are the same, but they are encrypted, authenticated and checked for tampering.", "category": "Compare", "topic": "HTTP", "source": "MDN, HPBN"},
+    {"id": "How do TLS and TCP work together?", "question": "How do TLS and TCP work together?", "answer": "TCP carries the data reliably as packets. TLS runs directly on top of it and protects the data before TCP splits it into packets.", "category": "Compare", "topic": "TLS", "source": "HPBN, zine"},
+    {"id": "What is the difference between DNS and an IP address?", "question": "What is the difference between DNS and an IP address?", "answer": "An IP address is a server's numeric location. DNS is the system that looks up the IP address for a domain name.", "category": "Compare", "topic": "DNS", "source": "MDN"}
+  ]
+}

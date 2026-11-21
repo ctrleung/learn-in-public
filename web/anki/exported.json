@@ -1,0 +1,23 @@
+{
+ "Web::Networking": [
+  "What is a client?",
+  "What is a server?",
+  "What are the main parts of a URL?",
+  "What is an IP address?",
+  "What does DNS (Domain Name System) do?",
+  "What is TCP/IP?",
+  "What is a packet?",
+  "What is HTTP?",
+  "What is an HTTP status code?",
+  "What is HTTPS?",
+  "What is TLS?",
+  "What does encryption do in TLS?",
+  "What does authentication do in TLS?",
+  "What does integrity do in TLS?",
+  "What is public key cryptography used for in TLS?",
+  "How are TLS and SSL related?",
+  "What is the difference between HTTP and HTTPS?",
+  "How do TLS and TCP work together?",
+  "What is the difference between DNS and an IP address?"
+ ]
+}
