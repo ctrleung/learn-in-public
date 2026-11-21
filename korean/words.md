@@ -6,6 +6,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 |---|---|---|---|---|---|---|
 | 기회 (gi-hoe) | opportunity, chance | Japanese *ki-kai*; Cantonese *gei1 wui6*; Mandarin *jī-huì* | Cantonese is the closest to gi-hoe overall. Japanese matches the first syllable (ki ~ gi) | 機會 (Japanese 機会) | | 2026-11-21 |
 | 두 번째 (du beon-jjae) | second in order or in line; the second time. For second place in a ranking, 2등 (i-deung) is more natural | Only 번 has a match: Japanese *ban*; Cantonese *faan1*; Mandarin *fān*. In Cantonese the meaning decides the counter: second time 第二次 *dai6 ji6 ci3*; second in line or order 第二個 *dai6 ji6 go3* (a person: 第二位 *dai6 ji6 wai2*); second place 第二名 *dai6 ji6 ming4*. Korean uses 번째 for the first two | 두 and 째 are native Korean, no match. 번 ~ Japanese ban (as in 二番, niban). Built like Japanese 二番目 (ni-ban-me): number + 番 + ordinal | 番 (only in 번) | | 2026-11-21 |
+| 동안 (dong-an) | during, for a period of time; while. Goes after a time expression (한 시간 동안). 에 marks a point in time, 동안 a duration | No clear match for this meaning (probably a native Korean word). The homonym 동안 "baby face" has matches: Japanese *dōgan*; Cantonese *tung4 ngaan4*; Mandarin *tóng yán* | Don't confuse the two words. The "baby face" one sounds very close to Japanese dōgan | 童顔 (the homonym only) | | 2026-11-21 |
 
 ## How to read the sounds
 
