@@ -12,7 +12,7 @@ I build web applications and want to understand how they scale and how the piece
 
 ## Constraints
 - One short session of about 10 minutes a week, on a weekend; the first thing to skip when I'm tired, with web and Japanese protected
-- Sources: my system design interview book, the System Design Primer, MDN's HTTP reference and caching pages, AWS Well-Architected; Docker and Kubernetes docs once their domains are allowed
+- Sources: *System Design Interview* by Alex Xu, the System Design Primer, MDN's HTTP reference and caching pages, AWS Well-Architected; Docker and Kubernetes docs once their domains are allowed
 - Quiz first, then explain; I produce answers and designs myself, and feedback comes after an attempt
 - Mostly learning for myself, with notes public in this repo. Interview dates and other personal timing are not recorded here
 
