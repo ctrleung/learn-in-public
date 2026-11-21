@@ -5,5 +5,5 @@ Everything I miss goes here, so I can fix it from memory instead of just reading
 | Date | Area | What I missed | Status | Fix in my own words | Re-test |
 |---|---|---|---|---|---|
 | 2026-11-20 | Hiragana reading | Diagnostic rounds 1 and 2. Solid: あ, い, お, か, け, き, し, た, ん. Not remembered: て, ぬ, ふ, ま, よ, れ | open | | 2026-11-21 |
-| 2026-11-20 | Hiragana s-row | Read さ as "chi", そ as "zu", and す as "shi" then didn't answer the hint. Sounds from other rows are attached to the wrong characters. Got all five right after rebuilding | open | "The more complicated one comes first" (in すし, す then し) | 2026-11-21 |
-| 2026-11-20 | Row pattern | Couldn't state the pattern (consonant plus a, i, u, e, o) and remembers the s-row by rote | open | | 2026-11-21 |
+| 2026-11-20 | Hiragana s-row | Read さ as "chi", そ as "zu", and す as "shi" then didn't answer the hint. Sounds from other rows were attached to the wrong characters. Passed the 1-day re-test (7 of 7); needs one more at a longer interval | open | "The more complicated one comes first" (in すし, す then し) | 2026-11-24 |
+| 2026-11-20 | Row pattern | Now states consonant plus a, i, u, e, o (and noticed English's order is different), but didn't name the exception, し ("shi", not "si") | open | "s at the start, vowels go a i u e o" | 2026-11-22 |
