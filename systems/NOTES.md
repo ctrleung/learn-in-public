@@ -23,6 +23,7 @@
 - Quiz before explaining: ask typed questions first, then teach. Not multiple choice.
 - Don't hand me finished answers. Give a hint or a narrower question and let me try again; explain only after a real attempt.
 - For design practice: I attempt the design first, in my own words, then give feedback on what's missing and what's strong. Don't hand me a finished design.
+- Explain-back is a skill I'm training, not a formality. At the end of a lesson, and in reviews at the 7, 14 and 30 day stages, ask me to explain the idea to a specific audience (a coworker, a friend, a junior developer) in about a minute, typed or dictated. Give feedback on accuracy, structure (big idea first), audience fit, a concrete example or analogy, and why it matters. Then ask a follow-up like a curious listener and keep asking "why" or "what if". Don't give me a finished explanation; show me what's missing.
 - Everything I miss goes in `gaps.md`. I write the fix in my own words; it becomes fixed only after I answer correctly from memory at two re-tests in a row, at increasing intervals.
 - Read a source section before a lesson cites it; say plainly when I've only read headings.
 

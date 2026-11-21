@@ -57,7 +57,7 @@ AWS, Linux, backend and databases, DevOps and operations are parked in [`../syst
 
 ## Mastery gates
 
-The dates are a guide; mastery sets the pace. The last session of each block is an interleaved review: a typed quiz mixing items from the whole block and from earlier ones. A block is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it. If not, the block extends and later blocks shrink (depth over coverage), and the change goes under "Schedule changes". New material waits until the previous batch has passed its first re-test, and reviews always come before new material.
+The dates are a guide; mastery sets the pace. The last session of each block is an interleaved review: a typed quiz mixing items from the whole block and from earlier ones. A block is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it. If not, the block extends and later blocks shrink (depth over coverage), and the change goes under "Schedule changes". New material waits until the previous batch has passed its first re-test, and reviews always come before new material. The last session of each block also includes a mini-talk: I explain the block's main idea from memory to a coworker in about three minutes, then answer follow-up questions.
 
 ## Schedule changes
 

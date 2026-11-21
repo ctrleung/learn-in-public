@@ -9,6 +9,7 @@ I build web applications and already know the basics, but I want to refresh my m
 - Explain what happens from typing a URL to a rendered page, covering both the network half (DNS, HTTP, TLS basics) and the browser half, and use the browser's developer tools to see where a request went wrong
 - Write JavaScript by hand for DOM, events and `fetch`, including promises and error handling
 - Build a small accessible React app by hand: components, state, events, conditional rendering
+- Explain any topic in the plan clearly to a coworker or friend, in about a minute or as a short talk, with a concrete example, and answer follow-up questions without notes
 - `gaps.md` shrinks: gaps move to fixed after I re-answer correctly from memory on a re-test
 
 ## Constraints
