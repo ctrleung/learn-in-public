@@ -59,6 +59,8 @@ AWS, Linux, backend and databases, DevOps and operations are parked in [`../syst
 
 The dates are a guide; mastery sets the pace. The last session of each block is an interleaved review: a typed quiz mixing items from the whole block and from earlier ones. A block is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it. If not, the block extends and later blocks shrink (depth over coverage), and the change goes under "Schedule changes". New material waits until the previous batch has passed its first re-test, and reviews always come before new material. The last session of each block also includes a mini-talk: I explain the block's main idea from memory to a coworker in about three minutes, then answer follow-up questions.
 
+Mastery means a fixed standard and flexible time. A block is done when its review quiz scores about 85 percent (the usual range is 80 to 90) on top of the gate above, and it ends with a transfer task: something unfamiliar, like a small hand-coded task in `practice/`, not only recall questions. With a fixed end date, a block that needs longer means later blocks shrink, and the change goes under "Schedule changes".
+
 ## Schedule changes
 
 | Date | Change | Reason |
