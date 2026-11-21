@@ -29,8 +29,9 @@ From the learner's vocabulary deck: two cards per note (term to meaning, and mea
 ## Adding to a deck you've already imported
 
 - **New cards:** each lesson's file has only that lesson's new cards, with the same deck name (for example `Web::Networking`) and the same note type, so they land in the existing deck and your current cards are left alone.
-- **Reimporting a file** shouldn't create duplicates, because every card has a stable `id` that sets its Anki identity. Rewording a card keeps its id, so it updates the same note.
-- **Whether a reimport overwrites an edited card** depends on your Anki import settings, which I haven't checked in your app. The simplest way to fix a card is to edit it in Anki, and tell me so I mirror it in the JSON.
+- **Only import files of brand-new cards.** Each lesson's file has cards Anki has never seen, so nothing existing can be affected. This is the safe pattern.
+- **Don't reimport a file you've already studied from.** Every card has a stable `id`, so a reimport matches the existing notes instead of duplicating them, but I haven't tested what Anki does to their review history and scheduling, and I'm not certain it's kept. If the import dialog offers a choice about updating existing notes, pick the one that doesn't.
+- **Fix an existing card by editing it in Anki,** which leaves your progress untouched, then tell me so I mirror it in the JSON.
 - **Anki is the source of truth for what you study** once you've imported; the JSON is a record. If they drift apart, say so at wrap-up.
 - **Before the first import,** export your collection as a backup, and try a small file first.
 
