@@ -10,6 +10,7 @@ I build web applications and already know the basics, but I want to refresh my m
 - Write JavaScript by hand for DOM, events and `fetch`, including promises and error handling
 - Build a small accessible React app by hand: components, state, events, conditional rendering
 - Explain any topic in the plan clearly to a coworker or friend, in about a minute or as a short talk, with a concrete example, and answer follow-up questions without notes
+- Connect new ideas to things I already know and say where each comparison holds and where it breaks
 - Remember the key terms and concepts well enough, at the 30-day review, to define them in my own words, tell similar ones apart, and use them correctly
 - `gaps.md` shrinks: gaps move to fixed after I re-answer correctly from memory on a re-test
 

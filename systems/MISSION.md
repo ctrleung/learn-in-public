@@ -8,6 +8,7 @@ I build web applications and want to understand how they scale and how the piece
 - Explain performance vs scalability, latency vs throughput, and availability vs consistency in my own words, with an example of each
 - Talk through a design for a simple system (a URL shortener is a good first one) in four steps: use cases, constraints and assumptions; a high-level design; the core components; then scaling it, including a back-of-the-envelope estimate
 - Talk through a design out loud, in an organized way and in my own words, and answer follow-up questions about it, as I would in an interview or to a coworker
+- Connect new ideas to things I already know and say where each comparison holds and where it breaks
 - Remember the key terms and concepts well enough, at the 30-day review, to define them in my own words, tell similar ones apart, and use them correctly
 - Explain what containers are and what Kubernetes does, and run a container locally
 - Do timed practice designs where I attempt first and get feedback afterwards, for system design interview practice

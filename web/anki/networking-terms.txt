@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#tags column:3
+What is Client?	An internet-connected device, plus the web-accessing software on it (usually a browser). (Source: MDN)	web networking
+What is Server?	A computer that stores webpages, sites or apps. (Source: MDN)	web networking
+What is URL?	Defines the location of a unique resource on the internet. Main parts: protocol (https), domain name, optional subdomain, and path. (Source: MDN)	web networking
+What is IP address?	A number such as 192.0.2.172 that represents a unique location on the web. (Source: MDN)	web networking
+What is DNS (Domain Name System)?	Special servers that match the web address you type to the website's real IP address, like an address book. The browser needs this before it can retrieve the site. (Source: MDN)	web networking
+What is TCP/IP?	Communication protocols that define how data should travel across the internet. (Source: MDN)	web networking
+What is Packet?	A small chunk of data sent between client and server. It has a header (client and server IP addresses, packet number, total packets, protocol details) and a payload (the actual data). (Source: MDN)	web networking
+What is HTTP?	An application protocol: the language clients and servers use to talk to each other. (Source: MDN)	web networking
+What is HTTP status code?	Part of the response saying whether the request worked. Common ones: 200 success; 301 permanently moved; 400 server can't process the request; 403 server won't give access; 404 server can't find it; 503 server can't handle it right now (temporary). (Source: MDN)	web networking
+What is HTTPS?	A secure version of HTTP that stops bad people from reading your data while it is being transported. (Source: MDN)	web networking
+What is TLS (Transport Layer Security)?	A protocol designed to give applications running above it three services: encryption, authentication and data integrity. (Source: HPBN)	web networking
+What is Encryption?	A mechanism to obfuscate what is sent from one host to another. (Source: HPBN)	web networking
+What is Authentication?	A mechanism to verify the validity of provided identification material. In the browser, it lets the client check the server is who it claims to be and not someone pretending to be the destination by spoofing its name or IP address. (Source: HPBN)	web networking
+What is Integrity?	A mechanism to detect message tampering and forgery. TLS signs each message with a message authentication code (MAC), a one-way cryptographic hash (effectively a checksum). (Source: HPBN)	web networking
+What is Public key cryptography?	Lets two peers negotiate a shared secret key without prior knowledge of each other, over an unencrypted channel. This is why TLS works in practice. (Source: HPBN)	web networking
