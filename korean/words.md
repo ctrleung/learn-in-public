@@ -16,6 +16,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 상황 (sang-hwang) | situation, circumstances. 상황에 따라 = depending on the situation | Cantonese *zong6 fong3*; Mandarin *zhuàngkuàng*; Japanese *jōkyō* | Cantonese *zong6 fong3* is closest: both keep the -ng endings (sang / zong, hwang / fong). Japanese turned -ng into a long vowel (jō, kyō) | 狀況 | | 2026-11-21 |
 | 기름 (gi-reum) | oil, fat, grease; also fuel (기름 넣다 = to fill up). 참기름 = sesame oil, 기름지다 = oily | No match for 기름 itself (native Korean). The Sino-Korean 유 (油) has matches: Japanese *yu*; Cantonese *jau4*; Mandarin *yóu* | Korean 유 is almost identical to Mandarin *yóu*. 석유 (石油, petroleum) *seok-yu* ~ Japanese *sekiyu*; Cantonese *sek6 jau4* | 油 (for the related 유) | | 2026-11-21 |
 | 문장 (mun-jang) | sentence. 문장을 만들다 = to make a sentence; 예문 = example sentence | Cantonese *man4 zoeng1*; Japanese *bunshō*; Mandarin *wénzhāng* | Cantonese *man4 zoeng1* is closest (man ~ mun, zoeng ~ jang, same -ng). Japanese m became b (mun ~ bun). Meaning shifts: Korean = sentence; Mandarin/Cantonese 文章 = article or essay (their "sentence" is 句子); Japanese 文章 = text, and a sentence is 文 | 文章 | | 2026-11-21 |
+| 생활 (saeng-hwal) | daily life, living. 대학 생활 = university life; 생활비 = living expenses. Compare 삶 (native, a life one lives) and 인생 (人生, a whole lifetime) | Cantonese *saang1 wut6*; Japanese *seikatsu*; Mandarin *shēnghuó* | Cantonese *saang1 wut6* is closest: saang ~ saeng (-ng kept), wut ~ hwal (Korean -l ~ Cantonese -t ~ Japanese -tsu) | 生活 | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -23,6 +24,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 - Only words that come from Chinese (Sino-Korean words) have a sound match. Native Korean words have no cousin in these languages, and I'll say so when that's the case.
 - Cantonese often keeps older Chinese sounds, so it can sound closer to Korean than Mandarin does. That's a rough tendency, not a rule.
 - Korean and Cantonese usually keep a final -ng (and -m, -p, -t, -k) where Japanese turns it into a vowel (sang / zong / jō).
+- A Korean final -l often matches -t in Cantonese and -tsu in Japanese: hwal / wut / katsu, il / jat6. Again a tendency, not a rule.
 
 ## Pieces seen so far
 
@@ -46,3 +48,5 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 油 | 유 | oil | related to 기름: 석유 "petroleum", 식용유 "cooking oil" |
 | 文 | 문 | writing, text | 문장 (also 문화 "culture", Japanese bunka; 문학 "literature") |
 | 章 | 장 | chapter, section | 문장 |
+| 生 | 생 | live, birth | 생활 (also 학생 "student", Japanese gakusei) |
+| 活 | 활 | alive, active | 생활 (also 활동 "activity", Japanese katsudō) |
