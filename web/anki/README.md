@@ -18,6 +18,22 @@ Decks built after lessons as importable `.apkg` files, in the learner's own card
 
 From the learner's vocabulary deck: two cards per note (term to meaning, and meaning to term), a big centered term with audio, a very short meaning with a clarifier in brackets, and a small gray "Type · Lesson N" line. Lowercase tags (`lesson1`, `vocabulary`), and a deck path like `Subject::Course unit::Lesson N`. `build.py` doesn't build these yet.
 
+## When to make and change cards
+
+- **Make cards after a lesson,** once I've been tested on it, in small batches (about 5 to 15 per lesson). I build them at wrap-up as `networking-lesson-N.json` (or the topic's name) and a matching `.apkg`. Don't make cards from material that hasn't been learned.
+- **Control the pace in Anki,** with its new-cards-per-day setting, not by delaying the file.
+- **Change a card** when it's ambiguous, wrong, or a leech (missed again and again). Rewrite it so it asks one clear thing. Review leeches and wording at each block review.
+- **Retire a card** (suspend or delete) when the topic is obsolete, not because it's hard.
+- **Mistakes in gaps.md** that keep coming back are good candidates for a new card.
+
+## Adding to a deck you've already imported
+
+- **New cards:** each lesson's file has only that lesson's new cards, with the same deck name (for example `Web::Networking`) and the same note type, so they land in the existing deck and your current cards are left alone.
+- **Reimporting a file** shouldn't create duplicates, because every card has a stable `id` that sets its Anki identity. Rewording a card keeps its id, so it updates the same note.
+- **Whether a reimport overwrites an edited card** depends on your Anki import settings, which I haven't checked in your app. The simplest way to fix a card is to edit it in Anki, and tell me so I mirror it in the JSON.
+- **Anki is the source of truth for what you study** once you've imported; the JSON is a record. If they drift apart, say so at wrap-up.
+- **Before the first import,** export your collection as a backup, and try a small file first.
+
 ## Files
 
 - `note-type.json`: the concept-card note type (fields, template, styling)

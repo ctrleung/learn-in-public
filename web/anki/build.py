@@ -2,6 +2,7 @@
 
 Usage: python3 build.py networking-lesson-1.json   (needs: pip install genanki)
 
+Each card's optional "id" keeps its Anki identity stable, so rewording a card updates it instead of duplicating it.
 The note type (fields, template, CSS) comes from note-type.json, copied exactly from the
 learner's own concept-card deck so cards look the same and Anki recognizes the note type.
 """
@@ -21,7 +22,7 @@ spec = json.load(open(path))
 deck = genanki.Deck(1795300000000 + zlib.crc32(spec["deck"].encode()) % 1000000, spec["deck"])
 for c in spec["cards"]:
     deck.add_note(genanki.Note(
-        model=model, guid=genanki.guid_for(spec["deck"], c["question"]),
+        model=model, guid=genanki.guid_for(spec["deck"], c.get("id", c["question"])),
         fields=[c["question"], c["answer"], c.get("code", ""), c.get("category", ""), c["topic"]]))
 out = os.path.splitext(path)[0] + ".apkg"
 genanki.Package(deck).write_to_file(out)
