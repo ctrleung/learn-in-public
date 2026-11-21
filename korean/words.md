@@ -12,6 +12,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 개월 (gae-wol) | counter for months, a length of time: 3개월 = three months. 월 alone names a calendar month: 3월 = March. Native 달 also counts months (세 달). Irregular: 6월 = 유월, 10월 = 시월 | Japanese か月/ヶ月 *kagetsu*; Cantonese 個月 *go3 jyut6*; Mandarin 个月 *gè yuè* | Cantonese 個月 *go3 jyut6* is closest to gae-wol: both are counter + month. Japanese and Mandarin use the same structure | 個月 (Japanese ヶ月) | | 2026-11-21 |
 | 죽다 (juk-da) | to die. 죽이다 = to kill. -아/어 죽겠다 = "so ... I could die" (배고파 죽겠어요). For a respected person use 돌아가시다 | No match for the verb (native Korean). Related: 사 (死) *sa* ~ Japanese *shi*, Cantonese *sei2*, Mandarin *sǐ*. Homonym 죽 "porridge" (粥) ~ Cantonese *zuk1* (congee) | The homonym 죽 "porridge" sounds almost the same as Cantonese zuk1: a sound hook, not the same word. 사망 (死亡) ~ Japanese shibō, Cantonese sei2 mong4 | 死 (for 사), 粥 (for the homonym 죽) | | 2026-11-21 |
 | 사흘 (sa-heul) | three days; the 3rd day. Native day-count: 하루 1, 이틀 2, 사흘 3, 나흘 4, 닷새 5, 엿새 6, 이레 7, 여드레 8, 아흐레 9, 열흘 10. Gotcha: 사 here is not "four". 사흘 동안 = for three days | No match for 사흘 (native). The Sino-Korean 삼 일 (三日) matches: Cantonese *saam1 jat6*; Japanese *sannichi* (native reading *mikka*); Mandarin *sān rì* | Cantonese *saam1 jat6* is almost the same as sam-il. Japanese mikka is the native-word counterpart of 사흘 | 三日 (for 삼 일) | | 2026-11-21 |
+| 의미 (ui-mi) | meaning, significance. 무슨 의미예요? = what does it mean? Native 뜻 is the everyday word for meaning; 의미 is more formal and abstract | Japanese *imi*; Cantonese *ji3 mei6*; Mandarin *yìwèi* | Japanese 意味 (imi) is the same word and nearly the same sound. Cantonese *ji3 mei6* is close too (mei ~ mi). In everyday Cantonese and Mandarin, "meaning" is usually 意思 (ji3 si1, yìsi) | 意味 | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -34,3 +35,5 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 個 | 개 | counter, unit | 개월 |
 | 三 | 삼 | three | 삼 일 (the Sino-Korean form of 사흘) |
 | 日 | 일 | day, sun | 삼 일 |
+| 意 | 의 | meaning, intention | 의미 |
+| 味 | 미 | taste, flavor | 의미 (also 취미 "hobby", Japanese shumi) |
