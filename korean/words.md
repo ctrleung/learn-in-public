@@ -17,6 +17,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 | 기름 (gi-reum) | oil, fat, grease; also fuel (기름 넣다 = to fill up). 참기름 = sesame oil, 기름지다 = oily | No match for 기름 itself (native Korean). The Sino-Korean 유 (油) has matches: Japanese *yu*; Cantonese *jau4*; Mandarin *yóu* | Korean 유 is almost identical to Mandarin *yóu*. 석유 (石油, petroleum) *seok-yu* ~ Japanese *sekiyu*; Cantonese *sek6 jau4* | 油 (for the related 유) | | 2026-11-21 |
 | 문장 (mun-jang) | sentence. 문장을 만들다 = to make a sentence; 예문 = example sentence | Cantonese *man4 zoeng1*; Japanese *bunshō*; Mandarin *wénzhāng* | Cantonese *man4 zoeng1* is closest (man ~ mun, zoeng ~ jang, same -ng). Japanese m became b (mun ~ bun). Meaning shifts: Korean = sentence; Mandarin/Cantonese 文章 = article or essay (their "sentence" is 句子); Japanese 文章 = text, and a sentence is 文 | 文章 | | 2026-11-21 |
 | 생활 (saeng-hwal) | daily life, living. 대학 생활 = university life; 생활비 = living expenses. Compare 삶 (native, a life one lives) and 인생 (人生, a whole lifetime) | Cantonese *saang1 wut6*; Japanese *seikatsu*; Mandarin *shēnghuó* | Cantonese *saang1 wut6* is closest: saang ~ saeng (-ng kept), wut ~ hwal (Korean -l ~ Cantonese -t ~ Japanese -tsu) | 生活 | | 2026-11-21 |
+| 복습하다 (bok-seup-ha-da) | to review (what you've learned). 예습 = to preview before class | Cantonese *fuk6 zaap6*; Japanese *fukushū*; Mandarin *fùxí* | Cantonese *fuk6 zaap6* is closest: the final stops are kept (bok ~ fuk, seup ~ zaap). Japanese adds a vowel (fuku-shū) | 復習 | | 2026-11-21 |
 
 ## How to read the sounds
 
@@ -25,6 +26,7 @@ One row per word I asked about. The point is to hear how the word sounds in othe
 - Cantonese often keeps older Chinese sounds, so it can sound closer to Korean than Mandarin does. That's a rough tendency, not a rule.
 - Korean and Cantonese usually keep a final -ng (and -m, -p, -t, -k) where Japanese turns it into a vowel (sang / zong / jō).
 - A Korean final -l often matches -t in Cantonese and -tsu in Japanese: hwal / wut / katsu, il / jat6. Again a tendency, not a rule.
+- A Korean final -k or -p is usually kept in Cantonese and gets an extra vowel in Japanese: bok / fuk / fuku, seup / zaap / shū.
 
 ## Pieces seen so far
 
@@ -50,3 +52,5 @@ Many Korean words are built from Chinese-character syllables. Spotting a piece y
 | 章 | 장 | chapter, section | 문장 |
 | 生 | 생 | live, birth | 생활 (also 학생 "student", Japanese gakusei) |
 | 活 | 활 | alive, active | 생활 (also 활동 "activity", Japanese katsudō) |
+| 復 | 복 | again, repeat | 복습 |
+| 習 | 습 | practice, learn | 복습 (also 연습 "practice", Japanese renshū; 학습 "learning", gakushū) |
