@@ -41,9 +41,17 @@ The first week of each block is a **diagnostic**: a typed quiz across the block,
 
 DNS, HTTP, TLS basics and how a page loads stay in scope, mainly in weeks 7 and 9. The earlier networking records (0001 to 0003) keep their re-tests in the warm-ups. Security stays as a light browser-side thread (XSS, CORS, CSP, cookies, HSTS): when a topic raises "how is this attacked?", ask it once.
 
+## Systems thread
+
+Scaling, networking, containers and system design have their own short weekend sessions in [`../systems/`](../systems/), starting after week 1. Where a web topic overlaps, ask one "what changes at scale?" question and leave the depth for that session. Examples: how a page loads and DNS in week 7, caching, cookies and sessions in week 9.
+
 ## Parked
 
-AWS, containers, Linux, backend and databases, DevOps, operations, system design and the rest are in the dormant [`../systems/`](../systems/) workspace. I work on them only when I ask.
+AWS, Linux, backend and databases, DevOps and operations are parked in [`../systems/PARKING-LOT.md`](../systems/PARKING-LOT.md). I work on them only when I ask.
+
+## Mastery gates
+
+The dates are a guide; mastery sets the pace. The last session of each block is an interleaved review: a typed quiz mixing items from the whole block and from earlier ones. A block is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it. If not, the block extends and later blocks shrink (depth over coverage), and the change goes under "Schedule changes". New material waits until the previous batch has passed its first re-test, and reviews always come before new material.
 
 ## Schedule changes
 

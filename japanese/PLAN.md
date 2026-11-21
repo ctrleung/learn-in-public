@@ -17,6 +17,10 @@ Draft, to adjust after the first diagnostic quiz and once the trip date is known
 2. Quiz first on the new item, then explain. A miss goes in `gaps.md`.
 3. Explain it back in my own words, then a learning record with a Re-test date.
 
+## Mastery gates
+
+The dates are a guide; mastery sets the pace. Don't add a new row or group of characters until the previous one has passed its first re-test and stays correct at the next. Renshuu and Anki do the daily practice, and sessions here test it from memory, with items mixed across earlier rows. A phase is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it; otherwise the phase extends and the change goes under "Schedule changes". Reviews always come before new material.
+
 ## Schedule changes
 
 | Date | Change | Reason |

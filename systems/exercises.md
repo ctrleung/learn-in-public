@@ -1,6 +1,6 @@
-# Exercises (dormant)
+# Exercises
 
-Hands-on exercises parked from the web fundamentals plan. Each one runs on your own computer; only probe your own devices and networks.
+Hands-on exercises for the systems thread. These are the ones parked from the web fundamentals plan; new exercises are added as sessions reach them (for example running a container locally, once Docker docs are reachable). Each one runs on your own computer; only probe your own devices and networks.
 
 - [ ] **Trace the route.** Run `traceroute google.com`.
   Notice: each line is a router your packets pass through on the way. *(Zine, routing page)*
