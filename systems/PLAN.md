@@ -28,6 +28,10 @@ The learner is rereading chapter 1 of Volume 1 of the Alex Xu book on their own 
 
 Where a web topic overlaps (how a page loads and DNS in week 7, caching, cookies and sessions in week 9), the web lesson asks one "what changes at scale?" question and leaves the depth for this thread.
 
+## Mastery gates
+
+The order is a guide; mastery sets the pace. Move to the next topic only when the previous one's key items are at the 7-day stage or higher and `gaps.md` has no open items for it. Design practice counts too: re-do an earlier design from memory, in my own words, before the next new one. If a phase needs longer, it extends, and the change goes under "Schedule changes". Reviews always come before new material.
+
 ## Schedule changes
 
 | Date | Change | Reason |
