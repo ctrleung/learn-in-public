@@ -30,6 +30,12 @@ The first week of each block is a **diagnostic**: a typed quiz across the block,
 | 11 | 1 to 7 Feb | React | State, events, conditional rendering and filtering |
 | 12 | 8 to 14 Feb | React | React accessibility, a small hand-built project, review of the whole plan against `gaps.md` |
 
+## Refresher reading
+
+Web basics are a refresher, so I read the block's MDN pages first, on my own time, then the diagnostic quiz tests what stuck. A topic that turns out to be new gets quizzed first and explained after.
+
+- **Block 1, HTML and accessibility (before the week 1 diagnostic):** MDN's [Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax), [Headings and paragraphs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs), [Emphasis and importance](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Emphasis_and_importance), [Lists](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Lists), [Creating links](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links), [Structuring documents](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Structuring_documents), [Webpage metadata](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata) and [HTML images](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images). Skim what you know cold and slow down on what you don't. Reading lists for later blocks are added when they start.
+
 ## Hand-coded practice (in `practice/`, no AI)
 
 - **After HTML and accessibility:** an accessible page with landmarks, a form with validation and a data table, checked with the keyboard and tooling.

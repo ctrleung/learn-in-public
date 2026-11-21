@@ -23,7 +23,8 @@
 
 ## How to teach me
 
-- Quiz before explaining: ask typed questions on the new topic first, then teach. Not multiple choice.
+- Quiz before explaining for topics that are new to me: ask typed questions first, then teach. Not multiple choice.
+- Refresher mode, the default for web basics I already know: I read the assigned MDN page or section first, on my own time, outside the 10 to 20 minutes. The session then quizzes me from memory on it and fills what didn't stick. Reading only counts once I've been tested on it.
 - Don't hand me finished answers. Give a hint or a narrower question and let me try again; explain only after a real attempt.
 - Everything I miss goes in `gaps.md` (what I missed, status open). I write the fix in my own words; it becomes fixed only after I answer correctly from memory at two re-tests in a row, at increasing intervals.
 - Lessons and reference pages come after the quiz, as the explanation and the thing to refer back to.
