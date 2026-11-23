@@ -1,6 +1,6 @@
 # 12-week plan: web fundamentals (23 Nov 2026 to 14 Feb 2027)
 
-This is a guide, not a contract. It adjusts to how I'm doing: when `gaps.md` shows a topic needs more time, that block grows and a later one shrinks, and the change is recorded in "Schedule changes" at the bottom. Main resource: MDN (section links are in [RESOURCES.md](RESOURCES.md)).
+This is a map, not a timetable. The order of the blocks and the mastery gates are the plan; the dates are targets, and a week is a rough pace, not a deadline. It adjusts to how I'm doing: when `gaps.md` shows a topic needs more time, that block grows and a later one shrinks, and the change is recorded in "Schedule changes" at the bottom. Main resource: MDN (section links are in [RESOURCES.md](RESOURCES.md)).
 
 ## How each session works
 
@@ -13,9 +13,11 @@ This is a guide, not a contract. It adjusts to how I'm doing: when `gaps.md` sho
 
 The first week of each block is a **diagnostic**: a typed quiz across the block, used to find the real gaps and set the pace.
 
-## Blocks and weeks
+## Blocks and rough pace
 
-| Week | Dates | Block | Focus |
+The weeks show a rough pace. A topic isn't late because its week has passed: I move on when it's mastered (see "Mastery gates"), and the pace adjusts.
+
+| Week | Target dates | Block | Focus |
 |---|---|---|---|
 | 1 | 23 to 29 Nov | HTML and accessibility | Diagnostic. Document structure, headings, text semantics, links, images, metadata |
 | 2 | 30 Nov to 6 Dec | HTML and accessibility | Forms and tables, done accessibly; form validation |
@@ -62,6 +64,18 @@ AWS, Linux, backend and databases, DevOps and operations are parked in [`../syst
 The dates are a guide; mastery sets the pace. The last session of each block is an interleaved review: a typed quiz mixing items from the whole block and from earlier ones. A block is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it. If not, the block extends and later blocks shrink (depth over coverage), and the change goes under "Schedule changes". New material waits until the previous batch has passed its first re-test, and reviews always come before new material. The last session of each block also includes a mini-talk: I explain the block's main idea from memory to a coworker in about three minutes, then answer follow-up questions.
 
 Mastery means a fixed standard and flexible time. A block is done when its review quiz scores about 85 percent (the usual range is 80 to 90) on top of the gate above, and it ends with a transfer task: something unfamiliar, like a small hand-coded task in `practice/`, not only recall questions. With a fixed end date, a block that needs longer means later blocks shrink, and the change goes under "Schedule changes".
+
+## What shrinks first
+
+The end date is fixed, so if a block runs long, later work shrinks in this order, and depth always beats coverage:
+
+1. The extras: optional reading, nice-to-have topics (for example HTTP/2 detail, WAI-ARIA beyond the basics).
+2. The last block's breadth: React covers fewer topics, but the ones it covers still pass the gate.
+3. The block's end project, made smaller, never skipped.
+
+Never shrink: the mastery gate, the reviews, or the earlier blocks. A rushed block that isn't mastered costs more later.
+
+At the end of each block (not every week), review this plan against `gaps.md`: what is still open, what the next block depends on, and whether anything needs to shrink. Record any change under "Schedule changes".
 
 ## Schedule changes
 
