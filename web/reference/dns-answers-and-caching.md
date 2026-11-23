@@ -31,5 +31,24 @@ Your machine asks the resolver once; the resolver does the legwork. Each cache k
 ## What the browser's DNS cache stores
 An in-memory table of hostname, IP address(es) and an **expiry time**, not a countdown. When an answer arrives the cache stores `expires_at = now + TTL` (for example 12:00:00 + 300 s = 12:05:00). On each lookup it checks `now < expires_at`: if yes, use the cached IP; if not, do a fresh lookup. An "expires in 240 s" display is just `expires_at - now`, worked out when you look. Nothing updates every second, and expired rows are often only removed when next used or in occasional sweeps. The same deadline-and-compare trick is used for session and token expiry.
 
+## How to look at the browser's DNS cache
+- Chrome: `chrome://net-internals/#dns` shows the host cache and has a "Clear host cache" button. Chrome has moved this page between versions, so it may be missing or different in yours.
+- Firefox: `about:networking#dns` lists cached hostnames, addresses and remaining time.
+- Safari: no page of its own; it relies on the OS cache.
+
+## The OS DNS cache
+The same idea as the browser's table (hostname, record type, IP, expiry), but a system service holds it and every app on the machine shares it. Each browser's own cache is separate from it. Before asking DNS at all, the OS checks the `hosts` file (`IP hostname` per line), which is how a developer points `myapp.local` at their own machine.
+- Windows (DNS Client service): `ipconfig /displaydns` lists entries (record name, type, time to live, value); `ipconfig /flushdns` clears it.
+- macOS (`mDNSResponder`): no simple way to list it. Flush with `sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder`.
+- Linux: often no system-wide cache by default. With `systemd-resolved`, `resolvectl statistics` shows cache hits and `resolvectl flush-caches` clears it; otherwise a local service such as `dnsmasq` or `nscd` may do it.
+
+A Windows entry looks roughly like this (Time To Live is the remaining time, worked out from a stored expiry):
+```
+Record Name . . . : www.example.com
+Record Type . . . : 1          (1 = A)
+Time To Live  . . : 240
+A (Host) Record . : 93.184.216.34
+```
+
 ## One site, many IPs
 One server's IP, a load balancer's IP, several IPs rotated round-robin, different IPs by location (CDNs), or both IPv4 and IPv6.
