@@ -72,6 +72,18 @@ Root -> .com -> authoritative server --------------------> answer returns
 ```
 Each answer is cached on the way back, with its own expiry (`now + TTL`). Some browsers skip the OS steps (built-in DNS client, DNS over HTTPS). Many Linux setups have no OS cache, so the call goes from the `hosts` check straight to the resolver.
 
+## Recursive vs iterative queries
+- **Recursive** (your OS to the resolver): "do all the work and give me the final answer." The side asked does the work and returns only the answer.
+- **Iterative** (the resolver to the DNS hierarchy): the side asked answers with only what it knows, either the answer or a **referral**, and the asker does the next step itself.
+
+On a cache miss the resolver asks a root server first. The root doesn't know the IP of `www.example.com`; it replies with a referral to the `.com` (TLD) servers. The TLD server replies with a referral to the site's authoritative server, which gives the IP. Root, TLD and authoritative servers never go off to fetch an answer for the resolver; that is the resolver's job. A cache hit lets the resolver skip some or all of those steps.
+
+## Why there are three caches
+Each one serves a bigger group: the browser cache serves you, the OS cache serves every app on your machine (browser, `curl`, `ping`), and the resolver cache serves everyone using that resolver, so a site one person looked up is already cached for the next. The resolver cache also takes load off the root, TLD and authoritative servers, which would otherwise get a query for every page load.
+
+## What happens when a cached IP is stale
+The request is not invalid: it goes to the old IP, and what you see depends on what is there now. If the old server is gone, the connection fails or times out. If it is still running, you may get the old site. If another site now has that IP, the TLS certificate should not match the name, so the connection should fail. It lasts up to the TTL, which the site owner sets (300 seconds is only an example; real TTLs range from seconds to a day or more).
+
 ## What the browser's DNS cache stores
 An in-memory table of hostname, IP address(es) and an **expiry time**, not a countdown. When an answer arrives the cache stores `expires_at = now + TTL` (for example 12:00:00 + 300 s = 12:05:00). On each lookup it checks `now < expires_at`: if yes, use the cached IP; if not, do a fresh lookup. An "expires in 240 s" display is just `expires_at - now`, worked out when you look. Nothing updates every second, and expired rows are often only removed when next used or in occasional sweeps. The same deadline-and-compare trick is used for session and token expiry.
 
