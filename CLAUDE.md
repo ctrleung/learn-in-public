@@ -34,6 +34,10 @@ My timezone is US Pacific (`America/Los_Angeles`). The container runs on UTC, so
 4. Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes. On a low-energy day (I say so, or "reviews only"), do no new material by default: after the reviews, do a brain dump as NOTES.md says. The exception: if every due review was correct and `gaps.md` has no open items, offer one small piece of new material (a single concept, about 10 minutes) and let me say yes or no. Never offer it if I said "reviews only". Whatever is learned this way goes into `reviews.md` with a 1-day re-test. New-material sessions end with a small exercise.
 5. When I say "done" or "wrap up", finish as that workspace's NOTES.md says: learning record (with the explain-back), `reviews.md`, `gaps.md`, `NEXT.md`, log line (tagged with the workspace), branch, PR. Update `progress.md`, `connections.md` and `exercises.md` only when something changed.
 
+## Commit author
+
+Commit as me, not as Claude. At the start of a session, set the repo's git identity from my earlier commits: `git config user.name "$(git log origin/main --no-merges -1 --format=%an)"` and the same with `%ae` for `user.email`. Keep the Claude co-author trailer.
+
 ## Keep the repo clean
 
 This repo is public. Never write anything personal into it (real names, contact details, trip dates or places, private messages, account details), and never commit secrets (keys, tokens, passwords, `.env` files) or anything that doesn't belong in a public learning log (private documents, copyrighted books, pirated material). If something like that comes up, leave it out and tell me. Check each commit for this before pushing. Full note in `GUIDE.md`.
