@@ -13,7 +13,7 @@ Each section ends with a concrete "before it": what to read or do before the nex
 - **Next step:** do the 24 Nov re-test of 503 in a different form (no table), plus the three items still untested (the four steps of a request, the roles of DNS, TCP/IP, TLS and HTTP, 301). Then the typed diagnostic quiz on the three MDN pages: Basic HTML syntax, Headings and paragraphs, Structuring documents.
 - **Why:** 503 only came back with hints, and three networking items are still overdue. The HTML block waits until the networking batch has passed its first re-test.
 - **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` and `web/reference/glossary.html` on the request journey and the roles of DNS, TCP/IP, TLS and HTTP; then close them. Reading the three MDN pages is still optional, about 15 minutes.
-- **Revisit:** 503 (the status-family table worked: 5xx is the server's problem, retry later), URL vs hostname (`www` is part of it), integrity detects but does not prevent.
+- **Revisit:** DNS answers and the cache chain (new, 1-day re-tests due 24 Nov), 503 (the status-family table worked: 5xx is the server's problem, retry later), URL vs hostname (`www` is part of it), integrity detects but does not prevent.
 - **Last session:** 2026-11-23, five warm-up questions (503, DNS, integrity, the three TLS services, mastery learning); stopped after the reviews.
 
 ## japanese

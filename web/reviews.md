@@ -11,3 +11,7 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 | The three TLS services and the attack each stops | record 0003 | 7 days | mostly correct, 2026-11-23 (briefly gave impersonation to integrity; fixed in the session); stage held | 2026-11-26 |
 | Roles of DNS, TCP/IP, TLS and HTTP | record 0003 | 7 days | correct, 2026-10-29 | overdue (2026-11-05) |
 | 301 means permanently moved | record 0002 | 7 days | correct, 2026-10-29 | overdue (2026-11-05) |
+| What a DNS answer contains (name, TTL, type A or AAAA, IP) and what the TTL is for | chat, 2026-11-23 | 1 day | correct on TTL trade-off; record types not yet tested | 2026-11-24 |
+| The order of DNS caches (browser, OS, recursive resolver, then the DNS hierarchy) | chat, 2026-11-23 | 1 day | order right; needs the hierarchy step and "resolver does the legwork" | 2026-11-24 |
+| After an IP change, who may still hold the old IP and for how long (up to the TTL, per cache) | chat, 2026-11-23 | 1 day | named the three caches, timing needed hints | 2026-11-24 |
+| URL vs hostname: which part goes to DNS (the full hostname, including www) | chat, 2026-11-23 | 1 day | corrected in the session | 2026-11-24 |
