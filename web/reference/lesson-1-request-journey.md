@@ -28,6 +28,16 @@ Quick-reference notes from networking lesson 1. Every claim comes from [MDN](htt
 | `404` | Can't find the resource (wrong URL, or deleted without a redirect) |
 | `503` | Server can't handle the request right now, usually temporary (e.g. maintenance) |
 
+### The first digit is the family
+| Digit | Family | Whose problem |
+|---|---|---|
+| 2xx | Success | nobody's |
+| 3xx | Redirection | the resource is elsewhere (301 lives here) |
+| 4xx | Client error | the client made the mistake (404, 403, 400) |
+| 5xx | Server error | the server has the problem (503) |
+
+A `503` means the server is temporarily unable to handle the request, usually because it is overloaded or down for maintenance. The client should wait and retry later; the server can send a `Retry-After` header saying how long. Retrying the same request will not help with a 4xx.
+
 > **Mix-ups to watch:** 301 is not "unauthorized" and 503 is not "internal server error". Those are different codes (401 and 500), which the MDN page names but doesn't define. Look them up in MDN's HTTP status reference.
 
 ## Packets
