@@ -43,6 +43,8 @@ Web basics are a refresher, so I read the block's MDN pages first, on my own tim
 - **After browser, HTTP and JS:** a small page that fetches JSON and renders it with the DOM and events, with loading and error states, watched in the browser's developer tools.
 - **After React:** a small filterable list in React, accessible.
 
+You write each one with no AI. Claude reviews it afterwards with questions, not a rewrite, and a miss goes into `gaps.md`. `NEXT.md` mentions it when a block closes. That's four projects in total, one per block, not a weekly task.
+
 ## Networking, only as support
 
 DNS, HTTP, TLS basics and how a page loads stay in scope, mainly in weeks 7 and 9. The earlier networking records (0001 to 0003) keep their re-tests in the warm-ups. Security stays as a light browser-side thread (XSS, CORS, CSP, cookies, HSTS): when a topic raises "how is this attacked?", ask it once.

@@ -8,7 +8,7 @@ A study session is started by saying "go" (or naming a workspace) in a Claude Co
 2. **Read `NEXT.md`.** It gives the next step in one sentence, and says what to read or do beforehand.
 3. **Reviews first.** Due items from `reviews.md` and open items from `gaps.md` are quizzed from memory, typed. A correct answer moves an item up (1, 3, 7, 14, 30 days); a miss sends it back to 1 day and into `gaps.md`.
 4. **New material, if there's energy.** Quiz first, then explain, then explain it back in my own words, then a small exercise. On a tired day: reviews only, then a brain dump.
-5. **Wrap up ("done").** Learning record, `reviews.md`, `gaps.md`, `progress.md`, `NEXT.md`, a log line, then a branch and a pull request.
+5. **Wrap up ("done").** Always: the learning record, `reviews.md`, `gaps.md`, `NEXT.md` and a log line, then a branch and a pull request. Only when something changed: `progress.md` (a tick when a skill is mastered), `connections.md`, `exercises.md`.
 6. **Merge the PR.** The next session only sees what is on `main`.
 
 Anki runs on its own schedule outside the repo.
@@ -34,15 +34,15 @@ Anki runs on its own schedule outside the repo.
 | `RESOURCES.md` | The sources used (MDN, books, apps) |
 | `reviews.md` | The live review queue: item, stage, last result, due date |
 | `gaps.md` | What I missed, until I get it right at two re-tests in a row |
-| `progress.md` | A checklist of skills in order; ticked only when mastered |
-| `connections.md` | Where new ideas link to things I already know, and where the comparison breaks |
-| `exercises.md` | Hands-on things to try later |
+| `progress.md` | A checklist of skills in order; ticks only, when something is mastered |
+| `connections.md` | Where new ideas link to things I already know, and where the comparison breaks. Only added to when a real connection comes up |
+| `exercises.md` | Hands-on things to try later. A backlog, added to when one comes up |
 | `learning-records/` | A short numbered record of each session: what was covered and how it went |
 | `lessons/` | Lesson pages written for me to read |
 | `reference/` | Notes and glossaries to look things up in |
 | `assets/` | Styles and scripts the lesson pages use |
 | `anki/` | Anki card files (`web/` only): the note type, the card data, a build script, exported decks |
-| `practice/` | Code I write by hand, no AI (`web/` only) |
+| `practice/` | Code I write by hand, no AI (`web/` only): one small project at the end of each block, reviewed afterwards by questions |
 | `genki.md` | The Genki I map: textbook and workbook pages per lesson (`japanese/` only) |
 | `PARKING-LOT.md` | Topics parked on purpose, not worked on unless I ask (`systems/` only) |
 

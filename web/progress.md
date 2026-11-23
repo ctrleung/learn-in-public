@@ -1,6 +1,6 @@
 # Progress
 
-One line per skill, in the planned order. `[x]` means mastered: I can explain or apply it from memory and it held at the 30-day check. The note after each line is its status; it comes from `reviews.md` and is updated at the end of each session. The order flexes with `gaps.md`.
+One line per skill, in the planned order. `[x]` means mastered: I can explain or apply it from memory and it held at the 30-day check. Ticks only: the status of each skill lives in `reviews.md`, so don't repeat it here. Update this file only when something is mastered. The order flexes with `gaps.md`.
 
 ## Networking (supporting)
 
