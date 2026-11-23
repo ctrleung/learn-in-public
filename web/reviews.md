@@ -15,3 +15,6 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 | The order of DNS caches (browser, OS, recursive resolver, then the DNS hierarchy) | chat, 2026-11-23 | 1 day | order right; needs the hierarchy step and "resolver does the legwork" | 2026-11-24 |
 | After an IP change, who may still hold the old IP and for how long (up to the TTL, per cache) | chat, 2026-11-23 | 1 day | named the three caches, timing needed hints | 2026-11-24 |
 | URL vs hostname: which part goes to DNS (the full hostname, including www) | chat, 2026-11-23 | 1 day | corrected in the session | 2026-11-24 |
+| Recursive vs iterative DNS queries: who does the work in each, and which step uses which | record 0006 | 1 day | correct in own words, 2026-11-23 | 2026-11-24 |
+| On a cache miss the resolver asks root, then TLD, then authoritative server; each answers with a referral | record 0006 | 1 day | root-first fixed after one prompt | 2026-11-24 |
+| Explain-back: address lookup to a non-technical friend (big idea first, analogy, why it matters) | record 0006 | 7 days | first explain-back strong; missing big-idea opening and an analogy | 2026-11-30 |
