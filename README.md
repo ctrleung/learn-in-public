@@ -20,7 +20,7 @@ Each workspace has its own mission, notes, `gaps.md`, learning records, lessons 
 ## How a study session works
 
 1. **Reviews first.** Items due in the workspace's `reviews.md` are tested from memory, typed, oldest first. The stages are 1, 3, 7, 14 and 30 days: a correct answer moves an item up, a miss sends it back to 1 day.
-2. **Then new material, if there's energy.** Quiz first, then explain after a real attempt, then explain it back in my own words. On a tired day, reviews only.
+2. **Then new material, if there's energy.** Quiz first, then explain after a real attempt, then explain it back in my own words. On a tired day, reviews only, unless everything is clear, when one small piece may be offered.
 3. **Misses go in `gaps.md`** until I answer them correctly at two re-tests in a row.
 4. **Mastery gates the plan.** I move on when the key items are at the 7-day stage or higher with no open gaps; otherwise the block extends. If time runs short, the extras shrink first, then the last block's breadth, and the plan is reviewed against `gaps.md` at the end of each block (depth over coverage).
 5. **Wrap-up:** a learning record, the review queue, `gaps.md`, the next-step page (`NEXT.md`), a log line and a PR. The progress checklist, connections and exercises change only when something did.

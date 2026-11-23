@@ -7,7 +7,7 @@ A study session is started by saying "go" (or naming a workspace) in a Claude Co
 1. **Pick the workspace.** A named one wins. At the weekend, `systems/` comes first if it hasn't had a session that week. Otherwise the workspace with the most overdue items.
 2. **Read `NEXT.md`.** It gives the next step in one sentence, and says what to read or do beforehand.
 3. **Reviews first.** Due items from `reviews.md` and open items from `gaps.md` are quizzed from memory, typed. A correct answer moves an item up (1, 3, 7, 14, 30 days); a miss sends it back to 1 day and into `gaps.md`.
-4. **New material, if there's energy.** Quiz first, then explain, then explain it back in my own words, then a small exercise. On a tired day: reviews only, then a brain dump.
+4. **New material, if there's energy.** Quiz first, then explain, then explain it back in my own words, then a small exercise. On a tired day: reviews only, then a brain dump. The one exception: if every review was correct and `gaps.md` is clear, Claude offers one small piece of new material (a single concept, about 10 minutes), and a quick no is fine.
 5. **Wrap up ("done").** Always: the learning record, `reviews.md`, `gaps.md`, `NEXT.md` and a log line, then a branch and a pull request. Only when something changed: `progress.md` (a tick when a skill is mastered), `connections.md`, `exercises.md`.
 6. **Merge the PR.** The next session only sees what is on `main`.
 
