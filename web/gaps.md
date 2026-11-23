@@ -4,6 +4,6 @@ Everything I miss goes here, so I can fix it from memory instead of just reading
 
 | Date | Area | What I missed | Status | Fix in my own words | Re-test |
 |---|---|---|---|---|---|
-| 2026-10-29 | HTTP status codes | Didn't know what 503 means | open | | due now |
-| 2026-10-29 | TLS | Described integrity as preventing a man-in-the-middle attack; it does something narrower | open | | due now |
-| 2026-10-29 | DNS terms | Expanded DNS as "domain name service", and said it maps a URL to an IP address; check both | open | | due now |
+| 2026-10-29 | HTTP status codes | Didn't know what 503 means | open (correct with hints, 2026-11-23) | | 2026-11-24 |
+| 2026-10-29 | TLS | Described integrity as preventing a man-in-the-middle attack; it does something narrower | open (one correct, 2026-11-23) | | 2026-11-26 |
+| 2026-10-29 | DNS terms | Expanded DNS as "domain name service", and said it maps a URL to an IP address; check both | open (one correct, 2026-11-23) | | 2026-11-26 |

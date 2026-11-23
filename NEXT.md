@@ -10,11 +10,11 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** session 1 of the HTML block. The overdue networking reviews first (503, DNS terms, integrity, the request journey, the three TLS services, roles of DNS, TCP/IP, TLS and HTTP), then a typed diagnostic quiz on the three MDN pages: Basic HTML syntax, Headings and paragraphs, Structuring documents.
-- **Why:** the networking re-tests have been due since 30 Oct and 5 Nov, and the HTML block starts this week.
-- **Before it (optional reading):** the three pages above, about 15 minutes.
-- **Revisit:** 503 (open gap; use a different explanation this time), the integrity wording, DNS terms.
-- **Last session:** 2026-10-29. The 3-day re-test: layers and the TLS services held, 503 was still unknown.
+- **Next step:** do the 24 Nov re-test of 503 in a different form (no table), plus the three items still untested (the four steps of a request, the roles of DNS, TCP/IP, TLS and HTTP, 301). Then the typed diagnostic quiz on the three MDN pages: Basic HTML syntax, Headings and paragraphs, Structuring documents.
+- **Why:** 503 only came back with hints, and three networking items are still overdue. The HTML block waits until the networking batch has passed its first re-test.
+- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` and `web/reference/glossary.html` on the request journey and the roles of DNS, TCP/IP, TLS and HTTP; then close them. Reading the three MDN pages is still optional, about 15 minutes.
+- **Revisit:** 503 (the status-family table worked: 5xx is the server's problem, retry later), URL vs hostname (`www` is part of it), integrity detects but does not prevent.
+- **Last session:** 2026-11-23, five warm-up questions (503, DNS, integrity, the three TLS services, mastery learning); stopped after the reviews.
 
 ## japanese
 
@@ -34,4 +34,4 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## how-to-learn
 
-- **Next step:** up to one due review item per warm-up. The five mastery items are due 22 Nov.
+- **Next step:** up to one due review item per warm-up. Two mastery items passed on 23 Nov and are due 26 Nov; the other three are still due.
