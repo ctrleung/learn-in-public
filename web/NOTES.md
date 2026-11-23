@@ -41,6 +41,10 @@
 - Test the same idea in a different form each time (explain it, apply it, compare it), so I'm not just recognizing the question.
 - Block and topic reviews interleave: mix in items from earlier topics.
 - A learning record's "Re-test" line is the first scheduled test; `reviews.md` is the source of truth for what's due.
+- Fix a gap with a different explanation, not a repeat: when a miss repeats, change the representation (a diagram, an analogy, a worked example, a compare-and-contrast) instead of re-explaining the same way, and note what worked.
+- After each topic check, decide one of three things and note it in the learning record: move on, correct (a different explanation, then check again), or enrich (go deeper: connect, apply, explain it to an audience).
+- The usual mastery threshold is 80 to 90 percent; use about 85 percent on a topic or block review quiz.
+- Tests close to what was taught can overstate learning, so also test transfer: something unfamiliar, like a small hand-coded task or a new combination of things I know.
 
 ## Session routine
 

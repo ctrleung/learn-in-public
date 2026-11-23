@@ -32,6 +32,8 @@ Where a web topic overlaps (how a page loads and DNS in week 7, caching, cookies
 
 The order is a guide; mastery sets the pace. Move to the next topic only when the previous one's key items are at the 7-day stage or higher and `gaps.md` has no open items for it. Design practice counts too: re-do an earlier design from memory, in my own words, before the next new one. If a phase needs longer, it extends, and the change goes under "Schedule changes". Reviews always come before new material.
 
+A topic is done when its review quiz scores about 85 percent (the usual range is 80 to 90) on top of the gate above, and it ends with a transfer check: re-do a design from memory for a new variation, not only recall questions. Mastery fixes the standard and lets the time flex, so a phase that needs longer pushes the later ones back, and the change goes under "Schedule changes".
+
 ## Schedule changes
 
 | Date | Change | Reason |

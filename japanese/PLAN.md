@@ -21,6 +21,8 @@ Draft, to adjust after the first diagnostic quiz and once the trip date is known
 
 The dates are a guide; mastery sets the pace. Don't add a new row or group of characters until the previous one has passed its first re-test and stays correct at the next. Renshuu and Anki do the daily practice, and sessions here test it from memory, with items mixed across earlier rows. A phase is done when its key items are at the 7-day stage or higher and `gaps.md` has no open items for it; otherwise the phase extends and the change goes under "Schedule changes". Reviews always come before new material.
 
+A phase is done when its review quiz scores about 85 percent (the usual range is 80 to 90) on top of the gate above, and it ends with a transfer check: use the items in a new combination, such as reading a word or phrase I haven't seen. With a fixed target date, a phase that needs longer means later phases shrink, and the change goes under "Schedule changes".
+
 ## Schedule changes
 
 | Date | Change | Reason |
