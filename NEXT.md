@@ -10,11 +10,11 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** do the 24 Nov re-test of 503 in a different form (no table), plus the three items still untested (the four steps of a request, the roles of DNS, TCP/IP, TLS and HTTP, 301). Then the typed diagnostic quiz on the three MDN pages: Basic HTML syntax, Headings and paragraphs, Structuring documents.
-- **Why:** 503 only came back with hints, and three networking items are still overdue. The HTML block waits until the networking batch has passed its first re-test.
-- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` and `web/reference/glossary.html` on the request journey and the roles of DNS, TCP/IP, TLS and HTTP; then close them. Reading the three MDN pages is still optional, about 15 minutes.
-- **Revisit:** DNS answers and the cache chain (new, 1-day re-tests due 24 Nov), 503 (the status-family table worked: 5xx is the server's problem, retry later), URL vs hostname (`www` is part of it), integrity detects but does not prevent.
-- **Last session:** 2026-11-23, five warm-up questions (503, DNS, integrity, the three TLS services, mastery learning); stopped after the reviews.
+- **Next step:** the 24 Nov re-tests: 503 in a different form (no table), then the oldest DNS items (the cache chain, recursive vs iterative, root, TLD, authoritative), plus the three still untested (the four steps of a request, the roles of DNS, TCP/IP, TLS and HTTP, 301). Warm-up is 3 or 4 questions, the rest carry over. Then the HTML re-test (void elements, doctype, head contents, heading levels) and the diagnostic.
+- **Why:** the networking batch needs its first re-test before the HTML block moves on. The HTML cold pre-test is done (about 4.5 of 7), so the reading is targeted.
+- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` and `dns-answers-and-caching.md`, then close them and write what you remember. Targeted HTML reading, about 10 minutes: Basic HTML syntax (element anatomy, void elements, attributes), Structuring documents (doctype, `lang`, head contents, landmarks) and the headings section of Headings and paragraphs.
+- **Revisit:** DNS answers and the cache chain, recursive vs iterative, 503, URL vs hostname, integrity detects but does not prevent, element vs tag and void elements, the doctype, `lang`, charset and viewport, heading levels.
+- **Last session:** 2026-11-23: five warm-up questions, a long DNS talk-through with an explain-back to a junior developer, and the HTML cold pre-test; notes are in `web/reference/`.
 
 ## japanese
 
