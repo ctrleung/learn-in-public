@@ -23,7 +23,7 @@ Name, TTL (seconds the answer may be cached), class, record type, value. `A` is 
 ## Cache chain
 1. Browser cache.
 2. OS cache (and the `hosts` file).
-3. Recursive resolver (ISP or 1.1.1.1, 8.8.8.8), shared by many users.
+3. Recursive resolver, shared by many users (see below for where it lives).
 4. Only if all miss: the resolver walks root, then `.com`, then the site's authoritative server, caches the answer and returns it.
 
 Your machine asks the resolver once; the resolver does the legwork. Each cache keeps the answer only for the TTL, counted from when it last fetched it, so after an IP change the old IP can linger for up to about the TTL (not a guarantee).
@@ -49,6 +49,22 @@ Record Type . . . : 1          (1 = A)
 Time To Live  . . : 240
 A (Host) Record . : 93.184.216.34
 ```
+
+## Where the recursive resolver lives
+It is just a server that does lookups on your behalf. Which one you use depends on how your device is configured:
+- Your ISP's resolver: the default on most home and mobile networks (the router passes its address to your devices).
+- A public resolver you chose: 1.1.1.1 (Cloudflare), 8.8.8.8 (Google), 9.9.9.9 (Quad9).
+- Your router: many home routers run a small forwarding cache that forwards to the ISP or a public resolver.
+- A company or school resolver: also resolves internal names such as `intranet.corp`.
+- Your own machine: a local resolver such as `systemd-resolved`, `dnsmasq` or `unbound`.
+
+The role is the same everywhere: a shared cache that walks the DNS hierarchy on a miss.
+
+### How to see which resolver you use
+- Windows: `ipconfig /all`, look for "DNS Servers".
+- macOS: `scutil --dns`, or System Settings, Network, your connection, Details, DNS.
+- Linux: `resolvectl status`, or `cat /etc/resolv.conf` (it may show a local address such as 127.0.0.53, meaning a local resolver that forwards on; `resolvectl status` shows the real upstream servers).
+- Any system: `dig example.com` prints `SERVER:` near the bottom, the resolver that answered.
 
 ## One site, many IPs
 One server's IP, a load balancer's IP, several IPs rotated round-robin, different IPs by location (CDNs), or both IPv4 and IPv6.
