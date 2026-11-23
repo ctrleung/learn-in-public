@@ -33,6 +33,25 @@ The browser never reads the OS cache directly. It makes a function call to the o
 
 Exception: some browsers skip the OS. Chrome can use its own built-in DNS client, and "secure DNS" (DNS over HTTPS) sends the query straight to a chosen resolver over HTTPS. Then the OS cache and `hosts` file may not be involved. The chain above is the classic picture, not the only one.
 
+## Diagram: one lookup, hit or miss
+```mermaid
+flowchart TD
+    A[Browser needs an IP for www.example.com] --> B{Browser DNS cache:<br/>in table and within TTL?}
+    B -- hit --> Z[Use the IP, done]
+    B -- miss --> C[Browser calls the OS resolver API<br/>getaddrinfo]
+    C --> D{hosts file<br/>has the name?}
+    D -- yes --> Z
+    D -- no --> E{OS DNS cache:<br/>in table and within TTL?}
+    E -- hit --> Z
+    E -- miss --> F[OS sends a DNS query to the<br/>recursive resolver]
+    F --> G{Resolver cache:<br/>in table and within TTL?}
+    G -- hit --> H[Answer returns to the OS,<br/>OS caches it, browser caches it]
+    G -- miss --> I[Resolver walks root, then .com,<br/>then the authoritative server]
+    I --> H
+    H --> Z
+```
+Each answer is cached on the way back, with its own expiry (`now + TTL`). Some browsers skip the OS steps (built-in DNS client, DNS over HTTPS). Many Linux setups have no OS cache, so the call goes from the `hosts` check straight to the resolver.
+
 ## What the browser's DNS cache stores
 An in-memory table of hostname, IP address(es) and an **expiry time**, not a countdown. When an answer arrives the cache stores `expires_at = now + TTL` (for example 12:00:00 + 300 s = 12:05:00). On each lookup it checks `now < expires_at`: if yes, use the cached IP; if not, do a fresh lookup. An "expires in 240 s" display is just `expires_at - now`, worked out when you look. Nothing updates every second, and expired rows are often only removed when next used or in occasional sweeps. The same deadline-and-compare trick is used for session and token expiry.
 
