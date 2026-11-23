@@ -25,6 +25,8 @@ The next session only sees what is merged on `main`, which is why the last step 
 
 ![A session reads main, commits to a branch and pull request, and only your merge puts the work back on main; Anki sits outside the loop](docs/where-things-live.svg)
 
+Dates and times follow US Pacific time. The Claude container runs on UTC, so each session checks the real date first (`CLAUDE.md`, "Dates and time").
+
 ## The root
 
 | File or folder | What it's for |
