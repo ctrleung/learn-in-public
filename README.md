@@ -28,6 +28,7 @@ Each workspace has its own mission, notes, `gaps.md`, learning records, lessons 
 - [`log/`](log/): one line per study session, tagged by workspace, so showing up counts even on tired weeks
 - [`web/practice/`](web/practice/): code written by hand, no AI
 - [`how-to-learn/`](how-to-learn/): notes on how to learn better, and how I apply them here
+- [`GUIDE.md`](GUIDE.md): how the workflow runs and what each file is for
 - [`NEXT.md`](NEXT.md): what to do next in each workspace, updated after every session
 
 ## The web plan, 12 weeks

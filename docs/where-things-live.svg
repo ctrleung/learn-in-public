@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 400" role="img" aria-labelledby="t d">
+<title id="t">Where everything lives</title><desc id="d">The next session reads only what is merged on main. A session commits its work to a branch and pull request, and only your merge puts it back on main. Anki sits outside this loop with its own schedule.</desc>
+<style>
+svg { --bg:#fbf9ff; --ink:#3b3a52; --muted:#6c6a86; --line:#8f8bb0;
+ --sky:#dcecfb; --mint:#d9f2e6; --peach:#fde6d8; --lav:#e8e2fa; --butter:#fff3c4; --pink:#fbdde8; --white:#ffffff;
+ --peachline:#c98a62; --pinkline:#c4708f; --mintline:#5fa885; }
+@media (prefers-color-scheme: dark) { svg {
+ --bg:#1d1b2a; --ink:#ebe8f7; --muted:#a9a6c4; --line:#8c88b5;
+ --sky:#23405c; --mint:#1f4a3c; --peach:#5a3a2c; --lav:#3a3560; --butter:#54481f; --pink:#5a2d41; --white:#2a2840;
+ --peachline:#e0a37b; --pinkline:#e48fb0; --mintline:#6fc29a; } }
+.bg { fill: var(--bg); }
+.n { stroke: var(--line); stroke-width: 1.3; }
+.sky{fill:var(--sky)} .mint{fill:var(--mint);stroke:var(--mintline)} .peach{fill:var(--peach);stroke:var(--peachline);stroke-dasharray:5 3}
+.lav{fill:var(--lav)} .butter{fill:var(--butter)} .pink{fill:var(--pink);stroke:var(--pinkline);stroke-dasharray:5 3} .white{fill:var(--white)}
+.soft { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 5 3; }
+.e { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.ep { fill: none; stroke: var(--pinkline); stroke-width: 1.6; stroke-dasharray: 5 3; }
+.eo { fill: none; stroke: var(--peachline); stroke-width: 1.6; stroke-dasharray: 5 3; }
+.em { fill: none; stroke: var(--mintline); stroke-width: 1.9; }
+text { fill: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.t { font-size: 13px; text-anchor: middle; } .tb { font-size: 13px; font-weight: 700; text-anchor: middle; }
+.s { font-size: 11px; text-anchor: middle; fill: var(--muted); } .sl { font-size: 11px; text-anchor: start; fill: var(--muted); }
+.sp { font-size: 11px; text-anchor: middle; fill: var(--pinkline); } .so { font-size: 11px; text-anchor: middle; fill: var(--peachline); }
+.sm { font-size: 11px; font-weight:700; text-anchor: start; fill: var(--mintline); }
+</style>
+<defs>
+<marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="var(--line)"/></marker>
+<marker id="ap" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="var(--pinkline)"/></marker>
+<marker id="ao" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="var(--peachline)"/></marker>
+<marker id="am" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><polygon points="0,0 8,4 0,8" fill="var(--mintline)"/></marker>
+</defs>
+<rect class="bg" width="360" height="400" rx="12"/>
+<rect class="n mint" x="20" y="10" width="240" height="52" rx="8"/><text class="tb" x="140.0" y="32.5">main on GitHub</text><text class="s" x="140.0" y="47.5">NEXT.md, reviews.md, gaps.md, plans</text>
+<line class="e" x1="130" y1="62" x2="130" y2="92" marker-end="url(#a)"/>
+<text class="sl" x="150" y="82">session start: reads NEXT.md first</text><rect class="n white" x="20" y="96" width="240" height="48" rx="8"/><text class="tb" x="140.0" y="116.5">A Claude session</text><text class="s" x="140.0" y="131.5">a temporary container</text>
+<line class="e" x1="130" y1="144" x2="130" y2="174" marker-end="url(#a)"/>
+<text class="sl" x="150" y="164">wrap-up: commits</text><rect class="n lav" x="20" y="178" width="240" height="48" rx="8"/><text class="tb" x="140.0" y="198.5">A branch and a pull request</text><text class="s" x="140.0" y="213.5">records, reviews.md, log</text>
+<path class="em" d="M 260 202 H 346 V 36 H 262" marker-end="url(#am)"/>
+<text class="sm" x="276" y="118">you click</text><text class="sm" x="276" y="132">Merge</text><rect class="n peach" x="20" y="240" width="240" height="40" rx="8"/><text class="so" x="140" y="257" style="font-weight:700;font-size:12px">Not merged means invisible</text><text class="so" x="140" y="271">the next session can’t see it</text>
+<rect class="soft" x="20" y="312" width="320" height="72" rx="8"/><text class="tb" x="180" y="336">Anki, on your devices</text><text class="s" x="180" y="354">terms and facts, with its own schedule</text><text class="s" x="180" y="369">outside the loop above; never touches the repo</text>
+
+</svg>
