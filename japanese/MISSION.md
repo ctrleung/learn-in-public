@@ -1,7 +1,7 @@
-# Mission: Survival Japanese for a short trip to Japan
+# Mission: Survival Japanese for travel
 
 ## Why
-I'm going to Japan for a short trip and I don't know any Japanese yet. Before I go I want enough to read signs, get around, talk to locals and ask questions, so the trip is easier and more fun.
+I want survival Japanese for travelling in Japan, and I'm starting from very little. The aim is enough to read signs, get around, talk to locals and ask questions, so travelling there is easier and more fun.
 
 ## Success looks like
 - Read hiragana and katakana without a chart, so I can sound out signs, menus and station names
@@ -12,7 +12,7 @@ I'm going to Japan for a short trip and I don't know any Japanese yet. Before I 
 
 ## Constraints
 - Short sessions, about 10 minutes or less; uneven energy, and the web plan runs at the same time until 14 Feb
-- The trip date is deliberately not recorded in this repo; I'll say when timing matters
+- Travel dates are deliberately not recorded in this repo; I'll say when timing matters
 - Materials: Genki textbook, workbook and app (audio), Anki for vocabulary, Renshuu for hiragana
 - Typed chat can't check pronunciation, so audio practice happens in the Genki app
 
