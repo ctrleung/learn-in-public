@@ -4,6 +4,8 @@ The central page: what to do next in each workspace, based on results so far. A 
 
 Last updated: 2026-11-23
 
+Each section ends with a concrete "before it": what to read or do before the next session (pages, workbook exercises, Renshuu goals) with a rough time, or "nothing" if there's none.
+
 **Every day:** Anki, 5 to 10 minutes, reviews first.
 
 ## web
@@ -18,7 +20,7 @@ Last updated: 2026-11-23
 
 - **Next step:** the row-pattern check (which sound breaks the rule?), the s-row and す vs し (due 24 Nov), then start the t-row (た is known; ち, つ, て, と are new) with a pre-quiz. Genki and the workbook start once hiragana reading is solid.
 - **Why:** the s-row held at one day (7 of 7), but the row pattern still lacks its exception.
-- **Before it:** nothing.
+- **Before it:** your usual Renshuu hiragana practice, 5 to 10 minutes a day. Nothing else yet. When you're ready to start Genki, tell me which lesson and pages you've covered, and I'll add the reading and the workbook exercises here.
 - **Revisit:** the exception し ("shi", not "si").
 - **Last session:** 2026-11-21, the 1-day re-test.
 

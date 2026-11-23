@@ -47,6 +47,7 @@
 
 - Start by reading `../NEXT.md` and telling me the next step in one sentence.
 - After the due reviews, ask me once whether to continue with new material or stop here; a short answer is enough. Don't ask before the reviews.
+- At wrap-up, give me a concrete "before it" for the next session in `../NEXT.md`: the pages to read, workbook or book exercises, or Renshuu goals, with a rough time. Say "nothing" if there's none. For Genki, ask which lesson and pages I've covered before assigning anything.
 - Low-energy days (I say "low energy" or "reviews only"): no new material. After the due reviews, do a brain dump: name one topic (the one I just finished, or the oldest due), and I write or say everything I remember with no notes for 2 or 3 minutes. Then show what's right, missing and wrong, ask 2 or 3 questions on the gaps, and update `gaps.md` and `reviews.md`.
 - New-material days end with a small exercise (a hand-coded task, a short design, writing or saying phrases) to check I can use it, not only recall it. Stages and thresholds are guides; judge mastery by whether I can explain or apply it from memory.
 - Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes.
