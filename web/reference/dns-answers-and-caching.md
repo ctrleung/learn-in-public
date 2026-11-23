@@ -50,6 +50,22 @@ flowchart TD
     I --> H
     H --> Z
 ```
+Plain-text version of the same diagram (in case the chart does not render where you are reading):
+```
+Browser cache ---- hit ----------------------------------> use the IP
+   | miss
+   v  (call to the OS resolver API, getaddrinfo)
+hosts file ------- name found ---------------------------> use that IP
+   | not found
+   v
+OS cache --------- hit (within TTL) ---------------------> use the IP
+   | miss
+   v  (DNS query)
+Recursive resolver cache -- hit -------------------------> answer returns
+   | miss
+   v
+Root -> .com -> authoritative server --------------------> answer returns
+```
 Each answer is cached on the way back, with its own expiry (`now + TTL`). Some browsers skip the OS steps (built-in DNS client, DNS over HTTPS). Many Linux setups have no OS cache, so the call goes from the `hosts` check straight to the resolver.
 
 ## What the browser's DNS cache stores
