@@ -28,5 +28,8 @@ Name, TTL (seconds the answer may be cached), class, record type, value. `A` is 
 
 Your machine asks the resolver once; the resolver does the legwork. Each cache keeps the answer only for the TTL, counted from when it last fetched it, so after an IP change the old IP can linger for up to about the TTL (not a guarantee).
 
+## What the browser's DNS cache stores
+An in-memory table of hostname, IP address(es) and an **expiry time**, not a countdown. When an answer arrives the cache stores `expires_at = now + TTL` (for example 12:00:00 + 300 s = 12:05:00). On each lookup it checks `now < expires_at`: if yes, use the cached IP; if not, do a fresh lookup. An "expires in 240 s" display is just `expires_at - now`, worked out when you look. Nothing updates every second, and expired rows are often only removed when next used or in occasional sweeps. The same deadline-and-compare trick is used for session and token expiry.
+
 ## One site, many IPs
 One server's IP, a load balancer's IP, several IPs rotated round-robin, different IPs by location (CDNs), or both IPv4 and IPv6.
