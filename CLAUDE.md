@@ -4,7 +4,7 @@ I am often tired and will not remember instructions. When I open a session and s
 
 ## How I learn: mastery and spaced repetition
 
-- Mastery first: I move on when I can answer from memory, not when something has been covered. Reviews come before new material, tired days included. If I'm tired, do the reviews only.
+- Mastery first: I move on when I can answer from memory, not when something has been covered. Reviews come before new material, tired days included. If I'm tired, do the reviews only (with the one exception under "Run the session", step 4).
 - Each workspace has a `reviews.md` queue (stages 1, 3, 7, 14 and 30 days; a correct answer moves up, a miss goes back to 1 day and into `gaps.md`). Follow that workspace's NOTES.md.
 
 This repo has one /teach workspace per subject:
@@ -27,7 +27,7 @@ This repo has one /teach workspace per subject:
 1. Read `NEXT.md` and tell me the next step in one sentence. Then read that workspace's `NOTES.md` and follow it, including "How to teach me" and the Session routine. In `web/` and `systems/`, also read `PLAN.md`.
 2. Read its `reviews.md`, `gaps.md` and learning records. Warm up first with 3 or 4 questions (2 or 3 in `japanese/`, 1 or 2 in `systems/`), taken from the due items in `reviews.md` and open items in `gaps.md`, oldest first, plus at most one due item from `how-to-learn/reviews.md`. I answer by typing. If nothing is due, go straight to the lesson.
 3. Once the due reviews are done, ask me once whether to continue with new material or stop here (a short answer is enough). If I want to continue, teach the next topic: from `PLAN.md` in `web/` and `systems/`, adjusting to `gaps.md` and how I'm doing. Choose the topic yourself, and ask me only if there is a real choice. Quiz me first and do not hand me finished answers: use hints and narrower questions, and put everything I miss in `gaps.md`.
-4. Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes. On a low-energy day (I say so, or "reviews only"), do no new material: after the reviews, do a brain dump as NOTES.md says. New-material sessions end with a small exercise.
+4. Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes. On a low-energy day (I say so, or "reviews only"), do no new material by default: after the reviews, do a brain dump as NOTES.md says. The exception: if every due review was correct and `gaps.md` has no open items, offer one small piece of new material (a single concept, about 10 minutes) and let me say yes or no. Never offer it if I said "reviews only". Whatever is learned this way goes into `reviews.md` with a 1-day re-test. New-material sessions end with a small exercise.
 5. When I say "done" or "wrap up", finish as that workspace's NOTES.md says: learning record (with the explain-back), `reviews.md`, `gaps.md`, `NEXT.md`, log line (tagged with the workspace), branch, PR. Update `progress.md`, `connections.md` and `exercises.md` only when something changed.
 
 ## Keep the repo clean
