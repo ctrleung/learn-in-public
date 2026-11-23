@@ -4,7 +4,7 @@ Draft, to adjust after the first diagnostic quiz and once the trip date is known
 
 ## Main course
 
-Genki (textbook and workbook) leads, with the Genki app for audio. Phrases, numbers and grammar follow Genki's order, and Renshuu and Anki are the daily practice. Numbers come early, since prices and times are among the most useful things on a trip.
+Genki (textbook and workbook) leads, with the Genki app for audio. Phrases, numbers and grammar follow Genki's order, and Renshuu and Anki are the daily practice. Numbers come early, since prices and times are among the most useful things on a trip. See `genki.md` for the workbook contents and which lessons look most useful on a trip.
 
 ## Phases
 
