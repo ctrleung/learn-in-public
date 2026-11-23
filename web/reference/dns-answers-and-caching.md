@@ -1,6 +1,6 @@
 # DNS answers and caching
 
-Notes from the 23 Nov 2026 session. Study from this, then close it and test yourself.
+DNS (Domain Name System) maps a domain name to an IP address. This page goes deeper than step 1 (address lookup) of [the request journey](lesson-1-request-journey.md): what a DNS answer contains, how long it is cached, and which caches answer first. See also the [glossary](glossary.html). Study from this, then close it and test yourself.
 
 ## URL vs hostname
 `https://www.example.com/blog/post?id=3`
