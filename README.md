@@ -21,13 +21,14 @@ Each workspace has its own mission, notes, `gaps.md`, learning records, lessons 
 2. **Then new material, if there's energy.** Quiz first, then explain after a real attempt, then explain it back in my own words. On a tired day, reviews only.
 3. **Misses go in `gaps.md`** until I answer them correctly at two re-tests in a row.
 4. **Mastery gates the plan.** I move on when the key items are at the 7-day stage or higher with no open gaps; otherwise the block extends and later blocks shrink (depth over coverage).
-5. **Wrap-up:** a learning record, the review queue, a log line and a PR.
+5. **Wrap-up:** a learning record, the review queue, the progress checklist, the next-step page (`NEXT.md`), a log line and a PR.
 
 ## Elsewhere
 
 - [`log/`](log/): one line per study session, tagged by workspace, so showing up counts even on tired weeks
 - [`web/practice/`](web/practice/): code written by hand, no AI
 - [`how-to-learn/`](how-to-learn/): notes on how to learn better, and how I apply them here
+- [`NEXT.md`](NEXT.md): what to do next in each workspace, updated after every session
 
 ## The web plan, 12 weeks
 
