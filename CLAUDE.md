@@ -15,6 +15,10 @@ This repo has one /teach workspace per subject:
 - `korean/`: a notebook, not a study workspace. The cards are in Anki. When I ask about a Korean word, answer, add a row to `korean/words.md` (how it sounds in Japanese, Cantonese and Mandarin with a note on which is closest, the characters as an optional extra, and a blank for my own memory aid; say so if it's a native Korean word with no match), and add a log line tagged `[korean]`. Don't quiz me on it or pick it for a bare "go"; Anki does the scheduling.
 - `how-to-learn/`: notes on learning better, and how I apply them. When I share an article about learning, ask me to explain it back in my own words first, then add it to `how-to-learn/reading.md`, make 3 to 5 review items in `how-to-learn/reviews.md`, and note any change it suggests to these rules. Only do this for things worth mastering; skim or skip the rest.
 
+## Dates and time
+
+My timezone is US Pacific (`America/Los_Angeles`). The container runs on UTC, so at the start of every session run `TZ=America/Los_Angeles date` and use that for "today", "this week", the weekend rule, due dates, and the dates in `log/`, `NEXT.md` and the learning records.
+
 ## Pick the workspace
 
 1. If I name a workspace or a topic ("web", "japanese", "systems", "css", "docker"), use that one.
