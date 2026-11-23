@@ -1,10 +1,10 @@
 # The request journey
 
-Quick-reference notes from networking lesson 1. Every claim comes from [MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) or [HPBN](https://hpbn.co/transport-layer-security-tls/). See also the [glossary](glossary.html) and the [lesson](../lessons/0001-follow-a-request.html).
+Quick-reference notes from networking lesson 1. Every claim comes from [MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works) or [HPBN](https://hpbn.co/transport-layer-security-tls/). See also the [glossary](glossary.html), the [lesson](../lessons/0001-follow-a-request.html) and [DNS answers and caching](dns-answers-and-caching.md).
 
 ## The four steps
 
-1. **Address lookup.** The browser asks DNS for the IP address of the server the site lives on. It needs this *before* it can retrieve the site.
+1. **Address lookup.** The browser asks DNS for the IP address of the server the site lives on. It needs this *before* it can retrieve the site. *Deeper:* [DNS answers and caching](dns-answers-and-caching.md) (what a DNS answer looks like, TTL, and the browser, OS and resolver caches).
 2. **Request.** The browser sends an HTTP request asking for a copy of the site. All data between client and server travels over TCP/IP.
 3. **Response.** If the server approves, it replies `200 OK` and sends the site's files as small chunks called *packets*.
 4. **Assembly.** The browser puts the chunks together into the page.

@@ -2,13 +2,13 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Request journey notes</title><link rel="stylesheet" href="../assets/lesson.css"></head>
 <body><main>
-<nav class="lesson-nav"><a href="../lessons/0001-follow-a-request.html">Lesson 1</a> · <a href="glossary.html">Glossary</a></nav>
+<nav class="lesson-nav"><a href="../lessons/0001-follow-a-request.html">Lesson 1</a> · <a href="glossary.html">Glossary</a> · <a href="dns-answers-and-caching.md">DNS answers and caching</a></nav>
 <h1>The request journey</h1>
 <p class="meta">Quick-reference notes from networking lesson 1. Every claim comes from MDN or HPBN (linked at the bottom).</p>
 
 <h2>The four steps</h2>
 <ol class="steps">
-<li><strong>Address lookup.</strong> The browser asks DNS for the IP address of the server the site lives on. It needs this <em>before</em> it can retrieve the site.</li>
+<li><strong>Address lookup.</strong> The browser asks DNS for the IP address of the server the site lives on. It needs this <em>before</em> it can retrieve the site. <em>Deeper:</em> <a href="dns-answers-and-caching.md">DNS answers and caching</a> (what a DNS answer looks like, TTL, and the browser, OS and resolver caches).</li>
 <li><strong>Request.</strong> The browser sends an HTTP request asking for a copy of the site. All data between client and server travels over TCP/IP.</li>
 <li><strong>Response.</strong> If the server approves, it replies <code>200 OK</code> and sends the site's files as small chunks called <em>packets</em>.</li>
 <li><strong>Assembly.</strong> The browser puts the chunks together into the page.</li>
