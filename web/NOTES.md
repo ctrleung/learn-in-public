@@ -7,7 +7,7 @@
 
 ## Preferences
 
-- Sessions of 10 to 20 minutes; uneven weekly energy. A lesson should be doable in a sitting.
+- Session length is flexible, usually 10 to 20 minutes and longer on a new-material day; uneven weekly energy.
 - Depth over coverage: fewer topics, understood well, beats skimming many.
 - Wants durable, referable notes that others can read too (repo is public). Keep personal details out of committed files.
 - Keep a light security thread, browser-side (XSS, CORS, CSP, cookies, HSTS): when a topic raises "how is this attacked, and how is it mitigated?", ask it once.
@@ -48,8 +48,13 @@
 
 ## Session routine
 
+- Start by reading `../NEXT.md` and telling me the next step in one sentence.
+- After the due reviews, ask me once whether to continue with new material or stop here; a short answer is enough. Don't ask before the reviews.
+- Low-energy days (I say "low energy" or "reviews only"): no new material. After the due reviews, do a brain dump: name one topic (the one I just finished, or the oldest due), and I write or say everything I remember with no notes for 2 or 3 minutes. Then show what's right, missing and wrong, ask 2 or 3 questions on the gaps, and update `gaps.md` and `reviews.md`.
+- New-material days end with a small exercise (a hand-coded task, a short design, writing or saying phrases) to check I can use it, not only recall it. Stages and thresholds are guides; judge mastery by whether I can explain or apply it from memory.
+- Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes.
 - Warm-up before any new lesson: 3 or 4 questions from memory, from due items in `reviews.md` and open items in `gaps.md`, oldest first. Typed answers in my own words, not multiple choice. Give feedback right away: what was right and what was missing. Give the correct answer only after a real attempt, in a sentence or two.
 - After a gap of more than a week, make the warm-up a gentle recap and keep the lesson short.
 - End of lesson: ask me to explain the idea back in my own words, correct the gaps, and put the corrected version in the learning record.
 - Every learning record ends with "Re-test: on or after <date>", the first scheduled test. The live queue is `reviews.md` (stages 1, 3, 7, 14 and 30 days).
-- Wrap-up: update `reviews.md` and `gaps.md`, add one line to ../log/YYYY-MM.md, commit to a branch, open the PR, and tell me in one line what to do next time.
+- Wrap-up: update `reviews.md`, `gaps.md` and `progress.md`, rewrite my section of `../NEXT.md` (next step, why, any reading before it, what to revisit, how the session went), add one line to ../log/YYYY-MM.md, commit to a branch, open the PR, and tell me in one line what to do next time.

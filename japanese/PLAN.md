@@ -2,6 +2,10 @@
 
 Draft, to adjust after the first diagnostic quiz and once the trip date is known. Short sessions, about 10 minutes or less, alongside the web plan. The schedule flexes with `gaps.md`; changes go in "Schedule changes" at the bottom.
 
+## Main course
+
+Genki (textbook and workbook) leads, with the Genki app for audio. Phrases, numbers and grammar follow Genki's order, and Renshuu and Anki are the daily practice. Numbers come early, since prices and times are among the most useful things on a trip.
+
 ## Phases
 
 | Dates | Phase | Focus |
