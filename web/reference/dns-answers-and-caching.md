@@ -34,6 +34,10 @@ The browser never reads the OS cache directly. It makes a function call to the o
 Exception: some browsers skip the OS. Chrome can use its own built-in DNS client, and "secure DNS" (DNS over HTTPS) sends the query straight to a chosen resolver over HTTPS. Then the OS cache and `hosts` file may not be involved. The chain above is the classic picture, not the only one.
 
 ## Diagram: one lookup, hit or miss
+![Flowchart of one DNS lookup: browser cache, hosts file, OS cache, recursive resolver, then the DNS hierarchy](img/dns-lookup-flow.svg)
+
+The image above is a rendered copy for viewers that can't draw charts (such as the GitHub mobile app). The Mermaid source it came from is below; if you change the diagram, regenerate the SVG.
+
 ```mermaid
 flowchart TD
     A[Browser needs an IP for www.example.com] --> B{Browser DNS cache:<br/>in table and within TTL?}
