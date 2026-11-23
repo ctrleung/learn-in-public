@@ -18,9 +18,9 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## japanese
 
-- **Next step:** the row-pattern check (which sound breaks the rule?), the s-row and す vs し (due 24 Nov), then start the t-row (た is known; ち, つ, て, と are new) with a pre-quiz. Genki and the workbook start once hiragana reading is solid.
+- **Next step:** the row-pattern check (which sound breaks the rule?), the s-row and す vs し (due 24 Nov), then start the t-row (た is known; ち, つ, て, と are new) with a pre-quiz. Genki Lesson 1 starts once hiragana reading is solid.
 - **Why:** the s-row held at one day (7 of 7), but the row pattern still lacks its exception.
-- **Before it:** your usual Renshuu hiragana practice, 5 to 10 minutes a day. Send me the Genki textbook contents, and I'll pair each workbook section with its textbook pages and put the first reading and exercises here. Optional, 10 to 15 minutes: the workbook's opening pages (Hiragana p. 11, Greetings p. 13, Numbers p. 15), as far as they match what you've done. I can't see inside them, so tell me what they ask for.
+- **Before it:** your usual Renshuu hiragana practice, 5 to 10 minutes a day. Optional, 15 to 20 minutes: Genki textbook Greetings (pp. 30 to 34) and Numbers (p. 35), then the workbook pages 13 and 15. I can't see inside them, so tell me what they ask for. Lesson 1 (textbook p. 36) comes once hiragana reading is solid.
 - **Revisit:** the exception し ("shi", not "si").
 - **Last session:** 2026-11-21, the 1-day re-test.
 
