@@ -28,6 +28,11 @@ Name, TTL (seconds the answer may be cached), class, record type, value. `A` is 
 
 Your machine asks the resolver once; the resolver does the legwork. Each cache keeps the answer only for the TTL, counted from when it last fetched it, so after an IP change the old IP can linger for up to about the TTL (not a guarantee).
 
+## How the browser reaches the OS cache
+The browser never reads the OS cache directly. It makes a function call to the operating system's resolver API, such as `getaddrinfo("www.example.com")` on Linux and macOS or `GetAddrInfo` on Windows. The same call is used by `curl`, `ping` and almost every other program. The OS then checks, in order: the `hosts` file, its own DNS cache (if it has one), and then it sends a DNS query to the configured recursive resolver. The answer comes back to the browser as a list of IPs, and the browser doesn't know which step answered. At each level the first cache with a fresh entry (in the table and within its TTL) answers, and later ones aren't asked.
+
+Exception: some browsers skip the OS. Chrome can use its own built-in DNS client, and "secure DNS" (DNS over HTTPS) sends the query straight to a chosen resolver over HTTPS. Then the OS cache and `hosts` file may not be involved. The chain above is the classic picture, not the only one.
+
 ## What the browser's DNS cache stores
 An in-memory table of hostname, IP address(es) and an **expiry time**, not a countdown. When an answer arrives the cache stores `expires_at = now + TTL` (for example 12:00:00 + 300 s = 12:05:00). On each lookup it checks `now < expires_at`: if yes, use the cached IP; if not, do a fresh lookup. An "expires in 240 s" display is just `expires_at - now`, worked out when you look. Nothing updates every second, and expired rows are often only removed when next used or in occasional sweeps. The same deadline-and-compare trick is used for session and token expiry.
 
