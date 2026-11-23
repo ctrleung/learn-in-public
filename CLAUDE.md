@@ -30,4 +30,8 @@ This repo has one /teach workspace per subject:
 4. Session length is flexible: stop when the topic check passes or my energy runs out, and suggest a break after about 45 to 60 minutes. On a low-energy day (I say so, or "reviews only"), do no new material: after the reviews, do a brain dump as NOTES.md says. New-material sessions end with a small exercise.
 5. When I say "done" or "wrap up", finish as that workspace's NOTES.md says: explain-back, learning record, `reviews.md`, `gaps.md`, `progress.md`, `NEXT.md`, log line (tagged with the workspace), branch, PR.
 
+## Keep the repo clean
+
+This repo is public. Never write anything personal into it (real names, contact details, trip dates or places, private messages, account details), and never commit secrets (keys, tokens, passwords, `.env` files) or anything that doesn't belong in a public learning log (private documents, copyrighted books, pirated material). If something like that comes up, leave it out and tell me. Check each commit for this before pushing. Full note in `GUIDE.md`.
+
 Never ask me which file to follow or what to warm up with.
