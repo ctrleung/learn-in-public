@@ -11,7 +11,19 @@ A study session is started by saying "go" (or naming a workspace) in a Claude Co
 5. **Wrap up ("done").** Always: the learning record, `reviews.md`, `gaps.md`, `NEXT.md` and a log line, then a branch and a pull request. Only when something changed: `progress.md` (a tick when a skill is mastered), `connections.md`, `exercises.md`.
 6. **Merge the PR.** The next session only sees what is on `main`.
 
+![How a study session runs: go, read NEXT.md, reviews first, then new material and a small exercise or a brain dump, then done and wrap-up, then merge the PR](docs/workflow-session.svg)
+
 Anki runs on its own schedule outside the repo.
+
+### How review items move
+
+![Review items move up through 1, 3, 7, 14 and 30 days; a miss at any stage sends them back to 1 day and into gaps.md](docs/review-stages.svg)
+
+### Where everything lives
+
+The next session only sees what is merged on `main`, which is why the last step of every session is yours.
+
+![A session reads main, commits to a branch and pull request, and only your merge puts the work back on main; Anki sits outside the loop](docs/where-things-live.svg)
 
 ## The root
 
