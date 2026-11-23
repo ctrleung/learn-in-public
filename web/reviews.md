@@ -18,3 +18,7 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 | Recursive vs iterative DNS queries: who does the work in each, and which step uses which | record 0006 | 1 day | correct in own words, 2026-11-23 | 2026-11-24 |
 | On a cache miss the resolver asks root, then TLD, then authoritative server; each answers with a referral | record 0006 | 1 day | root-first fixed after one prompt | 2026-11-24 |
 | Explain-back: address lookup to a non-technical friend (big idea first, analogy, why it matters) | record 0006 | 7 days | first explain-back strong; missing big-idea opening and an analogy | 2026-11-30 |
+| HTML element vs tag, and void elements | HTML pre-test, record 0007 | 1 day | named after a prompt, 2026-11-23 | 2026-11-24 |
+| What the doctype does (standards mode vs quirks mode) | HTML pre-test, record 0007 | 1 day | partly right, 2026-11-23 | 2026-11-24 |
+| What goes in `<html>` and `<head>`: lang, title, charset, viewport, and which are required | HTML pre-test, record 0007 | 1 day | missed lang, charset, viewport, 2026-11-23 | 2026-11-24 |
+| Why heading levels matter (outline, screen readers, no skipped levels) | HTML pre-test, record 0007 | 1 day | partly right, 2026-11-23 | 2026-11-24 |
