@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 """Build the data file for the Mastery Map artifact.
 
-Reads web/TOPICS.md and networking/TOPICS.md (the topic lists), web/reviews.md and web/gaps.md, groups the
-review items by topic, and writes topics.json: one row per topic with a status.
+Reads the topic lists (web/TOPICS.md and networking/TOPICS.md), the review queue
+(web/reviews.md) and the gaps list (web/gaps.md), and writes topics.json: one row
+per topic with a status.
+
+Every row in reviews.md and gaps.md has a Topic column, written "Subject: Topic"
+exactly as in the topic lists, for example "Networking: DNS and name resolution".
+A row with a missing or unknown topic is reported as a warning and left out.
 
 Usage:  python3 -I scripts/mastery_map.py [output.json]     (default: topics.json)
 
 Status of a topic = its weakest review item:
   none      no review items yet
-  work      a gap with no correct answer yet
+  work      an open gap with no correct answer yet
   learning  weakest item at 1 or 3 days
   solid     weakest item at 7 or 14 days
   master    every item at 30 days or more
+
+Sections whose heading says "optional" are not tracked.
 
 Then upload topics.json to the Mastery Map artifact and point its `topics`
 dataset at the new file (see CLAUDE.md, "Run the session", step 5).
@@ -28,71 +35,58 @@ STAGES = ("1", "3", "7", "14", "30", "M")
 STAGE_NAME = {"1": "1 day", "3": "3 days", "7": "7 days", "14": "14 days", "30": "30 days", "M": "Mastered"}
 STATUS_LABEL = {"none": "Not started", "work": "Needs work", "learning": "Learning",
                 "solid": "Getting solid", "master": "Mastered"}
+SUBJECT_ORDER = ["HTML", "CSS", "JavaScript", "React", "HTTP and the web", "Networking"]
+warnings = []
 
 
-def table_rows(path):
-    rows = []
-    for line in Path(path).read_text().splitlines():
-        if line.startswith("|") and not line.startswith(("|---", "| Item", "| Date", "| #")):
-            rows.append([c.strip() for c in line.strip().strip("|").split("|")])
-    return rows
+def cells(line):
+    return [c.strip() for c in line.strip().strip("|").split("|")]
 
 
-# Subjects and their topics. HTML comes from web/TOPICS.md; the rest are first
-# guesses from web/PLAN.md until their lists are polished.
+def read_table(path):
+    """Rows of the first markdown table in a file, as dicts keyed by the header cells."""
+    lines = Path(path).read_text().splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith("|") and i + 1 < len(lines) and lines[i + 1].startswith("|---"):
+            header = cells(line)
+            rows = []
+            for row in lines[i + 2:]:
+                if not row.startswith("|"):
+                    break
+                c = cells(row)
+                rows.append(dict(zip(header, c + [""] * (len(header) - len(c)))))
+            return rows
+    return []
+
+
 def topics_from_md(path):
-    """Topics per subject from web/TOPICS.md: a '## Subject' heading, then a table with a numbered first column. Rows tagged `optional` are not tracked."""
+    """Topics per subject: a '## Subject' heading, then a table with a numbered first column.
+    Sections marked optional are not tracked."""
     found, subject = {}, None
     for line in Path(path).read_text().splitlines():
         if line.startswith("## "):
-            subject = re.sub(r"\s*\(.*\)\s*$", "", line[3:]).strip()
+            subject = None if "optional" in line else re.sub(r"\s*\(.*\)\s*$", "", line[3:]).strip()
         elif line.startswith("|") and subject:
-            cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if len(cells) > 1 and cells[0].isdigit() and cells[-1].lower() != "optional":
-                found.setdefault(subject, []).append(cells[1])
+            c = cells(line)
+            if len(c) > 1 and c[0].isdigit():
+                found.setdefault(subject, []).append(c[1])
     return found
 
 
 FROM_MD = {**topics_from_md(ROOT / "web/TOPICS.md"), **topics_from_md(ROOT / "networking/TOPICS.md")}
-SUBJECTS = {
-    "HTML": FROM_MD.get("HTML", []),
-    "CSS": FROM_MD.get("CSS", ["Selectors", "Cascade and specificity", "Inheritance", "Box model",
-                               "Sizing and overflow", "Flexbox", "Grid", "Positioning",
-                               "Responsive design and media queries", "Values and units", "Typography"]),
-    "JavaScript": FROM_MD.get("JavaScript", ["Fundamentals", "The DOM", "Events and bubbling", "Promises",
-                                             "fetch and JSON", "Error handling", "Browser storage"]),
-    "React": FROM_MD.get("React", ["Getting started", "Components", "State", "Events",
-                                   "Conditional rendering and filtering", "React accessibility"]),
-    "HTTP and the web": FROM_MD.get("HTTP and the web", []),
-    "Networking": FROM_MD.get("Networking", []),
-}
+SUBJECTS = {s: FROM_MD.get(s, []) for s in SUBJECT_ORDER}
 
-# (keyword in the review item, subject, start of the topic name). First match wins.
-# An item that matches nothing is left out; add a rule when you add a new kind of item.
-RULES = [
-    ("steps of a request", "Networking", "The request journey"),
-    ("roles of", "Networking", "The request journey"),
-    ("503", "HTTP and the web", "Status codes"),
-    ("301", "HTTP and the web", "Status codes"),
-    ("tls", "Networking", "TLS"),
-    ("integrity", "Networking", "TLS"),
-    ("dns", "Networking", "DNS"),
-    ("address lookup", "Networking", "DNS"),
-    ("hostname", "Networking", "DNS"),
-    ("cache", "Networking", "DNS"),
-    ("ip change", "Networking", "DNS"),
-    ("element vs tag", "HTML", "Element anatomy"),
-    ("doctype", "HTML", "Document structure"),
-    ("`<html>`", "HTML", "Document structure"),
-    ("heading", "HTML", "Headings and paragraphs"),
-]
 
-# (keyword in the review item, text that appears in the matching gaps.md row)
-GAP_LINKS = [
-    ("503", "503"), ("dns terms", "domain name service"), ("integrity", "integrity"),
-    ("element vs tag", "element vs tag"), ("doctype", "doctype"),
-    ("`<html>`", "lang"), ("heading levels", "heading level"),
-]
+def resolve(topic_cell, where):
+    """'Subject: Topic' -> (subject, topic), or None with a warning."""
+    if ": " not in topic_cell:
+        warnings.append(f"{where}: missing Topic (write 'Subject: Topic')")
+        return None
+    subject, topic = topic_cell.split(": ", 1)
+    if subject not in SUBJECTS or topic not in SUBJECTS[subject]:
+        warnings.append(f"{where}: unknown topic '{topic_cell}'")
+        return None
+    return subject, topic
 
 
 def stage_key(text):
@@ -102,51 +96,55 @@ def stage_key(text):
     return m.group(1) if m and m.group(1) in STAGES else "1"
 
 
-gap_rows = [r for r in table_rows(ROOT / "web/gaps.md") if len(r) > 3 and r[3].lower().startswith("open")]
-open_gaps = " ".join(r[2].lower() + " " + r[3].lower() for r in gap_rows)
-fresh_gaps = " ".join(r[2].lower() + " " + r[3].lower() for r in gap_rows if "correct" not in r[3].lower())
-
-bucket = {}
-for r in table_rows(ROOT / "web/reviews.md"):
-    name, _src, stage, last = (r + [""] * 4)[:4]
-    low = name.lower()
-    hit = next(((s, t) for k, s, t in RULES if k in low), None)
-    if not hit:
+items = {}   # (subject, topic) -> list of {stage, last}
+for r in read_table(ROOT / "web/reviews.md"):
+    key = resolve(r.get("Topic", ""), "reviews.md: " + r.get("Item", "")[:40])
+    if not key:
         continue
-    subject, start = hit
-    topic = next((t for t in SUBJECTS[subject] if t.startswith(start)), None)
-    if not topic:
+    dates = re.findall(r"\d{4}-\d{2}-\d{2}", r.get("Last result", ""))
+    items.setdefault(key, []).append({"stage": stage_key(r.get("Stage", "")), "last": max(dates) if dates else ""})
+
+gaps = {}    # (subject, topic) -> {"open": n, "fresh": n}
+for r in read_table(ROOT / "web/gaps.md"):
+    status_text = r.get("Status", "").lower()
+    if not status_text.startswith("open"):
         continue
-    dates = re.findall(r"\d{4}-\d{2}-\d{2}", last)
-    bucket.setdefault((subject, topic), []).append({
-        "stage": stage_key(stage),
-        "gap": any(k in low and g in open_gaps for k, g in GAP_LINKS),
-        "fresh": any(k in low and g in fresh_gaps for k, g in GAP_LINKS),
-        "last": max(dates) if dates else "",
-    })
+    key = resolve(r.get("Topic", ""), "gaps.md: " + r.get("What I missed", "")[:40])
+    if not key:
+        continue
+    g = gaps.setdefault(key, {"open": 0, "fresh": 0})
+    g["open"] += 1
+    if "correct" not in status_text:
+        g["fresh"] += 1
 
 
-def status(items):
-    if not items:
-        return "none"
-    if any(i["fresh"] for i in items):
+def status(key):
+    its = items.get(key, [])
+    if gaps.get(key, {}).get("fresh"):
         return "work"
-    low = min(STAGES.index(i["stage"]) for i in items)
+    if not its:
+        return "none"
+    low = min(STAGES.index(i["stage"]) for i in its)
     return "learning" if low <= 1 else "solid" if low <= 3 else "master"
 
 
 rows = []
 for subject, topics in SUBJECTS.items():
     for topic in topics:
-        items = bucket.get((subject, topic), [])
-        st = status(items)
-        weakest = STAGE_NAME[STAGES[min(STAGES.index(i["stage"]) for i in items)]] if items else ""
+        key = (subject, topic)
+        its = items.get(key, [])
+        st = status(key)
+        weakest = STAGE_NAME[STAGES[min(STAGES.index(i["stage"]) for i in its)]] if its else ""
         rows.append({
             "subject": subject, "topic": topic, "status": st, "status_label": STATUS_LABEL[st],
-            "items": len(items), "open_gaps": sum(1 for i in items if i["gap"]),
+            "items": len(its), "open_gaps": gaps.get(key, {}).get("open", 0),
             "weakest_item_stage": weakest,
-            "last_tested": max([i["last"] for i in items if i["last"]] or [""]),
+            "last_tested": max([i["last"] for i in its if i["last"]] or [""]),
         })
 
 Path(OUT).write_text(json.dumps(rows, indent=1))
 print(f"{len(rows)} topics written to {OUT}")
+for w in warnings:
+    print("WARNING:", w)
+if warnings:
+    print(f"{len(warnings)} warning(s): fix the Topic column, then run again.")

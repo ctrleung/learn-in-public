@@ -36,6 +36,7 @@
 ## Mastery and spaced repetition
 
 - Mastery first: I move on when I can answer the previous material from memory, not when it has been covered. New material waits until the previous batch has passed its first re-test.
+- Every row in `reviews.md` and `gaps.md` has a Topic, written "Subject: Topic" exactly as in `TOPICS.md` (for example "Networking: DNS and name resolution"). The Mastery Map reads it, so fill it in whenever a row is added.
 - Reviews come before new material. Due items in `reviews.md` are tested first, oldest first. On a tired day, do the reviews only and skip the new lesson; never skip the reviews.
 - `reviews.md` is the live queue: one row per item, with its stage, last result and next due date. The stages are 1, 3, 7, 14 and 30 days. A correct answer from memory moves the item up a stage. A miss sends it back to 1 day and adds it to `gaps.md`. An item is **mastered** after it passes the 14-day and 30-day tests; after that it only needs an occasional check.
 - Test the same idea in a different form each time (explain it, apply it, compare it), so I'm not just recognizing the question.
