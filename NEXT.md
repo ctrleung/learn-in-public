@@ -14,6 +14,7 @@ Each section ends with a concrete "before it": what to read or do before the nex
 - **Why:** the networking batch needs its first re-test before the HTML block moves on. The HTML cold pre-test is done (about 4.5 of 7), so the reading is targeted.
 - **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` and `dns-answers-and-caching.md`, then close them and write what you remember. Targeted HTML reading, about 10 minutes: Basic HTML syntax (element anatomy, void elements, attributes), Structuring documents (doctype, `lang`, head contents, landmarks) and the headings section of Headings and paragraphs.
 - **Revisit:** DNS answers and the cache chain, recursive vs iterative, 503, URL vs hostname, integrity detects but does not prevent, element vs tag and void elements, the doctype, `lang`, charset and viewport, heading levels.
+- **Topic lists (planned):** polish the topic list for one subject at a time in `web/TOPICS.md` (HTML is drafted; CSS is next). When CSS is done, also move the other subjects' lists out of `scripts/mastery_map.py` into `web/TOPICS.md` and add a `Topic` column to `reviews.md`, so the Mastery Map script never needs editing when topics or review items are added.
 - **Last session:** 2026-11-23: five warm-up questions, a long DNS talk-through with an explain-back to a junior developer, and the HTML cold pre-test; notes are in `web/reference/`.
 
 ## japanese
