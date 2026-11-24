@@ -71,7 +71,7 @@ Parked, not in the list: Sass and PostCSS (not needed for the fundamentals), and
 
 ## JavaScript (draft 2, to edit)
 
-Level is from your JavaScript roadmap: green is beginner, purple is intermediate, black is advanced. Topics not on that roadmap have no level. Tag: `plan` is in `PLAN.md`, `roadmap` is from your roadmap, `added?` is my suggestion.
+Level is from your JavaScript roadmap: green is beginner, purple is intermediate, black is advanced. Topics not on that roadmap have no level. Level is a hint for choosing what to teach next, not something shown on the map: within a block go beginner, then intermediate, then advanced; open gaps and due reviews come first; an advanced topic waits until the topics it builds on have passed their first re-test. Tag: `plan` is in `PLAN.md`, `roadmap` is from your roadmap, `added?` is my suggestion.
 
 | # | Topic | I can... | Level | Tag |
 |---|---|---|---|---|
