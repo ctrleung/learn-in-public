@@ -10,10 +10,10 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 25 Nov re-tests: the four steps of a request by name (1 day), then the DNS items (the cache chain, recursive vs iterative, root, TLD, authoritative, stale IPs, URL vs hostname) and the four HTML items (void elements, the doctype, `lang` and the head, heading levels). Warm-up is 3 or 4 questions, the rest carry over. Then the HTML diagnostic.
+- **Next step:** the 25 Nov re-tests: the four steps of a request by name (1 day), then the DNS items (the cache chain, recursive vs iterative, root, TLD, authoritative, stale IPs, URL vs hostname) and the two HTML items still at 1 day (`lang` and the head, heading levels). Warm-up is 3 or 4 questions, the rest carry over. Then the HTML diagnostic.
 - **Why:** the DNS and HTML items were due 24 Nov and not reached. The HTML diagnostic waits until the networking batch has passed its first re-test.
 - **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` (the four steps) and `dns-answers-and-caching.md`, then close them and write what you remember. Targeted HTML reading, about 10 minutes: Basic HTML syntax (element anatomy, void elements, attributes), Structuring documents (doctype, `lang`, head contents, landmarks) and the headings section of Headings and paragraphs.
-- **Revisit:** the four steps by name (request, response, assembly), redirects and the `Location` header (301 and 308 permanent, 302 and 307 temporary), 304 is not a redirect, the browser asks the OS and only the resolver asks the root, TLD and authoritative servers, the mastery threshold protects against moving on too early.
+- **Revisit:** the four steps by name (request, response, assembly), redirects and the `Location` header (301 and 308 permanent, 302 and 307 temporary), 304 is not a redirect, the browser asks the OS and only the resolver asks the root, TLD and authoritative servers, the mastery threshold protects against moving on too early, a paragraph styled like a heading is not a heading, and screen readers use heading levels, not size.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
 - **Last session:** 2026-11-24: five warm-up questions (four steps, HTTP vs HTTPS vs TLS, 301, 503, the mastery threshold) and some questions while reading the notes; stopped after the reviews.
 
