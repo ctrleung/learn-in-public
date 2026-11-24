@@ -32,6 +32,40 @@ How to read the tags: **[plan]** is already in `PLAN.md`; **[added?]** is a sugg
 | 22 | Global attributes | use `id` and `class` well, store data in `data-*` attributes, say why `style` in HTML is a last resort, and use `hidden`, `lang` and `title` | added? |
 | 23 | SEO basics | write a useful `title` and meta description, use headings and link text that make sense out of context, and say what is page-level and what is not | added? |
 
-## CSS, JavaScript, React, Networking and HTTP
+## CSS (draft 1, to edit)
 
-To be drafted, one subject at a time. The first guesses are in the plan (`PLAN.md`, weeks 4 to 12).
+| # | Topic | I can... | Tag |
+|---|---|---|---|
+| 1 | CSS syntax and how it is applied | write a rule (selector, property, value, declaration block), add CSS with `link`, `style` and inline `style`, write comments, and say which to use when | plan |
+| 2 | Selectors | use type, class, ID, attribute and universal selectors, group selectors, and say which selector to reach for first | plan |
+| 3 | Combinators, pseudo-classes and pseudo-elements | use descendant, child and sibling combinators, `:hover`, `:focus-visible`, `:nth-child` and `::before`, and say what each matches | plan |
+| 4 | The cascade | say how the origin, specificity and source order decide which rule wins, and where `!important` fits | plan |
+| 5 | Specificity | work out which of two selectors is more specific, and keep specificity low and predictable | plan |
+| 6 | Inheritance and resetting | say which properties inherit, and use `inherit`, `initial`, `unset` and `revert` | plan |
+| 7 | The box model | name content, padding, border and margin, use `box-sizing: border-box`, and explain margin collapsing | plan |
+| 8 | Sizing and overflow | use `width`, `height`, `min-` and `max-` sizes, percentages and content-based sizes, and control `overflow` | plan |
+| 9 | Values and units | choose between `px`, `rem`, `em`, `%`, `vw` and `vh`, and use `calc()`, `min()`, `max()` and `clamp()` | plan |
+| 10 | Colors and backgrounds | write colors in hex, `rgb()`, `hsl()` and modern formats, set backgrounds and gradients, and check text contrast | plan |
+| 11 | Typography | set `font-family` stacks, size, weight, `line-height` and spacing, load a web font, and keep a readable line length | plan |
+| 12 | Display and normal flow | explain block and inline flow, `display` values, and how `inline-block` and `none` differ from `visibility: hidden` | plan |
+| 13 | Positioning | use `relative`, `absolute`, `fixed` and `sticky`, say what each is positioned against, and explain `z-index` and stacking contexts | plan |
+| 14 | Flexbox | lay out a row or a column, align and distribute items, and use `gap`, `flex-grow`, `flex-shrink` and `flex-basis` | plan |
+| 15 | Grid | define columns and rows, place items, use `fr`, `repeat()` and `minmax()`, and choose between grid and flexbox | plan |
+| 16 | Responsive design | set the viewport meta, write mobile-first media queries, use fluid layouts and relative units, and size images responsively | plan |
+| 17 | Styling text elements, links and lists | style link states in the right order, lists and their markers, and keep focus visible | plan |
+| 18 | Styling forms and tables | style inputs, buttons and tables, and say why form controls need special care | plan |
+| 19 | Images and replaced elements | use `object-fit`, `aspect-ratio` and `max-width: 100%`, and say what makes an element "replaced" | added? |
+| 20 | Custom properties and theming | define and use `--` variables, scope them, and build light and dark themes with `prefers-color-scheme` | added? |
+| 21 | CSS and accessibility | keep focus styles and contrast, respect `prefers-reduced-motion`, hide content visually without hiding it from screen readers, and avoid relying on color alone | plan |
+| 22 | Transitions and animations | write a transition and a `@keyframes` animation, say which properties animate cheaply, and respect reduced motion | added? |
+| 23 | Transforms | use `translate`, `scale`, `rotate` and `transform-origin`, and say why transforms do not affect layout | added? |
+| 24 | Modern selectors and nesting | use `:is()`, `:where()` and `:has()`, and write nested rules | added? |
+| 25 | Cascade layers and `@supports` | use `@layer` to control order and `@supports` to test for a feature | added? |
+| 26 | Container queries and logical properties | size a component by its container, and use logical properties such as `margin-inline` for different writing directions | added? |
+| 27 | Debugging CSS with DevTools | inspect an element, read the computed styles and the box model, find the winning rule, and toggle declarations | plan |
+| 28 | Organizing CSS | name classes consistently, order a stylesheet, use a reset, and say what BEM or utility-first CSS trade off | added? |
+| 29 | How CSS is loaded and rendered | say why CSS blocks rendering, what a render-blocking stylesheet costs, and how to keep it small | added? |
+
+## JavaScript, React, Networking and HTTP
+
+To be drafted, one subject at a time. The first guesses are in the script (`scripts/mastery_map.py`) and the plan (`PLAN.md`, weeks 7 to 12).
