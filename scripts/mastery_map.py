@@ -61,8 +61,8 @@ SUBJECTS = {
                                "Responsive design and media queries", "Values and units", "Typography"]),
     "JavaScript": FROM_MD.get("JavaScript", ["Fundamentals", "The DOM", "Events and bubbling", "Promises",
                                              "fetch and JSON", "Error handling", "Browser storage"]),
-    "React": ["Getting started", "Components", "State", "Events",
-              "Conditional rendering and filtering", "React accessibility"],
+    "React": FROM_MD.get("React", ["Getting started", "Components", "State", "Events",
+                                   "Conditional rendering and filtering", "React accessibility"]),
     "Networking and HTTP": ["The request journey", "DNS", "TLS", "Status codes", "Headers and caching",
                             "Cookies", "CORS", "HTTP/2, HTTPS and HSTS"],
 }
