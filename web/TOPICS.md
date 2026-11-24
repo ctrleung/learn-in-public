@@ -110,7 +110,9 @@ Level is from your JavaScript roadmap: green is beginner, purple is intermediate
 
 Parked, not in the list: TypeScript, Node.js and back-end JavaScript, frameworks other than React, and the bitwise, comma and BigInt operators.
 
-## React (draft 1, to edit)
+## React (draft 2, to edit)
+
+Tags: `plan` is in `PLAN.md`, `roadmap` is from your React roadmap, `added?` is my suggestion, and `optional` means it is not tracked on the Mastery Map.
 
 | # | Topic | I can... | Tag |
 |---|---|---|---|
@@ -118,32 +120,35 @@ Parked, not in the list: TypeScript, Node.js and back-end JavaScript, frameworks
 | 2 | Setting up a project | create a project with a build tool such as Vite, run the dev server, read the project structure, and say what `npm` scripts do | plan |
 | 3 | JSX | write JSX with expressions, `className`, fragments and self-closing tags, and say what JSX compiles to and why it escapes values | plan |
 | 4 | Components and props | write function components, pass props and `children`, compose components, and say why props are read-only | plan |
-| 5 | Thinking in React | break a design into a component tree, build a static version first, and find the minimal state | plan |
-| 6 | Rendering lists and keys | render a list with `map`, choose a stable `key`, and say what goes wrong with index keys | plan |
-| 7 | Conditional rendering | render different output with `&&`, ternaries and early returns, and avoid the `0` rendering bug | plan |
-| 8 | State with useState | add state, say when state versus props versus a variable, update with a function, treat state as immutable, and explain why updates are batched | plan |
-| 9 | Events and handlers | pass handlers to elements, read the event object, and say why you pass a function and don't call it | plan |
-| 10 | Forms and controlled inputs | build a controlled input, handle `submit` with `preventDefault`, and say when an uncontrolled input is fine | plan |
-| 11 | Sharing state and data flow | lift state up to a common parent, pass it down and call back up, and explain one-way data flow | plan |
-| 12 | Filtering and derived state | filter and sort a list from state without storing the result, and say why duplicated state goes out of sync | plan |
-| 13 | Effects with useEffect | say what an effect is for, write the dependency array, clean up, and explain why strict mode runs effects twice in development | plan |
-| 14 | Fetching data in React | load data with an effect, show loading and error states, ignore or cancel stale responses, and say what a data library adds | plan |
-| 15 | Refs and the DOM | use `useRef` to reach a DOM node or hold a value, move focus, and say when a ref is the wrong tool | added? |
-| 16 | Rendering and re-rendering | say what triggers a render, the difference between render and commit, and why keys and state position matter | added? |
-| 17 | Hooks and custom hooks | state the rules of hooks, write a custom hook, and say what it shares and what it does not | added? |
-| 18 | Context | create and use context, say when it is better than passing props, and name its cost | added? |
-| 19 | Reducers | use `useReducer` for state with several related changes, and say when `useState` is simpler | added? |
-| 20 | React accessibility | use semantic elements in JSX, label inputs, manage focus on route or dialog changes, support the keyboard, and announce changes with live regions | plan |
-| 21 | Styling in React | style with CSS files, class names and inline `style`, and say what CSS Modules and utility classes change | added? |
-| 22 | Performance basics | say when `memo`, `useMemo` and `useCallback` help and when they are noise, and use the profiler to find a slow render | added? |
-| 23 | Error states and boundaries | show errors for failed requests, and say what an error boundary catches and what it does not | added? |
-| 24 | Routing basics | say what client-side routing is, define routes and links, and read URL parameters | added? |
-| 25 | Security in React | say what React escapes and what `dangerouslySetInnerHTML` bypasses, avoid unsafe `href` values, and keep secrets out of the bundle | plan |
-| 26 | Testing components | write a test that renders a component and checks what a user sees, and say why testing behaviour beats testing implementation | added? |
-| 27 | Debugging React | use React DevTools and StrictMode warnings to find a bug, and read the component stack in an error | plan |
-| 28 | Small project: a filterable list | build a small accessible filterable list by hand (no AI) in `practice/`, and explain each design choice | plan |
+| 5 | Composition patterns | compose with `children`, and recognise render props and higher-order components in older code and say why hooks and composition replaced them | roadmap |
+| 6 | Thinking in React | break a design into a component tree, build a static version first, and find the minimal state | plan |
+| 7 | Rendering lists and keys | render a list with `map`, choose a stable `key`, and say what goes wrong with index keys | plan |
+| 8 | Conditional rendering | render different output with `&&`, ternaries and early returns, and avoid the `0` rendering bug | plan |
+| 9 | State with useState | add state, say when state versus props versus a variable, update with a function, treat state as immutable, and explain why updates are batched | plan |
+| 10 | Events and handlers | pass handlers to elements, read the event object, and say why you pass a function and don't call it | plan |
+| 11 | Forms and controlled inputs | build a controlled input, handle `submit` with `preventDefault`, say when an uncontrolled input is fine, and say what a form library such as React Hook Form adds | plan |
+| 12 | Sharing state and data flow | lift state up to a common parent, pass it down and call back up, and explain one-way data flow | plan |
+| 13 | Filtering and derived state | filter and sort a list from state without storing the result, and say why duplicated state goes out of sync | plan |
+| 14 | Effects with useEffect | say what an effect is for, describe the component lifecycle (mount, update, unmount) in terms of effects, write the dependency array, clean up, and explain why strict mode runs effects twice in development | plan |
+| 15 | Fetching data in React | load data with an effect, show loading and error states, ignore or cancel stale responses, and say what a data library such as TanStack Query, SWR or Axios adds | plan |
+| 16 | Refs and the DOM | use `useRef` to reach a DOM node or hold a value, move focus, and say when a ref is the wrong tool | roadmap |
+| 17 | Rendering and re-rendering | say what triggers a render, the difference between render and commit, and why keys and state position matter | added? |
+| 18 | Hooks and custom hooks | state the rules of hooks, write a custom hook, and say what it shares and what it does not | roadmap |
+| 19 | Context | create and use context, say when it is better than passing props, and name its cost | roadmap |
+| 20 | Reducers | use `useReducer` for state with several related changes, and say when `useState` is simpler | roadmap |
+| 21 | React accessibility | use semantic elements in JSX, label inputs, manage focus on route or dialog changes, support the keyboard, and announce changes with live regions | plan |
+| 22 | Styling in React | style with CSS files, class names and inline `style`, and say what CSS Modules and utility classes change | roadmap |
+| 23 | Performance basics | say when `memo`, `useMemo` and `useCallback` help and when they are noise, and use the profiler to find a slow render | roadmap |
+| 24 | Error states and boundaries | show errors for failed requests, and say what an error boundary catches and what it does not | roadmap |
+| 25 | Suspense and portals | say what `Suspense` is for, render a modal into another place in the DOM with a portal, and keep focus and the keyboard working | roadmap |
+| 26 | Routing basics | say what client-side routing is, define routes and links, and read URL parameters | roadmap |
+| 27 | Security in React | say what React escapes and what `dangerouslySetInnerHTML` bypasses, avoid unsafe `href` values, and keep secrets out of the bundle | plan |
+| 28 | Testing components | write a test that renders a component and checks what a user sees, and say why testing behaviour beats testing implementation | roadmap |
+| 29 | Debugging React | use React DevTools and StrictMode warnings to find a bug, and read the component stack in an error | plan |
+| 30 | Small project: a filterable list | build a small accessible filterable list by hand (no AI) in `practice/`, and explain each design choice | plan |
+| 31 | The React ecosystem map | name what state libraries, component libraries, headless components, animation libraries and frameworks are for, and when you would reach for one (your roadmap's recommended picks: Zustand or Jotai, Tailwind, shadcn, Radix or Base UI, TanStack Query, React Testing Library with Vitest, React Hook Form, Next.js or Astro, TypeScript with Zod, Framer Motion) | optional |
 
-Parked, not in the list: Next.js and server components, state libraries (Redux, Zustand), TypeScript with React, and React Native.
+Parked, not in the list: Next.js and server components, server APIs, TypeScript and Zod, GraphQL, state libraries in depth, end-to-end testing (Playwright, Cypress), animation libraries, and React Native.
 
 ## Networking and HTTP
 

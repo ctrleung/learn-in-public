@@ -41,14 +41,14 @@ def table_rows(path):
 # Subjects and their topics. HTML comes from web/TOPICS.md; the rest are first
 # guesses from web/PLAN.md until their lists are polished.
 def topics_from_md(path):
-    """Topics per subject from web/TOPICS.md: a '## Subject' heading, then a table with a numbered first column."""
+    """Topics per subject from web/TOPICS.md: a '## Subject' heading, then a table with a numbered first column. Rows tagged `optional` are not tracked."""
     found, subject = {}, None
     for line in Path(path).read_text().splitlines():
         if line.startswith("## "):
             subject = re.sub(r"\s*\(.*\)\s*$", "", line[3:]).strip()
         elif line.startswith("|") and subject:
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if len(cells) > 1 and cells[0].isdigit():
+            if len(cells) > 1 and cells[0].isdigit() and cells[-1].lower() != "optional":
                 found.setdefault(subject, []).append(cells[1])
     return found
 
