@@ -8,14 +8,14 @@ How to read the tags: **[plan]** is already in `PLAN.md`; **[added?]** is a sugg
 
 | # | Topic | I can... | Tag |
 |---|---|---|---|
-| 1 | Element anatomy and attributes | name the parts of an element, tell an element from a tag, say what a void element is, write attributes, nest elements correctly and add comments | plan |
+| 1 | Element anatomy and attributes | name the parts of an element, tell an element from a tag, say what a void element is, write attributes, nest elements correctly, add comments and say that tag and attribute names are case-insensitive | plan |
 | 2 | Document structure | say what the doctype does, write the skeleton (`html` with `lang`, `head`, `body`) and say which parts are required | plan |
 | 3 | Metadata | set the title, charset, viewport and description, and link a stylesheet, script and icon | plan |
 | 4 | Headings and paragraphs | pick heading levels for structure, not size, avoid skipped levels, and explain whitespace collapsing, `br` and `hr` | plan |
-| 5 | Text semantics | choose `em`, `strong`, `code`, `pre`, `abbr`, `time`, `blockquote` and `cite` for their meaning, and say why `b` and `i` are different | plan |
+| 5 | Text semantics | choose `em`, `strong`, `code`, `pre`, `abbr`, `time`, `blockquote`, `cite`, `q`, `dfn`, `address`, `mark`, `sub`, `sup`, `del`, `ins` and `s` for their meaning, and say why `b` and `i` are different | plan |
 | 6 | Lists | pick `ul`, `ol` or `dl`, nest lists, and say why a menu of links is a list | plan |
 | 7 | Links | write absolute and relative URLs, anchors and fragments, write link text that makes sense alone, and use `mailto`, `download` and `rel` | plan |
-| 8 | Images and media | write useful `alt` text (and empty `alt` for decoration), use `figure` and `figcaption`, set width and height, and know what `picture`, `srcset` and `loading` do | plan |
+| 8 | Images and media | write useful `alt` text (and empty `alt` for decoration), use `figure` and `figcaption`, set width and height, and know what `picture`, `srcset`, `loading` and `fetchpriority` do | plan |
 | 9 | Page structure and landmarks | use `header`, `nav`, `main`, `article`, `section`, `aside` and `footer`, and say when `div` and `span` are the right choice | plan |
 | 10 | Forms | build a form with `label`, `input` types, `select`, `textarea`, `button` and `fieldset`, and say how `name`, GET and POST decide what is sent | plan |
 | 11 | Form validation | use `required`, `type`, `pattern`, `min` and `max`, explain why client-side validation is not enough, and say what the server must still check | plan |
@@ -27,8 +27,10 @@ How to read the tags: **[plan]** is already in `PLAN.md`; **[added?]** is a sugg
 | 17 | Character references and entities | write `&amp;`, `&lt;`, `&nbsp;` and say why you escape `<` in text | added? |
 | 18 | Embedded content | use `iframe` safely (`title`, `sandbox`) and know what `video` and `audio` need | added? |
 | 19 | Interactive elements | use `details` and `summary`, and say what the `dialog` element gives you | added? |
-| 20 | HTML and security | say how unescaped input becomes XSS, why `rel="noopener"` exists, and what `iframe sandbox` does | added? |
+| 20 | HTML and security | say how unescaped input becomes XSS, why `rel="noopener"` exists, what a content security policy (CSP) is for, and what `iframe sandbox` does | added? |
 | 21 | Validity and parsing | run a validator, say how the browser recovers from broken HTML, and tell semantic from presentational markup | added? |
+| 22 | Global attributes | use `id` and `class` well, store data in `data-*` attributes, say why `style` in HTML is a last resort, and use `hidden`, `lang` and `title` | added? |
+| 23 | SEO basics | write a useful `title` and meta description, use headings and link text that make sense out of context, and say what is page-level and what is not | added? |
 
 ## CSS, JavaScript, React, Networking and HTTP
 
