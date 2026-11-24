@@ -69,6 +69,42 @@ How to read the tags: **[plan]** is already in `PLAN.md`; **[added?]** is a sugg
 
 Parked, not in the list: Sass and PostCSS (not needed for the fundamentals), and CSS Modules and CSS-in-JS (they fit better with React).
 
-## JavaScript, React, Networking and HTTP
+## JavaScript (draft 1, to edit)
 
-To be drafted, one subject at a time. The first guesses are in the script (`scripts/mastery_map.py`) and the plan (`PLAN.md`, weeks 7 to 12).
+| # | Topic | I can... | Tag |
+|---|---|---|---|
+| 1 | Variables and data types | use `let` and `const` (and say why not `var`), name the primitive types, tell `null` from `undefined`, explain type coercion, and choose `===` over `==` | plan |
+| 2 | Operators and control flow | write `if`, `switch`, ternaries and loops, say what is truthy and falsy, and use `&&`, `||`, `??` and `?.` | plan |
+| 3 | Functions | write declarations, expressions and arrow functions, use default and rest parameters, return values, and explain hoisting | plan |
+| 4 | Scope and closures | say what block, function and global scope are, and explain a closure with an example you could use in real code | plan |
+| 5 | `this` and binding | say what `this` is in each kind of call, and use `call`, `apply` and `bind` | plan |
+| 6 | Objects and prototypes | create objects, read and change properties, use destructuring and spread, use `Object.keys` and `Object.entries`, and explain the prototype chain | plan |
+| 7 | Classes | write a class with `constructor`, methods, `extends`, getters and private fields, and say how classes relate to prototypes | added? |
+| 8 | Arrays and iteration | use `map`, `filter`, `reduce`, `find`, `some`, `every` and `for...of`, sort correctly, and say which methods change the array | plan |
+| 9 | Strings, numbers, dates and math | use template literals and string methods, explain floating-point surprises, work with `Date` and `Intl`, and use `Math` | plan |
+| 10 | Collections: Map, Set and friends | use `Map` and `Set`, and say when they beat an object or an array | added? |
+| 11 | Modules and loading scripts | use `import` and `export`, load a script with `type="module"`, and explain `defer` and `async` | plan |
+| 12 | The DOM: selecting and changing | use `querySelector`, `textContent`, `createElement`, `classList` and attributes, and say why `textContent` is safer than `innerHTML` | plan |
+| 13 | Events | add and remove listeners, read the event object, and tell `target` from `currentTarget` | plan |
+| 14 | Event bubbling, capturing and delegation | explain the three phases, stop propagation, and use event delegation on a list | plan |
+| 15 | The event loop and asynchronous code | explain the call stack, the task queue and microtasks, and predict the order of `setTimeout` and promise callbacks | plan |
+| 16 | Promises | say what the three states are, chain `then`, `catch` and `finally`, and use `Promise.all`, `race` and `allSettled` | plan |
+| 17 | async and await | write `async` functions, handle errors with `try` and `catch`, and run requests in sequence and in parallel | plan |
+| 18 | fetch and HTTP in the browser | use `fetch` with methods, headers and a body, check `response.ok`, cancel with `AbortController`, and say why a 404 does not reject | plan |
+| 19 | JSON | use `JSON.parse` and `JSON.stringify`, say what JSON cannot hold, and handle bad JSON | plan |
+| 20 | Error handling | use `try`, `catch`, `finally` and `throw`, know the built-in error types, write a custom error, and show an error to the user | plan |
+| 21 | Browser storage | use `localStorage`, `sessionStorage` and cookies, say how they differ, and say what must never be stored there | plan |
+| 22 | Forms and user input | read a form with `FormData`, handle `submit` with `preventDefault`, and use the constraint validation API | added? |
+| 23 | Browser APIs | use `URL` and `URLSearchParams`, `history`, `IntersectionObserver`, timers and `requestAnimationFrame` | added? |
+| 24 | Security basics in JavaScript | say how `innerHTML` and `eval` lead to XSS, what CORS blocks from `fetch`, what a CSP does, and why not to keep secrets in front-end code | plan |
+| 25 | Debugging and DevTools | use the console, breakpoints, the network tab and stack traces to find a bug | plan |
+| 26 | Performance and the main thread | say what blocks the main thread, use debouncing and throttling, and know when a worker helps | added? |
+| 27 | Tooling and packages | use `npm` and `package.json`, and say what a bundler, linter and formatter do | added? |
+| 28 | Testing basics | write a small unit test with an assertion, and say what makes a function easy to test | added? |
+| 29 | Regular expressions | read and write simple patterns, and use `match`, `test` and `replace` | added? |
+
+Parked, not in the list: TypeScript, Node.js and back-end JavaScript, and frameworks other than React.
+
+## React, Networking and HTTP
+
+To be drafted, one subject at a time. The first guesses are in the script (`scripts/mastery_map.py`) and the plan (`PLAN.md`, weeks 10 to 12).
