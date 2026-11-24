@@ -4,13 +4,13 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 
 | Item | Topic | Source | Stage | Last result | Due |
 |---|---|---|---|---|---|
-| 503 status code | HTTP and the web: Status codes | gaps.md, record 0003 | 1 day | correct with hints, 2026-11-23 (the status-family table worked: 5xx is the server's problem, retry later); test again in a different form, without the table | 2026-11-24 |
+| 503 status code | HTTP and the web: Status codes | gaps.md, record 0003 | 3 days | correct from memory in a new form (API under load), 2026-11-24; earlier correct with hints, 2026-11-23 | 2026-11-27 |
 | DNS terms: Domain Name System, maps a domain name to an IP address | Networking: DNS and name resolution | gaps.md | 3 days | correct, 2026-11-23 (name and mapping right; hostname vs URL, including www, was shaky at first) | 2026-11-26 |
 | Integrity detects tampering; all three TLS services together stop a man-in-the-middle attack | Networking: TLS and HTTPS | gaps.md, record 0003 | 3 days | correct, 2026-11-23 (integrity detects, not prevents; all three together stop the attack) | 2026-11-26 |
-| The four steps of a request | Networking: The request journey | record 0001 | 7 days | correct, 2026-10-29 | overdue (2026-11-05) |
+| The four steps of a request | Networking: The request journey | record 0001 | 1 day | partly right, 2026-11-24: lookup, connection and request described well, but request and response were merged and assembly (packets put back together) was missing; ask for the four steps by name | 2026-11-25 |
 | The three TLS services and the attack each stops | Networking: TLS and HTTPS | record 0003 | 7 days | mostly correct, 2026-11-23 (briefly gave impersonation to integrity; fixed in the session); stage held | 2026-11-26 |
-| Roles of DNS, TCP/IP, TLS and HTTP | Networking: The request journey | record 0003 | 7 days | correct, 2026-10-29 | overdue (2026-11-05) |
-| 301 means permanently moved | HTTP and the web: Status codes | record 0002 | 7 days | correct, 2026-10-29 | overdue (2026-11-05) |
+| Roles of DNS, TCP/IP, TLS and HTTP | Networking: The request journey | record 0003 | 14 days | correct, 2026-11-24 (TCP as the base, TLS on top, HTTPS is HTTP over TLS) | 2026-12-08 |
+| 301 means permanently moved | HTTP and the web: Status codes | record 0002 | 14 days | correct, 2026-11-24 (did not know the Location header, not yet covered; thought DNS would handle a temporary move, corrected) | 2026-12-08 |
 | What a DNS answer contains (name, TTL, type A or AAAA, IP) and what the TTL is for | Networking: DNS and name resolution | chat, 2026-11-23 | 1 day | correct on TTL trade-off; record types not yet tested | 2026-11-24 |
 | The order of DNS caches (browser, OS, recursive resolver, then the DNS hierarchy) | Networking: DNS and name resolution | chat, 2026-11-23 | 1 day | order right; needs the hierarchy step and "resolver does the legwork" | 2026-11-24 |
 | After an IP change, who may still hold the old IP and for how long (up to the TTL, per cache) | Networking: DNS and name resolution | chat, 2026-11-23 | 1 day | named the three caches, timing needed hints | 2026-11-24 |
@@ -22,3 +22,6 @@ The live review queue: one row per item. The stages are 1, 3, 7, 14 and 30 days.
 | What the doctype does (standards mode vs quirks mode) | HTML: Document structure | HTML pre-test, record 0007 | 1 day | partly right, 2026-11-23 | 2026-11-24 |
 | What goes in `<html>` and `<head>`: lang, title, charset, viewport, and which are required | HTML: Document structure | HTML pre-test, record 0007 | 1 day | missed lang, charset, viewport, 2026-11-23 | 2026-11-24 |
 | Why heading levels matter (outline, screen readers, no skipped levels) | HTML: Headings and paragraphs | HTML pre-test, record 0007 | 1 day | partly right, 2026-11-23 | 2026-11-24 |
+| Redirects: the `Location` header carries the new URL, 301 and 308 are permanent, 302 and 307 are temporary, and a redirect is HTTP-level, not DNS | HTTP and the web: Redirects | chat, 2026-11-24 | 1 day | not yet tested; DNS-vs-redirect confusion corrected in the session | 2026-11-25 |
+| TCP connects first and TLS builds on it; HTTPS is HTTP over TLS | Networking: TLS and HTTPS | chat, 2026-11-24 | 1 day | correct after one slip (order reversed at first), 2026-11-24 | 2026-11-25 |
+| 3xx is the redirection family, but 304 Not Modified is a cache answer, not a redirect | HTTP and the web: Status codes | chat, 2026-11-24 | 1 day | not yet tested | 2026-11-25 |
