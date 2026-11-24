@@ -112,7 +112,7 @@ Parked, not in the list: TypeScript, Node.js and back-end JavaScript, frameworks
 
 ## React (draft 2, to edit)
 
-Tags: `plan` is in `PLAN.md`, `roadmap` is from your React roadmap, `added?` is my suggestion, and `optional` means it is not tracked on the Mastery Map.
+Tags: `plan` is in `PLAN.md`, `roadmap` is from your React roadmap, `added?` is my suggestion. The libraries are in their own section below, "React ecosystem".
 
 | # | Topic | I can... | Tag |
 |---|---|---|---|
@@ -146,9 +146,29 @@ Tags: `plan` is in `PLAN.md`, `roadmap` is from your React roadmap, `added?` is 
 | 28 | Testing components | write a test that renders a component and checks what a user sees, and say why testing behaviour beats testing implementation | roadmap |
 | 29 | Debugging React | use React DevTools and StrictMode warnings to find a bug, and read the component stack in an error | plan |
 | 30 | Small project: a filterable list | build a small accessible filterable list by hand (no AI) in `practice/`, and explain each design choice | plan |
-| 31 | The React ecosystem map | name what state libraries, component libraries, headless components, animation libraries and frameworks are for, and when you would reach for one (your roadmap's recommended picks: Zustand or Jotai, Tailwind, shadcn, Radix or Base UI, TanStack Query, React Testing Library with Vitest, React Hook Form, Next.js or Astro, TypeScript with Zod, Framer Motion) | optional |
 
-Parked, not in the list: Next.js and server components, server APIs, TypeScript and Zod, GraphQL, state libraries in depth, end-to-end testing (Playwright, Cypress), animation libraries, and React Native.
+Parked, not in the list: Next.js and server components, server APIs, TypeScript and Zod, GraphQL, state libraries in depth, end-to-end testing (Playwright, Cypress), animation libraries, and React Native. See the ecosystem section below for the libraries.
+
+## React ecosystem (optional, not tracked on the map)
+
+A reference for the libraries around React, not a list to master. Study a group only when a project needs it. The picks and alternatives are as I read the marks on your React roadmap (purple is the recommended pick, green is an alternative). A group is tracked on the map only if you move it into the React list above.
+
+| Group | What it is for | Roadmap picks | Alternatives |
+|---|---|---|---|
+| Build tools | creating and running a project | Vite | |
+| Routers | client-side routing | React Router | TanStack Router |
+| State management | state shared across many components | Zustand, Jotai | MobX, Context |
+| Writing CSS | styling components | Tailwind CSS | CSS Modules, Panda CSS |
+| Component libraries | ready-made styled components | shadcn/ui | Material UI, Chakra UI |
+| Headless components | behaviour and accessibility without styles | Base UI, Radix UI | React Aria, Ark UI |
+| API calls: REST | fetching, caching and syncing server data | TanStack Query | Axios, SWR, RTK Query |
+| API calls: GraphQL | querying a GraphQL server | Apollo | Relay, urql |
+| Testing | unit, component and end-to-end tests | Vitest, Playwright, React Testing Library | Jest, Cypress |
+| Forms | form state and validation | React Hook Form | Formik, Formish |
+| Frameworks | routing, server rendering and a full project setup | Next.js, Astro | React Router |
+| Types and validation | catching type and data errors | TypeScript, Zod | Valibot |
+| Animation | motion and transitions | Framer Motion | react-spring, GSAP |
+| Mobile | native mobile apps | React Native | |
 
 ## Networking and HTTP
 
