@@ -32,11 +32,17 @@ Quick-reference notes from networking lesson 1. Every claim comes from [MDN](htt
 | Digit | Family | Whose problem |
 |---|---|---|
 | 2xx | Success | nobody's |
-| 3xx | Redirection | the resource is elsewhere (301 lives here) |
+| 3xx | Redirection | the resource is usually elsewhere (301 lives here); 304 is the exception |
 | 4xx | Client error | the client made the mistake (404, 403, 400) |
 | 5xx | Server error | the server has the problem (503) |
 
 A `503` means the server is temporarily unable to handle the request, usually because it is overloaded or down for maintenance. The client should wait and retry later; the server can send a `Retry-After` header saying how long. Retrying the same request will not help with a 4xx.
+
+### Redirects, and the 3xx exception
+- **Permanent:** `301` and `308`. **Temporary:** `302` and `307`. `303` means "go and `GET` this other URL", often after a `POST`.
+- The new URL is in the **`Location`** header. The browser then sends a new request to it on its own, so the address bar changes. A `301` can be cached by the browser and by search engines; a `302` is not cached by default.
+- **DNS is not involved.** A redirect is an instruction from the server at the HTTP level. DNS maps only a hostname to an IP address and knows nothing about paths, so changing a DNS record would not change the address bar.
+- **`304 Not Modified` is a 3xx but not a redirect.** It answers a conditional request (the client sent `If-None-Match` or `If-Modified-Since`) and means "your cached copy is still good": no body and no new location.
 
 > **Mix-ups to watch:** 301 is not "unauthorized" and 503 is not "internal server error". Those are different codes (401 and 500), which the MDN page names but doesn't define. Look them up in MDN's HTTP status reference.
 
@@ -51,6 +57,13 @@ Data is sent in small chunks. Each packet has:
 
 1. Dropped or corrupted packets can be re-requested on their own instead of the whole file.
 2. Packets can take different routes and arrive out of order. The header numbers let the client reassemble them.
+
+### What each layer's header holds
+- **IP header:** source IP address and destination IP address, a hop limit, and which protocol is inside (TCP or UDP). Routers read the destination to forward the packet.
+- **TCP header:** source port and destination port (443 for HTTPS), and the numbers that let TCP put packets back in order and ask for missing ones.
+- **HTTP headers** (such as `Host`) are inside the data. The server reads them, routers do not.
+- **TLS** encrypts the data inside the packets, but not the IP header, so anyone on the path can see which addresses are talking.
+- The precise names differ by layer (TCP segments, IP packets, link-layer frames). People often say "packet" for all of them.
 
 ## Parts of a URL
 
