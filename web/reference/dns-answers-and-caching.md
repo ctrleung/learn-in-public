@@ -78,6 +78,8 @@ Each answer is cached on the way back, with its own expiry (`now + TTL`). Some b
 
 On a cache miss the resolver asks a root server first. The root doesn't know the IP of `www.example.com`; it replies with a referral to the `.com` (TLD) servers. The TLD server replies with a referral to the site's authoritative server, which gives the IP. Root, TLD and authoritative servers never go off to fetch an answer for the resolver; that is the resolver's job. A cache hit lets the resolver skip some or all of those steps.
 
+Only the recursive resolver queries the root, TLD and authoritative servers. The browser and the OS never do: they ask the resolver once and wait for the answer.
+
 ## Why there are three caches
 Each one serves a bigger group: the browser cache serves you, the OS cache serves every app on your machine (browser, `curl`, `ping`), and the resolver cache serves everyone using that resolver, so a site one person looked up is already cached for the next. The resolver cache also takes load off the root, TLD and authoritative servers, which would otherwise get a query for every page load.
 
