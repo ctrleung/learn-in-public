@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build the data file for the Mastery Map artifact.
 
-Reads web/TOPICS.md (HTML topics), web/reviews.md and web/gaps.md, groups the
+Reads web/TOPICS.md and networking/TOPICS.md (the topic lists), web/reviews.md and web/gaps.md, groups the
 review items by topic, and writes topics.json: one row per topic with a status.
 
 Usage:  python3 -I scripts/mastery_map.py [output.json]     (default: topics.json)
@@ -53,7 +53,7 @@ def topics_from_md(path):
     return found
 
 
-FROM_MD = topics_from_md(ROOT / "web/TOPICS.md")
+FROM_MD = {**topics_from_md(ROOT / "web/TOPICS.md"), **topics_from_md(ROOT / "networking/TOPICS.md")}
 SUBJECTS = {
     "HTML": FROM_MD.get("HTML", []),
     "CSS": FROM_MD.get("CSS", ["Selectors", "Cascade and specificity", "Inheritance", "Box model",
@@ -63,25 +63,24 @@ SUBJECTS = {
                                              "fetch and JSON", "Error handling", "Browser storage"]),
     "React": FROM_MD.get("React", ["Getting started", "Components", "State", "Events",
                                    "Conditional rendering and filtering", "React accessibility"]),
-    "Networking and HTTP": FROM_MD.get("Networking and HTTP", [
-        "The request journey", "DNS", "TLS", "Status codes", "Headers and caching",
-        "Cookies", "CORS", "HTTP/2, HTTPS and HSTS"]),
+    "HTTP and the web": FROM_MD.get("HTTP and the web", []),
+    "Networking": FROM_MD.get("Networking", []),
 }
 
 # (keyword in the review item, subject, start of the topic name). First match wins.
 # An item that matches nothing is left out; add a rule when you add a new kind of item.
 RULES = [
-    ("steps of a request", "Networking and HTTP", "The request journey"),
-    ("roles of", "Networking and HTTP", "The request journey"),
-    ("503", "Networking and HTTP", "Status codes"),
-    ("301", "Networking and HTTP", "Status codes"),
-    ("tls", "Networking and HTTP", "TLS"),
-    ("integrity", "Networking and HTTP", "TLS"),
-    ("dns", "Networking and HTTP", "DNS"),
-    ("address lookup", "Networking and HTTP", "DNS"),
-    ("hostname", "Networking and HTTP", "DNS"),
-    ("cache", "Networking and HTTP", "DNS"),
-    ("ip change", "Networking and HTTP", "DNS"),
+    ("steps of a request", "Networking", "The request journey"),
+    ("roles of", "Networking", "The request journey"),
+    ("503", "HTTP and the web", "Status codes"),
+    ("301", "HTTP and the web", "Status codes"),
+    ("tls", "Networking", "TLS"),
+    ("integrity", "Networking", "TLS"),
+    ("dns", "Networking", "DNS"),
+    ("address lookup", "Networking", "DNS"),
+    ("hostname", "Networking", "DNS"),
+    ("cache", "Networking", "DNS"),
+    ("ip change", "Networking", "DNS"),
     ("element vs tag", "HTML", "Element anatomy"),
     ("doctype", "HTML", "Document structure"),
     ("`<html>`", "HTML", "Document structure"),
