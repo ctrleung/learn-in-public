@@ -170,6 +170,37 @@ A reference for the libraries around React, not a list to master. Study a group 
 | Animation | motion and transitions | Framer Motion | react-spring, GSAP |
 | Mobile | native mobile apps | React Native | |
 
-## Networking and HTTP
+## Networking and HTTP (draft 1, to edit)
 
-To be drafted. The first guesses are in the script (`scripts/mastery_map.py`) and the plan (`PLAN.md`, week 9).
+Tags: `plan` is in `PLAN.md` (weeks 7 and 9, plus the networking records), `added?` is my suggestion. Scaling, load balancing and system design are in the weekend systems sessions (`systems/`).
+
+| # | Topic | I can... | Tag |
+|---|---|---|---|
+| 1 | The request journey | name the four steps of a request (address lookup, request, response, assembly) and say which step a given failure belongs to | plan |
+| 2 | URLs | split a URL into scheme, host, port, path, query and fragment, say which parts reach the server and which do not, and explain URL encoding | plan |
+| 3 | DNS and name resolution | say what DNS maps, read a DNS answer (name, TTL, type, value), trace the browser, OS and resolver caches, and tell recursive from iterative queries | plan |
+| 4 | TCP/IP and the layers | say what an IP address, a port and a packet are, describe the TCP handshake, and say how TCP differs from UDP | plan |
+| 5 | TLS and HTTPS | name the three TLS services and the attack each stops, say what a certificate proves, and outline the handshake | plan |
+| 6 | HTTP messages | read a raw request and response: request line, status line, headers and body | plan |
+| 7 | HTTP methods | choose `GET`, `POST`, `PUT`, `PATCH` and `DELETE`, and say what safe and idempotent mean | plan |
+| 8 | Status codes | say what the 2xx, 3xx, 4xx and 5xx families mean, and the common codes (200, 301, 302, 304, 400, 401, 403, 404, 500, 503) and what to do about each | plan |
+| 9 | Headers | use and read `Content-Type`, `Accept`, `Authorization`, `Host`, `User-Agent` and `Location`, and say which side sets each | plan |
+| 10 | HTTP caching | use `Cache-Control`, `ETag` and conditional requests, say what a CDN caches, and say how to bust a cache | plan |
+| 11 | Cookies and sessions | explain `Set-Cookie` and `Cookie`, the `HttpOnly`, `Secure` and `SameSite` attributes, and the difference between a session cookie and a token | plan |
+| 12 | CORS and the same-origin policy | define an origin, say what the same-origin policy blocks, explain a preflight request, and fix a CORS error the right way | plan |
+| 13 | HTTP/1.1, HTTP/2 and HTTP/3 | say what keep-alive, multiplexing and header compression fix, and what QUIC changes | plan |
+| 14 | HSTS and enforcing HTTPS | say what `Strict-Transport-Security` does, what it protects against, and what the preload list is | plan |
+| 15 | How browsers load a page | describe parsing, the render-blocking resources, the critical path from bytes to pixels, and what `defer`, `async` and `preload` change | plan |
+| 16 | Browser-side attacks and defences | say how XSS, CSRF, clickjacking and a man-in-the-middle work, and which defence stops each | plan |
+| 17 | Security headers | say what `Content-Security-Policy`, `X-Content-Type-Options`, `Referrer-Policy` and `frame-ancestors` do | plan |
+| 18 | Network DevTools | read the Network tab: the waterfall, timings, headers, payload and cache status, throttle the connection, and copy a request as curl | plan |
+| 19 | Redirects | tell 301, 302, 307 and 308 apart, and say how redirect chains hurt | added? |
+| 20 | Compression and content types | say how gzip and Brotli work in transit, and choose a `Content-Type` and encoding | added? |
+| 21 | REST and JSON APIs | design a resource URL, pick methods and status codes for an API, and say what pagination and idempotency are for | added? |
+| 22 | Authentication basics | compare cookies and bearer tokens, outline OAuth at a high level, and say why you do not store tokens carelessly | added? |
+| 23 | Real-time: WebSockets and server-sent events | say when to use a WebSocket, server-sent events or polling | added? |
+| 24 | Testing requests with curl | send a request with `curl`, set headers and a body, and read the response | added? |
+| 25 | Network performance | say what latency and bandwidth are, why round trips matter, and how caching, compression and a CDN reduce them | added? |
+| 26 | Hosting, domains and CDNs | say what a domain registrar, a host and a CDN each do, and where a load balancer sits (the depth is in the systems sessions) | added? |
+
+Parked, not in the list: load balancing, scaling, Linux networking, VPNs and firewalls (systems sessions or the parking lot).

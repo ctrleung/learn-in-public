@@ -63,8 +63,9 @@ SUBJECTS = {
                                              "fetch and JSON", "Error handling", "Browser storage"]),
     "React": FROM_MD.get("React", ["Getting started", "Components", "State", "Events",
                                    "Conditional rendering and filtering", "React accessibility"]),
-    "Networking and HTTP": ["The request journey", "DNS", "TLS", "Status codes", "Headers and caching",
-                            "Cookies", "CORS", "HTTP/2, HTTPS and HSTS"],
+    "Networking and HTTP": FROM_MD.get("Networking and HTTP", [
+        "The request journey", "DNS", "TLS", "Status codes", "Headers and caching",
+        "Cookies", "CORS", "HTTP/2, HTTPS and HSTS"]),
 }
 
 # (keyword in the review item, subject, start of the topic name). First match wins.
