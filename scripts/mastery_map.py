@@ -102,7 +102,9 @@ for r in read_table(ROOT / "web/reviews.md"):
     if not key:
         continue
     dates = re.findall(r"\d{4}-\d{2}-\d{2}", r.get("Last result", ""))
-    items.setdefault(key, []).append({"stage": stage_key(r.get("Stage", "")), "last": max(dates) if dates else ""})
+    due = re.findall(r"\d{4}-\d{2}-\d{2}", r.get("Due", ""))
+    items.setdefault(key, []).append({"stage": stage_key(r.get("Stage", "")), "last": max(dates) if dates else "",
+                                      "due": due[0] if due else ""})
 
 gaps = {}    # (subject, topic) -> {"open": n, "fresh": n}
 for r in read_table(ROOT / "web/gaps.md"):
@@ -140,6 +142,7 @@ for subject, topics in SUBJECTS.items():
             "items": len(its), "open_gaps": gaps.get(key, {}).get("open", 0),
             "weakest_item_stage": weakest,
             "last_tested": max([i["last"] for i in its if i["last"]] or [""]),
+            "next_due": min([i["due"] for i in its if i["due"]] or [""]),
         })
 
 Path(OUT).write_text(json.dumps(rows, indent=1))
