@@ -43,6 +43,21 @@ Section paths below come from MDN's Learn landing page, checked on 2026-11-20. *
 
 - Cloudflare Learning Center articles on DNS and TLS handshakes (cloudflare.com/learning). The site serves a bot check to automated requests, so I can't read it. The learner is reading these themselves.
 
+## Podcasts (to listen to)
+
+Found 24 Nov 2026. Descriptions and lengths come from the listing pages; I have not listened to these, so check the length before you start. Mark each one as you go.
+
+| Podcast episode | Good for | Status |
+|---|---|---|
+| [Syntax, "A11y Treats: Heading Design"](https://syntax.fm/show/674/a11y-treats-heading-design/transcript) | heading levels, outlines and screen readers (the HTML heading-levels topic) | to listen |
+| [Syntax, "Real Talk on Web Accessibility with Marcy Sutton Todd"](https://syntax.fm/show/836/real-talk-on-web-accessibility-with-marcy-sutton-todd/transcript) | keyboard support, contrast, semantics, headings and landmarks (the accessibility topics) | to listen |
+| [HTML All The Things, "Stop Using Divs for Everything!"](https://metacast.app/podcast/html-all-the-things---web-development-web-design/2ppZPZii/stop-using-divs-for-everything-master-semantic-html-custom-attributes-and-accessibility/j0rYbuoF) | why semantic tags matter (landmarks and text semantics) | to listen |
+| [The Backend Engineering Show, Episode 99 "TLS"](https://metacast.app/podcast/the-backend-engineering-show-with-hussein-nasser/Wb63TGA0/episode-99---tls/306r95u6) | the TLS handshake, a step past the notes (about 15 minutes) | to listen |
+| [Ask the Tech Guy, "HTTPS, SSL and TLS Explained"](https://www.everand.com/podcast/615721407/ATG-44-HTTPS-SSL-and-TLS-Explained-How-Encryption-Protects-Your-Web-Sessions-How-Encryption-Protects-Your-Web-Sessions) | a short beginner version of HTTPS and TLS | to listen |
+| [Understanding HTTP/S, CDNs and Edge Proxies (The Reasoning Show, 2019)](https://www.buzzsprout.com/3195/1958164-understanding-http-s-cdns-and-edge-proxies?play=true) | HTTP and HTTPS with CDNs and load balancers (about 54 minutes); leans toward the systems sessions | later |
+| [DevOps Paradox 339, "DNS Is Old Tech (And That's Why It Still Runs the Internet)"](https://pocketcasts.com/podcast/devops-paradox/14628d30-5e66-0137-f267-1d245fc5f9cf/dns-is-old-tech-and-thats-why-it-still-runs-the-internet/ba35fc3c-f17e-4bcb-9036-3ea1cfa63c29) | DNS at scale; better after the DNS basics (systems sessions) | later |
+| [Ladybug Podcast, "How the Internet Works"](https://dev.to/ladybugpodcast/how-the-internet-works) | URLs, DNS, basic networking and the browser | listened 24 Nov: a general review, nothing new |
+
 ## Gaps
 
 - **MDN pages unread.** Every section above still has to be read before a lesson uses it.
