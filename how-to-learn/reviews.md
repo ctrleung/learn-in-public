@@ -4,8 +4,3 @@ The live review queue for this notebook. The stages are 1, 3, 7, 14 and 30 days.
 
 | Item | Source | Stage | Last result | Due |
 |---|---|---|---|---|
-| Mastery learning fixes the ___ and varies the ___ | mastery learning article | 3 days | correct, 2026-11-23 | 2026-11-26 |
-| The usual mastery threshold, and what it protects against | mastery learning article | 1 day | partly right, 2026-11-24: gave the 80 to 90 percent range, but first said it protects against staying too long; it protects against moving on too early | 2026-11-25 |
-| The steps of the mastery loop | mastery learning article | 1 day | not yet tested, 2026-11-21 | 2026-11-22 |
-| What to do differently when a check shows a gap | mastery learning article | 1 day | not yet tested, 2026-11-21 | 2026-11-22 |
-| Why mastery learning saves time overall | mastery learning article | 3 days | correct, 2026-11-23 | 2026-11-26 |
