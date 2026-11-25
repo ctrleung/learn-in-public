@@ -2,7 +2,7 @@
 
 The central page: what to do next in each workspace, based on results so far. A session reads this first and tells me the next step in one sentence. It is rewritten at the end of every session. History is in `log/`, the review queue is each workspace's `reviews.md`, and skill status is each workspace's `progress.md`.
 
-Last updated: 2026-11-24
+Last updated: 2026-11-25
 
 Each section ends with a concrete "before it": what to read or do before the next session (pages, workbook exercises, Renshuu goals) with a rough time, or "nothing" if there's none.
 
@@ -10,13 +10,13 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 25 Nov re-tests, all at 1 day: the four steps of a request by name, redirects and the `Location` header, TCP before TLS (HTTPS is HTTP over TLS), 304 is not a redirect, then the HTML head (`lang`, charset, viewport, title) and heading levels. Warm-up is 3 or 4 questions, the rest carry over. Then the HTML diagnostic.
-- **Why:** these are the 1-day items from 24 Nov. The five DNS items and URL vs hostname passed on 24 Nov and are due again 28 Nov. The HTML diagnostic waits until the networking batch has passed its first re-test.
-- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` (the four steps, the redirects section and the 3xx exception), then close it and write what you remember. Targeted HTML reading, about 10 minutes: Basic HTML syntax (element anatomy, void elements, attributes), Structuring documents (doctype, `lang`, head contents, landmarks) and the headings section of Headings and paragraphs.
-- **Revisit:** the four steps by name (address lookup, request, response, assembly), only the hostname goes to DNS, redirects and the `Location` header (301 and 308 permanent, 302 and 307 temporary), 304 is not a redirect, charset and the head, a paragraph styled like a heading is not a heading, and screen readers use heading levels, not size.
+- **Next step:** the 26 Nov re-tests: heading levels and redirects (1 day, held back), then the 3-day items due 26 Nov (DNS terms, integrity, the three TLS services). Warm-up is 3 or 4 questions, oldest first, and the rest carry over. Then the HTML diagnostic.
+- **Why:** heading levels and redirects each needed a second pass. TCP before TLS and 304 were tested later on 25 Nov and passed. The HTML diagnostic waits until the networking batch has passed its first re-test.
+- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` (the redirects section: what the browser's HTTP cache stores, and the 3xx exception) and the Syntax episode on heading design (listed in `web/RESOURCES.md`), then close it and write what you remember. Targeted HTML reading, about 10 minutes, is still optional: Basic HTML syntax, Structuring documents, and the headings section of Headings and paragraphs.
+- **Revisit:** a redirect is cached by the browser's HTTP cache, not the DNS cache (DNS knows nothing about paths); the heading level is for structure and screen readers navigate by it, size belongs in CSS; (TCP before TLS and 304 passed on 25 Nov.)
 - **To teach later (not yet covered):** the port, the query, the fragment and the request line, with the URLs and HTTP messages topics.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
-- **Last session:** 2026-11-24, in two parts: the networking and HTML warm-up, then the DNS and URL items in applied forms. Mastery learning items were dropped by choice.
+- **Last session:** 2026-11-25, in two parts: four warm-up questions (the four steps, the head, heading levels, redirects), then TCP before TLS and 304.
 
 ## japanese
 
