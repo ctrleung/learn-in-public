@@ -16,6 +16,10 @@ This repo has one /teach workspace per subject:
 - `korean/`: a notebook, not a study workspace. The cards are in Anki. When I ask about a Korean word, answer, add a row to `korean/words.md` (how it sounds in Japanese, Cantonese and Mandarin with a note on which is closest, the characters as an optional extra, and a blank for my own memory aid; say so if it's a native Korean word with no match), and add a log line tagged `[korean]`. Don't quiz me on it or pick it for a bare "go"; Anki does the scheduling.
 - `how-to-learn/`: notes on learning better, and how I apply them. When I share an article about learning, ask me to explain it back in my own words first, then add it to `how-to-learn/reading.md`, make 3 to 5 review items in `how-to-learn/reviews.md`, and note any change it suggests to these rules. Only do this for things worth mastering; skim or skip the rest.
 
+## Questions
+
+When I ask something outside today's path, tell me in one line whether to answer it now (it unblocks what I'm studying, or is a quick fact that clears a misunderstanding) or park it (it goes deeper than the current topic, is already scheduled, or would take more than a few minutes). Answer now briefly, or add it to the `QUESTIONS.md` of the subject where it will be covered (`web/`, `japanese/`, `systems/` or `networking/`), choosing that file myself and creating it if it is missing. Each row says where and when it is covered. At the start of a session, check that workspace's `QUESTIONS.md` for questions whose topic is coming up.
+
 ## Dates and time
 
 My timezone is US Pacific (`America/Los_Angeles`). The container runs on UTC, so at the start of every session run `TZ=America/Los_Angeles date` and use that for "today", "this week", the weekend rule, due dates, and the dates in `log/`, `NEXT.md` and the learning records.
