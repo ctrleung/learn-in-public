@@ -10,13 +10,13 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 26 Nov re-tests: TCP before TLS and 304 (due 25 Nov, not reached), then heading levels and redirects (1 day, held back), then the 3-day items due 26 Nov (DNS terms, integrity, the three TLS services). Warm-up is 3 or 4 questions, oldest first, and the rest carry over. Then the HTML diagnostic.
-- **Why:** heading levels and redirects each needed a second pass, and TCP before TLS and 304 were not reached. The HTML diagnostic waits until the networking batch has passed its first re-test.
+- **Next step:** the 26 Nov re-tests: heading levels and redirects (1 day, held back), then the 3-day items due 26 Nov (DNS terms, integrity, the three TLS services). Warm-up is 3 or 4 questions, oldest first, and the rest carry over. Then the HTML diagnostic.
+- **Why:** heading levels and redirects each needed a second pass. TCP before TLS and 304 were tested later on 25 Nov and passed. The HTML diagnostic waits until the networking batch has passed its first re-test.
 - **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` (the redirects section: what the browser's HTTP cache stores, and the 3xx exception) and the Syntax episode on heading design (listed in `web/RESOURCES.md`), then close it and write what you remember. Targeted HTML reading, about 10 minutes, is still optional: Basic HTML syntax, Structuring documents, and the headings section of Headings and paragraphs.
-- **Revisit:** a redirect is cached by the browser's HTTP cache, not the DNS cache (DNS knows nothing about paths); the heading level is for structure and screen readers navigate by it, size belongs in CSS; TCP connects first and TLS builds on it; 304 is not a redirect.
+- **Revisit:** a redirect is cached by the browser's HTTP cache, not the DNS cache (DNS knows nothing about paths); the heading level is for structure and screen readers navigate by it, size belongs in CSS; (TCP before TLS and 304 passed on 25 Nov.)
 - **To teach later (not yet covered):** the port, the query, the fragment and the request line, with the URLs and HTTP messages topics.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
-- **Last session:** 2026-11-25: four warm-up questions (the four steps, the head, heading levels, redirects); stopped after the reviews.
+- **Last session:** 2026-11-25, in two parts: four warm-up questions (the four steps, the head, heading levels, redirects), then TCP before TLS and 304.
 
 ## japanese
 
