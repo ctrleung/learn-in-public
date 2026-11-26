@@ -11,6 +11,16 @@ Section paths below come from MDN's Learn landing page, checked on 2026-11-20. *
 - **Browser, HTTP and JavaScript:** [How browsers load websites](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_browsers_load_websites) and [Scripting](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting) (variables through functions and objects, events, event bubbling, DOM scripting, JSON, network requests, debugging). Extensions: [Async JS](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS) (promises), [Advanced JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Advanced_JavaScript_objects) (prototypes, classes) and [Client-side APIs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs) (client-side storage, third-party APIs). HTTP itself: MDN's [HTTP reference](https://developer.mozilla.org/en-US/docs/Web/HTTP) and its [HTTP caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching) page (both reachable, neither read yet).
 - **React:** [Frameworks and libraries](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries) (introduction, main features, React getting started, components, to-do list, interactivity and state, filtering and conditional rendering, React accessibility, React resources).
 
+## Reading log (MDN pages)
+
+Reading only counts once I've been tested on it. "Read on" is when I finished the page; "Tested on" is the day I was quizzed and the result held. A page that is read but not tested is still a to-do. Add each page as I reach it.
+
+| Page | Learning outcomes to check | Read on | Tested on | Notes |
+|---|---|---|---|---|
+| [Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax) | the anatomy of an element (element, opening tag, content, closing tag, attributes); the HTML body as the container for the page content; what void elements are and how they differ; the need for a doctype, its original purpose, and that it is now somewhat of a historical artifact; that HTML must be correctly nested | | | |
+| [Structuring documents](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Structuring_documents) | the doctype, `lang`, the head and its contents, the page landmarks | | | |
+| [Headings and paragraphs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs) (the headings section) | heading levels and the page outline, and why levels are chosen for structure and not size | | | |
+
 ## Supporting: networking (DNS, HTTP, TLS basics, how a page loads)
 
 ### Read
