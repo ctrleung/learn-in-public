@@ -6,4 +6,5 @@ Networking questions that came up while studying web topics. Networking is for l
 |---|---|---|---|
 | [ ] | TLS in depth | `TOPICS.md`, "TLS and HTTPS" (and a pass in the systems sessions) | later |
 | [ ] | TCP and IP in depth | `TOPICS.md`, "TCP/IP and the layers" | later |
-| [ ] | DNS caches in depth: the browser, OS and resolver caches, TTLs, and what happens when they disagree | `TOPICS.md`, "DNS and name resolution" (the basics are already in `web/reference/dns-answers-and-caching.md`) | later |
+| [ ] | DNS caches in depth: the browser cache, the OS cache and the `hosts` file, the resolver cache, TTLs, and what happens when they disagree | `TOPICS.md`, "DNS and name resolution" (the basics are already in `web/reference/dns-answers-and-caching.md`) | later |
+| [ ] | Resolvers and the root, TLD and authoritative name servers in depth: who runs them, how they are chosen and configured, and how the hierarchy is organised | `TOPICS.md`, "DNS and name resolution" (the basics are already in `web/reference/dns-answers-and-caching.md`; the DevOps Paradox DNS episode in `web/RESOURCES.md` goes further) | later |
