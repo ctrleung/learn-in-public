@@ -17,7 +17,7 @@ Reading only counts once I've been tested on it. "Read on" is when I finished th
 
 | Page | Learning outcomes to check | Read on | Tested on | Notes |
 |---|---|---|---|---|
-| [Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax) | the anatomy of an element (element, opening tag, content, closing tag, attributes); the HTML body as the container for the page content; what void elements are and how they differ; the need for a doctype, its original purpose, and that it is now somewhat of a historical artifact; that HTML must be correctly nested | | | |
+| [Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax) | the anatomy of an element (element, opening tag, content, closing tag, attributes); the HTML body as the container for the page content; what void elements are and how they differ; the need for a doctype, its original purpose, and that it is now somewhat of a historical artifact; that HTML must be correctly nested | 2026-11-25 |  |  |
 | [Structuring documents](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Structuring_documents) | the doctype, `lang`, the head and its contents, the page landmarks | | | |
 | [Headings and paragraphs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Headings_and_paragraphs) (the headings section) | heading levels and the page outline, and why levels are chosen for structure and not size | | | |
 
