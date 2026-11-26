@@ -8,8 +8,8 @@ Tag: `plan` means the topic is in `PLAN.md`; `extra` means it is on top of the p
 
 | # | Topic | I can... | Tag |
 |---|---|---|---|
-| 1 | Element anatomy and attributes | name the parts of an element, tell an element from a tag, say what a void element is, write attributes, nest elements correctly, add comments and say that tag and attribute names are case-insensitive | plan |
-| 2 | Document structure | say what the doctype does, write the skeleton (`html` with `lang`, `head`, `body`) and say which parts are required | plan |
+| 1 | Element anatomy and attributes | name the parts of an element (the element, opening tag, content, closing tag and attributes) and tell an element from a tag, say what a void element is and how it differs from other elements, write attributes, explain why HTML must be correctly nested, add comments, and say that tag and attribute names are case-insensitive | plan |
+| 2 | Document structure | say why a page needs a doctype, what it was originally for (standards mode vs quirks mode) and why it is now somewhat of a historical artifact, and write the skeleton (`html` with `lang`, `head`, and `body` as the container for the page content), saying which parts are required | plan |
 | 3 | Metadata | set the title, charset, viewport and description, and link a stylesheet, script and icon | plan |
 | 4 | Headings and paragraphs | pick heading levels for structure, not size, avoid skipped levels, and explain whitespace collapsing, `br` and `hr` | plan |
 | 5 | Emphasis and code | choose `em`, `strong`, `code`, `pre`, `mark`, `sub`, `sup` and `time` for their meaning, and say why `b` and `i` are different | plan |
