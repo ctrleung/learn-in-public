@@ -10,14 +10,14 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 27 Nov re-tests: DNS terms (1 day, the wording slipped again), the doctype's original purpose, correct nesting, and the `body` and void elements (due 26 Nov, not reached), and the styled-paragraph heading gap. Warm-up is 3 or 4 questions, oldest first, and the rest carry over. 28 Nov is heavy: the four steps, the head, TCP before TLS, 304, URL vs hostname and the five DNS items are all due.
+- **Next step:** the 27 Nov re-tests: DNS terms (1 day, the wording slipped again), the doctype's original purpose (missed twice, right after the timeline), and the styled-paragraph heading gap. Warm-up is 3 or 4 questions, oldest first, and the rest carry over. 28 Nov is heavy: the four steps, the head, TCP before TLS, 304, URL vs hostname and the five DNS items are all due.
 - **Why:** these are the 1-day items from 25 and 26 Nov. TLS, heading levels and redirects passed and are spaced out.
 - **Before it (optional):** about 10 minutes on the next HTML page, Structuring documents (the doctype, `lang`, the head and landmarks), then the headings section of Headings and paragraphs. Basic HTML syntax is read and tested.
-- **Revisit:** DNS stands for Domain Name System (not service), the doctype's original purpose (a link to the rules for an HTML version) versus its job today (standards mode), a paragraph styled like a heading is not a heading, and the `body` and void elements.
+- **Revisit:** DNS stands for Domain Name System (not service), the doctype's original purpose (a link to the rules for an HTML version, which a validator used) versus its job today (standards mode; a missing doctype means quirks mode, not the default), a paragraph styled like a heading is not a heading, and the `body` and void elements.
 - **To teach later (not yet covered):** the port, the query, the fragment and the request line, with the URLs and HTTP messages topics.
 - **Questions to come back to:** each subject has a `QUESTIONS.md` (`web/`, `networking/`) listing questions that came up while studying, with where and when each is covered. Check the workspace's file at the start of a session and answer any whose topic is coming up.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
-- **Last session:** 2026-11-26: four warm-up questions (DNS terms, the three TLS services and integrity, heading levels, redirects); stopped after the reviews.
+- **Last session:** 2026-11-26: four warm-up questions (DNS terms, the three TLS services and integrity, heading levels, redirects), then the three Basic HTML syntax items (the doctype's history, nesting, the body and void elements).
 
 ## japanese
 
