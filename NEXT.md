@@ -2,7 +2,7 @@
 
 The central page: what to do next in each workspace, based on results so far. A session reads this first and tells me the next step in one sentence. It is rewritten at the end of every session. History is in `log/`, the review queue is each workspace's `reviews.md`, and skill status is each workspace's `progress.md`.
 
-Last updated: 2026-11-25
+Last updated: 2026-11-26
 
 Each section ends with a concrete "before it": what to read or do before the next session (pages, workbook exercises, Renshuu goals) with a rough time, or "nothing" if there's none.
 
@@ -10,14 +10,14 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 26 Nov re-tests: heading levels and redirects (1 day, held back), the three new HTML items from Basic HTML syntax (the doctype's original purpose, nesting, `body` and void elements), then the 3-day items due 26 Nov (DNS terms, integrity, the three TLS services). Warm-up is 3 or 4 questions, oldest first, and the rest carry over. Then the HTML diagnostic.
-- **Why:** heading levels and redirects each needed a second pass. TCP before TLS and 304 were tested later on 25 Nov and passed. The HTML diagnostic waits until the networking batch has passed its first re-test.
-- **Before it (optional):** about 10 minutes in `web/reference/lesson-1-request-journey.md` (the redirects section: what the browser's HTTP cache stores, and the 3xx exception) and the Syntax episode on heading design (listed in `web/RESOURCES.md`), then close it and write what you remember. Next HTML reading, about 10 minutes: Structuring documents, then the headings section of Headings and paragraphs (Basic HTML syntax is read and tested).
-- **Revisit:** a redirect is cached by the browser's HTTP cache, not the DNS cache (DNS knows nothing about paths); the heading level is for structure and screen readers navigate by it, size belongs in CSS; (TCP before TLS and 304 passed on 25 Nov.)
-- **Questions to come back to:** each subject has a `QUESTIONS.md` (`web/`, `networking/`) listing questions that came up while studying, with where and when each is covered. Check the workspace's file at the start of a session and answer any whose topic is coming up.
+- **Next step:** the 27 Nov re-tests: DNS terms (1 day, the wording slipped again), the doctype's original purpose, correct nesting, and the `body` and void elements (due 26 Nov, not reached), and the styled-paragraph heading gap. Warm-up is 3 or 4 questions, oldest first, and the rest carry over. 28 Nov is heavy: the four steps, the head, TCP before TLS, 304, URL vs hostname and the five DNS items are all due.
+- **Why:** these are the 1-day items from 25 and 26 Nov. TLS, heading levels and redirects passed and are spaced out.
+- **Before it (optional):** about 10 minutes on the next HTML page, Structuring documents (the doctype, `lang`, the head and landmarks), then the headings section of Headings and paragraphs. Basic HTML syntax is read and tested.
+- **Revisit:** DNS stands for Domain Name System (not service), the doctype's original purpose (a link to the rules for an HTML version) versus its job today (standards mode), a paragraph styled like a heading is not a heading, and the `body` and void elements.
 - **To teach later (not yet covered):** the port, the query, the fragment and the request line, with the URLs and HTTP messages topics.
+- **Questions to come back to:** each subject has a `QUESTIONS.md` (`web/`, `networking/`) listing questions that came up while studying, with where and when each is covered. Check the workspace's file at the start of a session and answer any whose topic is coming up.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
-- **Last session:** 2026-11-25, in three parts: the MDN Basic HTML syntax reading, quizzed on its five outcomes, and then, earlier, four warm-up questions (the four steps, the head, heading levels, redirects), then TCP before TLS and 304.
+- **Last session:** 2026-11-26: four warm-up questions (DNS terms, the three TLS services and integrity, heading levels, redirects); stopped after the reviews.
 
 ## japanese
 
