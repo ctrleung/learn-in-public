@@ -2,7 +2,7 @@
 
 The central page: what to do next in each workspace, based on results so far. A session reads this first and tells me the next step in one sentence. It is rewritten at the end of every session. History is in `log/`, the review queue is each workspace's `reviews.md`, and skill status is each workspace's `progress.md`.
 
-Last updated: 2026-11-26
+Last updated: 2026-11-28
 
 Each section ends with a concrete "before it": what to read or do before the next session (pages, workbook exercises, Renshuu goals) with a rough time, or "nothing" if there's none.
 
@@ -10,14 +10,14 @@ Each section ends with a concrete "before it": what to read or do before the nex
 
 ## web
 
-- **Next step:** the 27 Nov re-tests: DNS terms (1 day, the wording slipped again), the doctype's original purpose (missed twice, right after the timeline), and the styled-paragraph heading gap. Warm-up is 3 or 4 questions, oldest first, and the rest carry over. 28 Nov is heavy: the four steps, the head, TCP before TLS, 304, URL vs hostname and the five DNS items are all due.
-- **Why:** these are the 1-day items from 25 and 26 Nov. TLS, heading levels and redirects passed and are spaced out.
+- **Next step:** the 28 Nov re-tests. DNS terms and the styled-heading gap are due 28 Nov (held back), and 28 Nov also has the four steps, the head, TCP before TLS, 304, URL vs hostname and the five DNS items (3 days). Warm-up is 3 or 4 questions, oldest first, and the rest carry over. The first systems session (chapter 1 of Volume 1) is also planned for this weekend, 28 to 29 Nov.
+- **Why:** 28 Nov is a heavy day, so take the oldest first and let the rest carry to the next day. 503, the doctype and element vs tag passed and are spaced out.
 - **Before it (optional):** about 10 minutes on the next HTML page, Structuring documents (the doctype, `lang`, the head and landmarks), then the headings section of Headings and paragraphs. Basic HTML syntax is read and tested.
-- **Revisit:** DNS stands for Domain Name System (not service), the doctype's original purpose (a link to the rules for an HTML version, which a validator used) versus its job today (standards mode; a missing doctype means quirks mode, not the default), a paragraph styled like a heading is not a heading, and the `body` and void elements.
+- **Revisit:** `www.example.com` is the hostname and `www` is a subdomain, and `example.com` and `www.example.com` are different names with their own records; a styled `div` is not a heading element, so screen readers leave it out of the headings list.
 - **To teach later (not yet covered):** the port, the query, the fragment and the request line, with the URLs and HTTP messages topics.
-- **Questions to come back to:** each subject has a `QUESTIONS.md` (`web/`, `networking/`) listing questions that came up while studying, with where and when each is covered. Check the workspace's file at the start of a session and answer any whose topic is coming up.
+- **Questions to come back to:** each subject has a `QUESTIONS.md` (`web/`, `networking/`, `systems/`) listing questions that came up while studying or at work, with where and when each is covered. Check the workspace's file at the start of a session and answer any whose topic is coming up.
 - **Topic lists:** all subjects are drafted in `web/TOPICS.md` and `networking/TOPICS.md`; review and edit them when you have time. Every row in `reviews.md` and `gaps.md` has a Topic column that the Mastery Map reads.
-- **Last session:** 2026-11-26: four warm-up questions (DNS terms, the three TLS services and integrity, heading levels, redirects), then the three Basic HTML syntax items (the doctype's history, nesting, the body and void elements).
+- **Last session:** 2026-11-27: four warm-up questions (500 vs 503, URL vs hostname vs domain name, the doctype, the styled heading), then element vs tag and void elements.
 
 ## japanese
 
